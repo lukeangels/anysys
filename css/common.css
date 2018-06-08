@@ -1,0 +1,398 @@
+
+/* 弹窗的居中tab样式 */
+.popup_tab{
+	width: 100%;
+    font-size: 0;
+    border-bottom: 1px solid #eeeeee;
+    text-align: center;
+}
+.popup_tab li{
+	display: inline-block;
+    vertical-align: top;
+    font-size: 14px;
+    color: #333333;
+    text-align: center;
+    height: 100%;
+    cursor: pointer
+}
+.popup_tab li p{
+	height: 100%;
+	box-sizing: border-box;
+}
+.popup_tab_active p{
+	color: #3771EF;
+	border-bottom: 3px solid #3771EF;
+}
+.popup_tab_con{
+	width: 100%;
+	padding-top: 36px;
+}
+
+.assembly_text{
+    margin: 0 auto;
+    font-size: 0;
+    line-height: 38px;
+    padding: 7px 0;
+}
+.mtgl_pop .assembly_text{
+	width: 460px;
+}
+.assembly_text .assembly_text_tit{
+	display: inline-block;
+	width: 90px;
+    padding-right: 10px;
+    line-height: 20px;
+    font-size: 14px;
+    color: #333333;
+    vertical-align: middle;
+}
+.admin_popup .assembly_text_tit{
+	text-align: right;
+}
+.assembly_text .pla{
+	width: 358px;
+}
+.assembly_text .pla p{
+	width: 314px;
+}
+.pla input[type="text"]{
+	border: none;
+	font-size: 14px;
+}
+.assembly_text .pla input[type="text"]{
+	width: 100%;
+	border: none;
+	padding-left: 0;
+}
+.assembly_text .text_option,.assembly_text .input_option{
+	width: 358px;
+	box-sizing: border-box;
+}
+
+.input_option{
+	position: absolute;
+	top: 40px;
+	left: 0;
+	border: 1px solid #CCCCCC;
+	border-radius: 2px;
+	max-height: 200px;
+	overflow-x: hidden;
+	overflow-y: auto;
+	background: #FFFFFF;
+}
+.input_option span{
+	display: block;
+	font-size: 14px;
+	padding: 0 10px;
+}
+.input_option span:hover{
+	color: #3771EF;
+	background: #f5f5f5;
+	
+}
+/* 名称等input[type="text"]组件样式 */
+.assembly_text input[type=text]{
+	display: inline-block;
+	vertical-align: top;
+	width: 358px;
+	height: 38px;
+    border: 1px solid #cccccc;
+    border-radius: 2px;
+    padding: 0 12px;
+    font-size: 14px;
+    color: #333333;
+    box-sizing: border-box;
+}
+
+/* 上传组件样式 */
+.input_file{
+	vertical-align: top;
+}
+input[type="file"],input[type="radio"],input[type=checkbox]{
+	display: none;
+}
+.file_con{
+	position: relative;
+}
+.file_con_text{
+	width: 358px;
+    height: 38px;
+    border: 1px solid #CCCCCC;
+    padding: 0 76px 0 11px;
+    font-size: 14px;
+    color: #cccccc;
+    line-height: 38px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    text-align: left;
+    border-radius: 2px;
+    box-sizing: border-box;
+}
+.file_con label{
+	position: absolute;
+	top: 0;
+	right: 10px;
+	cursor: pointer;
+}
+.file_con label p{
+	font-size: 14px;
+	color: #3771EF;
+}
+
+/* 单选组件 */
+.input_radio{
+	width: 358px;
+}
+.input_radio_con{
+	margin-left: 12px;
+	font-size: 0;
+}
+.input_radio_con label{
+	width: 18px;
+	height: 18px;
+	border: 1px solid #CDCDCD;
+	border-radius: 100%;
+	vertical-align: middle;
+	position: relative;
+}
+input[type="radio"],input[type="checkbox"]{
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+.input_radio_con p{
+	font-size: 14px;
+	vertical-align: top;
+	padding: 0 20px 0 10px;
+}
+.input_radio_con label span{
+	position: relative;
+	vertical-align: top;
+	width: 6px;
+	height: 6px;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	-webkit-transform: translate(-50%,-50%);
+	border-radius: 100%;
+}
+.input_radio_con .input_radio_active{
+	border-color: #3771EF;
+}
+.input_radio_active span{
+	background: #3771EF;
+}
+
+/* 多选组件 */
+.input_checkbox{
+	width: 16px;
+	height: 16px;
+	border: 1px solid #CDCDCD;
+	border-radius: 2px;
+	position: relative;
+	vertical-align: middle;
+}
+.input_checkbox span{
+	width: 10px;
+    height: 8px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -4px 0 0 -5px;
+}
+.input_checkbox_active{
+	border-color: #3771EF;
+}
+.input_checkbox_active span{
+	background: url(../ossweb-img/images/sprite.png) -782px -288px no-repeat;
+}
+
+/* 底部按键 */
+.bottom_btn{
+	font-size: 0;
+	margin-left: -10px;
+}
+.admin_popup .bottom_btn{
+	margin-left: 0;
+}
+.bottom_btn a{
+	display: inline-block;
+	vertical-align: top;
+	padding: 0 36px;
+	height: 40px;
+	line-height: 40px;
+	box-sizing: border-box;
+	font-size: 14px;
+	margin: 20px 10px 0;
+}
+.gradual_change_btn{
+	background: -webkit-linear-gradient(90deg,#3771ef,#3498f9); /* Safari 5.1 - 6.0 */
+	background: -o-linear-gradient(90deg,#3771ef,#3498f9); /* Opera 11.1 - 12.0 */
+	background: -moz-linear-gradient(90deg,#3771ef,#3498f9); /* Firefox 3.6 - 15 */
+	background: linear-gradient(90deg,#3771ef,#3498f9); /* 标准的语法 */
+	color: #FFFFFF;
+}
+.admin_popup .gradual_change_btn{
+	margin-left: 0;
+}
+.frame_btn{
+	border: 1px solid #999999;
+}
+
+.blue_spot{
+	background: #7ba1f4;
+}
+.orange_spot{
+	background: #ff7623;
+}
+
+/* 删除图标 */
+.delete{
+	width: 24px;
+	height: 24px;
+	background: url(../ossweb-img/images/sprite.png) no-repeat -768px -336px;
+	cursor: pointer;
+}
+.modify{
+	width: 24px;
+	height: 24px;
+	background: url(../ossweb-img/images/sprite.png) no-repeat -96px -394px;
+	cursor: pointer;
+}
+.modify:hover{
+	background-position: -128px -394px;
+}
+.delete:hover{
+	background-position: -712px -368px;
+}
+
+/* scroll垂直滚动条、level_scroll水平滚动条 */
+.scroll{
+	overflow-x: hidden;
+	overflow-y: auto;
+}
+.level_scroll{
+	overflow-x: auto;
+	overflow-y: hidden;
+}
+.scroll .mCSB_scrollTools{
+	right: 8px;
+	width: 12px;
+}
+.level_scroll_box{
+	position: relative;
+	width: 100%;
+}
+.level_scroll_left{
+	position: absolute;
+	top: 0;
+	left: 0;
+	background: #FFFFFF;
+	z-index: 10;
+}
+.level_scroll_left_head{
+	width: auto;
+	height: 81px;
+	line-height: 81px;
+	font-size: 0;
+}
+.level_scroll_left_head .inline_block{
+	font-size: 14px;
+	color: #666666;
+}
+.level_scroll_right{
+	font-size: 0;
+	width: auto;
+}
+.level_scroll_right li{
+	display: inline-block;
+	vertical-align: top;
+	width: 90px;
+	text-align: center;
+	font-size: 14px;
+}
+.lsr_time{
+	font-size: 14px;
+	font-weight: bold;
+	padding-left: 345px;
+}
+.lsr_head li,.lsr_time{
+	height: 40px;
+	line-height: 40px;
+}
+.level_scroll_right ul,.lsl_tr{
+	border-top: 1px solid #EEEEEE;
+}
+.level_scroll .mCSB_container{
+	margin-bottom: 14px;
+}
+.lsr_tr_con li,.lsl_tr{
+	height: 60px;
+	line-height: 60px;
+}
+.cost_num{
+	width: 72px;
+	margin: 0 auto;
+	color: #3771EF;
+}
+.lsr_tr_con li input[type="text"]{
+	width: 70px;
+    height: 28px;
+    color: #3771EF;
+    border: 1px solid #CCCCCC;
+    border-radius: 2px;
+    text-align: center;
+}
+
+.scroll .mCSB_scrollTools .mCSB_dragger_bar,.scroll .mCSB_scrollTools .mCSB_draggerRail{
+	width: 8px;
+}
+.scroll .mCSB_container{
+	margin-right: 20px;
+}
+
+/* 提示弹窗icon */
+.confirm_ico{
+	background-position: -616px -336px;
+}
+
+/* 编辑按键及确认按键 */
+.edit_btn,.confirm_edit_btn{
+	width: 66px;
+    height: 30px;
+    font-size: 14px;
+    text-align: center;
+    line-height: 30px;
+    cursor: pointer;
+}
+
+/* 开关按键 */
+.switch_shut{
+	width: 48px;
+	height: 30px;
+	vertical-align: middle;
+	background: url(../ossweb-img/images/sprite.png) no-repeat -336px -472px;
+	cursor: pointer;
+}
+.switch_open{
+	background-position: -280px -472px;
+}
+
+/* 警告图标 */
+.warning_ico{
+	width: 90px;
+	height: 90px;
+	background: url(../ossweb-img/images/sprite.png) no-repeat -520px -336px;
+	position: absolute;
+	top: -45px;
+	left: 50%;
+	transform: translateX(-50%);
+	-webkit-transform: translateX(-50%);
+}
+.warning_text{
+	width: 288px;
+	margin: 0 auto;
+	text-align: center;
+	line-height: 24px;
+}

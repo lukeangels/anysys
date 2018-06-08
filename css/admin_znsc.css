@@ -1,0 +1,906 @@
+/* 素材管理 */
+
+.material_management .tab_td5{
+	text-align: center;
+}
+.material_management .tab_td5 span{
+	width: 23px;
+	height: 23px;
+	background: url(../ossweb-img/images/sprite.png) no-repeat -424px -432px;
+	cursor: pointer;
+	vertical-align: middle;
+}
+.material_management .tab_td5:hover span{
+	background-position: -456px -432px;
+}
+.material_management .tab_td2{
+	width: 340px; /* 5.29修改 */
+}
+.material_management .tab_td2 a{
+	width: 256px; /* 5.29修改 */
+}
+
+
+/* 素材详情（端游） */
+.scxq_pc_game_con{
+	width: 1167px;
+	margin: 10px auto 0;
+}
+.scxq_pc_game_con .multi_selection_tr{
+	line-height: 60px;
+}
+.scxq_pc_game_con .multi_selection_tr .multi_selection_td1{
+	height: 60px;
+	line-height: 60px;
+}
+.scxq_pc_game_con .psc_right_tr_con li{
+	position: relative;
+}
+.scxq_pc_game_con .psc_right_tr_con li a{
+	font-size: 12px;
+	color: #FFFFFF;
+	padding: 3px;
+	line-height: 1;
+	vertical-align: middle;
+}
+.spgc_prompt{
+	width: 97px;
+	height: 44px;
+	background: url(../ossweb-img/images/sprite.png) no-repeat -394px -472px;
+	position: absolute;
+	top: 46px;
+	left: 10px;
+	line-height: 40px;
+	font-size: 0;
+	z-index: 5;
+}
+.spgc_prompt span{
+	font-size: 12px;
+	color: #999999;
+	line-height: 40px;
+	vertical-align: top;
+	padding-right: 9px;
+}.spgc_prompt em{
+	width: 10px;
+	height: 11px;
+	background: url(../ossweb-img/images/sprite.png) no-repeat -782px -300px;
+	vertical-align: middle;
+	cursor: pointer;
+}
+.prt_ytf{
+	background: #1eb615;
+}
+.prt_wtm{
+	background: #eb2121;
+}
+
+/* 素材详情（端游）--素材编辑 */
+.scxq_pc_game_scbj{
+	padding-bottom: 300px;
+}
+.tp_right p{
+	font-size: 14px;
+	line-height: 60px;
+	margin-right: 24px;
+	max-width: 324px;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	white-space: nowrap;
+}
+.scxq_pc_game_scbj .tab_label{
+	width: 800px;
+}
+.spgs_con .inline_block{
+	font-size: 14px;
+	padding-left: 20px;
+	box-sizing: border-box;
+	vertical-align: top;
+}
+.scxq_pc_game_scbj .tab_table_td1{
+	width: 230px;
+}
+.scxq_pc_game_scbj .tab_table_td2{
+	width: 152px;
+}
+.scxq_pc_game_scbj .tab_table_td3{
+	width:225px;
+}
+.scxq_pc_game_scbj .tab_table_td4{
+	width: 304px;
+}
+.scxq_pc_game_scbj .tab_table_td5{
+	width: 128px;
+}
+.scxq_pc_game_scbj .tab_table_td6{
+	width: 128px;
+}
+.spgs_con .tab_table_tr .tab_table_td6{
+	font-size: 0;
+}
+.scxq_pc_game_scbj .tab_table_td1 p{
+	line-height: 24px;
+	-webkit-line-clamp: 3;
+}
+.scxq_pc_game_scbj .tab_head{
+	width: 100% !important;
+	line-height: 48px;
+}
+.scxq_pc_game_scbj .tab_table .tab_table_tr{
+	padding: 18px 0;
+	border-bottom: 1px solid #EEEEEE;
+	font-size: 0;
+	width: 100%;
+}
+.preview_img,.preview_img img{
+	width: 64px;
+	height: 48px;
+}
+.scxq_pc_game_scbj .tab_table_td2 a{
+	width: 100%;
+	max-height: 36px;
+	font-size: 12px;
+	line-height: 18px;
+	color: #3771EF;
+	word-break:break-all;
+}
+.sele_time_text{
+	width: 187px;
+	height: 30px;
+	border: 1px solid #CCCCCC;
+	border-radius: 2px;
+	text-align: center;
+	line-height: 30px;
+	font-size: 0;
+}
+.sele_time_text .inline_block{
+	padding-left: 0;
+}
+.sele_time_text p{
+	padding-right: 12px;
+	vertical-align: top;
+	font-size: 14px;
+}
+.sele_time_text span{
+	width: 18px;
+	height: 18px;
+	background: url(../ossweb-img/images/sprite.png) no-repeat -134px -432px;
+	position: relative;
+	top: 50%;
+	margin-top: -9px;
+	cursor: pointer;
+	vertical-align: top;
+}
+.sele_time_text span:hover{
+	background-position: -160px -432px;
+}
+.scxq_pc_game_scbj .tab_table_tr .pla{
+	width: 189px;
+	height: 32px;
+	line-height: 30px;
+	margin-top: 10px;
+}
+.scxq_pc_game_scbj .tab_table_tr .pla p{
+	width: 145px;
+}
+.scxq_pc_game_scbj .tab_table_tr .tab_table_td4 p a{
+	-webkit-line-clamp: 3;
+	line-height: 24px;
+}
+.scxq_pc_game_scbj .tab_table_tr .tab_table_td4 p a:hover{
+	color: #3771EF;
+}
+.scxq_pc_game_scbj .tab_table_tr .tab_table_td5{
+	height: 20px;
+	line-height: 20px;
+}
+
+.scxq_pc_game_scbj .tab_table_td5 .state_ico p{
+	padding-left: 7px;
+}
+
+/* 素材审核 */
+.znsc .tab_table_tbody{
+	margin-top: 10px;
+}
+.znsc .multi_selection_head{
+	background: #FFFFFF;
+	border-bottom: 1px solid #EEEEEE;
+}
+.znsc .multi_selection_head{
+	height: 48px;
+	line-height: 48px;
+	font-size: 0;
+}
+.znsc .multi_selection_head .multi_selection_td1,.znsc .multi_selection_head .multi_selection_td2,.znsc .multi_selection_head .multi_selection_td3,
+.znsc .multi_selection_head .multi_selection_td4,.multi_selection_head .multi_selection_td5,.multi_selection_head .multi_selection_td6,
+.multi_selection_head .multi_selection_td7,.multi_selection_head .multi_selection_td8,.multi_selection_head .multi_selection_td9{
+	color: #666666;
+	font-weight: bold;
+	
+}
+.multi_selection_td5,.multi_selection_td6,.multi_selection_td7,.multi_selection_td8,.multi_selection_td9{
+	font-size: 14px;
+	border-top: 1px solid #EEEEEE;
+	height: 100%;
+	vertical-align: top;
+	padding-left: 10px;
+	box-sizing: border-box;
+}
+.multi_selection_td5{
+	width: 90px;
+	font-size: 0;
+}
+.multi_selection_head .multi_selection_td5,.multi_selection_head .multi_selection_td6,.multi_selection_head .multi_selection_td7,
+.multi_selection_head .multi_selection_td8,.multi_selection_head .multi_selection_td9{
+	line-height: 48px;
+	border: none;
+}
+.znsc .multi_selection_tr .multi_selection_td2,.znsc .multi_selection_tr .multi_selection_td3,
+.znsc .multi_selection_tr .multi_selection_td4,.multi_selection_tr .multi_selection_td5,.multi_selection_tr .multi_selection_td6,
+.multi_selection_tr .multi_selection_td7,.multi_selection_tr .multi_selection_td8,.multi_selection_tr .multi_selection_td9{
+	line-height: 90px;
+}
+.multi_selection_tr ul li{
+	height: 90px;
+}
+.multi_selection_td5 p{
+	font-size: 14px;
+	vertical-align: top;
+	padding-left: 10px;
+}
+.znsc .multi_selection_td3 p,.znsc .multi_selection_td4 p,.znsc .multi_selection_td2 p,.multi_selection_td6 p,.scxq_mobile_game .multi_selection_td7 p{
+	line-height: 24px;
+	vertical-align: middle;
+}
+.material_auditing .multi_selection_td2{
+	width: 212px;
+}
+.material_auditing .multi_selection_td4{
+	width: 160px;
+}
+.multi_selection_td4 p{
+	word-break: break-all;
+}
+.znsc .multi_selection_td4 .preview_img{
+	vertical-align: middle;
+}
+.multi_selection_td6 p{
+	width: 75px;
+	word-break: break-all;
+}
+.material_auditing .multi_selection_td9 span{
+	vertical-align: top;
+    width: 1px;
+    height: 18px;
+    background: #CCCCCC;
+    margin: -9px 10px 0;
+    position: relative;
+    top: 50%;
+}
+.multi_selection_td9 a:hover{
+	color: #3771EF;
+}
+.multi_selection_td6{
+	width: 110px;
+}
+.multi_selection_td7{
+	width: 118px;
+}
+.multi_selection_td8{
+	width: 114px;
+}
+.multi_selection_td9{
+	width: 118px;
+}
+.multi_selection_tr .multi_selection_td9{
+	font-size: 0;
+}
+.multi_selection_tr .multi_selection_td9 p,.multi_selection_tr .multi_selection_td9 a{
+	font-size: 14px;
+}
+.scxq_mobile_game .multi_selection_td2{ /* 5.29修改 */
+	width: 260px;
+}
+.scxq_mobile_game .multi_selection_td5{ /* 5.29修改 */
+	width: 150px;
+	padding-left: 24px;
+}
+.scxq_mobile_game .multi_selection_td6{ /* 5.29修改 */
+	width: 150px;
+}
+.scxq_mobile_game .multi_selection_td6 p{ /* 5.29修改 */
+	width: 100%;
+}
+.scxq_mobile_game .multi_selection_td7{ /* 5.29修改 */
+	width: 185px;
+}
+.scxq_mobile_game .multi_selection_td7 p{
+	cursor: pointer;
+}
+.scxq_mobile_game .multi_selection_td7 p:hover{
+	color: #3771EF;
+}
+
+.material_auditing .tab_table{
+	position: relative;
+	margin-bottom: 88px;
+}
+.material_auditing .batch_btn{
+	position: absolute;
+	bottom: -88px;
+	left: 0;
+}
+
+
+/* 上传素材 */
+.uploading_material .multi_selection_td2{
+	font-size: 0;
+}
+.uploading_material .multi_selection_td2 p{
+	width: 88%;
+	padding-left: 10px;
+	font-size: 14px;
+}
+.uploading_material_tit {
+	font-size: 0;
+	background: #FFFFFF;
+	height: 66px;
+	box-sizing: border-box;
+	padding: 30px 22px 18px;
+}
+.uploading_material_tit h5{
+	font-size: 18px;
+}
+.uploading_material_tit p{
+	font-size: 14px;
+	color: #999999;
+}
+.uploading_material .scroll{
+	height: 365px;
+	background: #FFFFFF;
+}
+.uploading_material .multi_selection_head{
+	padding-right: 20px;
+	box-sizing: border-box;
+}
+.multi_selection_tr .border{
+	border: none;
+}
+.uploading_material .mCustomScrollBox>.mCSB_scrollTools{
+	height: 96%;
+	top: 50%;
+	transform: translateY(-50%);
+	-webkit-transform: translateY(-50%);
+}
+.uploading_material .up_ma_launch_select{ /* 5.29修改 */
+	background: #FFFFFF;
+	margin: 10px auto 28px;
+	padding-bottom: 28px;
+}
+.uploading_material .tab_table_tbody{
+	padding-bottom: 0; /* 5.29修改 */
+}
+.up_ma_btn{
+	padding-bottom: 246px;
+}
+.umls_left,.umls_right{
+	width: 498px;
+	padding: 30px 0 0 24px;
+}
+.up_ma_launch_select .assembly_text .assembly_text_tit{
+	width: 80px;
+}
+.up_ma_launch_select h5{
+	padding-bottom: 20px;
+	font-size: 18px;
+}
+.up_ma_launch_select .file_con_text{
+	width: 392px;
+	height: 40px;
+}
+
+/* 素材定向 */
+.material_orientation_con{
+	width: 1167px;
+	margin: 28px auto 0;
+	position: relative;
+	padding-bottom: 20px;
+}
+.material_orientation_con .occ_label_con{
+	width: 100%; /* 5.29修改 */
+}
+.material_orientation_con .occ_label{
+	padding: 21px 0 21px 30px; /* 5.29修改 */
+	background: #FFFFFF;
+	height: 150px; /* 5.29修改 */
+}
+
+.material_orientation_con .occ_label_zhixuan{
+	background: #FFFFFF;
+	padding: 36px 0 36px 30px;
+}
+
+.material_orientation_con .occlzc_right_tab_con,.material_orientation_con .occlzc_right_con_tab{
+	width: 1095px; /* 5.29修改 */
+}
+.material_orientation_btn{
+	text-align: left;
+	padding-top: 48px;
+}
+.material_orientation .ortc_subset .ortc_subset_con{
+	width: 100%;
+}
+.material_orientation .occlzc_right_tab_con{
+	height: 160px;
+}
+.material_orientation .ortc_subset_con ul{
+	width: 1008px;
+}
+
+/* 5.29修改 */
+/* 素材管理 */
+.material_management .tab_td5,.material_management .tab_td7{
+	width: 96px;
+}
+.material_management .tab_td7{
+	padding: 0 10px;
+	text-align: center;
+	box-sizing: border-box;
+}
+.material_management .tab_td8,.material_management .tab_td4{
+	width: 110px;	
+}
+.material_management .tab_table_tr .tab_td7{
+	line-height: 90px;
+}
+.material_management .tab_table_tr .tab_td7 span{
+	width: 24px;
+	height: 24px;
+	vertical-align: middle;
+	padding: 0;
+	margin: 0;
+}
+
+/* 素材定向 */
+.material_orientation_con .occ_label_zhixuan_con{
+	padding: 0;
+}
+.material_orientation_con .occ_label .not_label{
+	margin-left: -30px;
+	line-height: 150px;
+}
+.material_orientation_con .occlzc_right_con{
+	padding: 0;
+}
+.material_orientation_con .ortc_subset{
+	width: 1095px;
+	height: 128px;
+}
+.material_orientation_con .ortc_subset .not_label{
+	line-height: 128px;
+}
+.material_orientation_con .ortc_subset_con ul{
+	max-height: 128px;
+}
+
+/* 上传素材 */
+.uploading_material .tab_label{
+	display: block;
+	float: none;
+	width: 1167px;
+	margin: 28px auto 0;
+	background: #FFFFFF;
+}
+.scxq_mobile_game .batch_btn{
+	margin-top: 28px;
+}
+.up_ma_btn{
+	width: 1167px;
+	margin: 0 auto;
+}
+.uploading_material .tab_table{
+	background: transparent;
+}
+
+.select_orient_crowd{
+	margin: 30px 0 0 24px;
+}
+.soc_btn{
+	width: 150px;
+	height: 38px;
+	border: 1px solid #999999;
+	border-radius: 2px;
+	font-size: 14px;
+	line-height: 38px;
+	text-align: center;
+	margin: 7px 0;
+}
+
+/* @ */
+/* 弹窗 */
+.material_edit .popup_tab{
+	height: 30px;
+}
+.material_edit .popup_tab li{
+	margin: 0 56px;
+}
+.material_edit .me_prompt{
+	width: 298px;
+	text-align: center;
+	padding: 0;
+	word-break:break-all;
+	font-size: 12px;
+	line-height: 18px;
+	padding-top: 9px;
+}
+.material_edit_con{
+	vertical-align: top;
+}
+.admin_popup .assembly_text{
+	width: 464px;
+}
+.material_edit_con .sele_time_text,.mobile_game .sele_time_text{
+	width: 356px;
+	height: 38px;
+	margin-bottom: 14px;
+	line-height: 38px;
+	text-align: left;
+}
+.material_edit .pla,.mobile_game .pla{
+	width: 358px;
+}
+.material_edit_con .sele_time_text p{
+	width: 306px;
+	padding-left: 10px;
+}
+.material_edit .bottom_btn,.mobile_game .bottom_btn{
+	text-align: center;
+	padding-top: 40px;
+}
+.batch_btn{ /* 5.29修改 */
+	text-align: left;
+}
+.input_radio_con p{
+	line-height: 38px;
+}
+/* 手游编辑 */
+.mobile_game .popup_tab_con{
+	padding: 0;
+}
+/* 5.29修改 */
+/* 批量删除素材 */
+.batch_delete{
+	width: 800px;
+}
+.batch_delete .popup_head{
+	width: 692px;
+	margin: 0 auto;
+}
+.popup_head,.batch_delete .popup_table_tr{
+	font-size: 0;
+}
+.popup_head p{
+	font-size: 14px;
+	font-weight: bold;
+	color: #666666;
+	vertical-align: top;
+	line-height: 38px;
+}
+.batch_delete .popup_table_td1{
+	width: 90px;
+	padding: 0 20px 0 18px;
+	box-sizing: border-box;
+	
+}
+.batch_delete .popup_table_td2{
+	width: 116px;
+	padding-right: 20px;
+	box-sizing: border-box;
+	
+}
+.batch_delete .popup_table_td3{
+	width: 101px;
+	padding-right: 20px;
+	box-sizing: border-box;
+	
+}
+.batch_delete .popup_table_td4{
+	width: 246px;
+	padding-right: 20px;
+	box-sizing: border-box;
+	
+}
+.batch_delete .popup_table_td5{
+	width: 138px;
+	padding-right: 20px;
+	box-sizing: border-box;
+	
+}
+.batch_delete .popup_table{
+	margin-left: 54px;
+	width: auto;
+	max-height: 400px;
+}
+.batch_delete .popup_table_tr p{
+	font-size: 14px;
+	width: 100%;
+	line-height: 20px;
+}
+.batch_delete .popup_table_tr{
+	width: 692px;
+	height: 72px;
+	border-top: 1px solid #EEEEEE;
+	line-height: 72px;
+}
+.batch_delete .popup_table_tr .inline_block{
+	vertical-align: middle;
+	line-height: 1;
+}
+.batch_delete .input_checkbox{
+	display: block;
+}
+.batch_delete .bottom_btn{
+	margin-top: 20px;
+}
+
+
+/* 小屏幕样式 */
+@media only screen and (min-width: 1024px) and (max-width: 1439px) {
+	.up_ma_btn,.material_orientation_con,.uploading_material .tab_label{ /* 5.29修改 */
+		width: 96%;
+	}
+	.material_management .tab_td2{
+		width: 32%;
+	}
+	.znsc .tab_td2 a{
+		width: 80%;
+	}
+	.znsc .tab_td3{
+		width: 14%;
+	}
+	.znsc .multi_selection_tr ul,.ma_td{
+		width: 90%;
+	}
+	.znsc .multi_selection_tr li{
+		width: 100%;
+	}
+	.znsc .multi_selection_td1{
+		width: 10%;
+	}
+	.znsc .multi_selection_td2{
+		width: 25%;
+	}
+	.znsc .multi_selection_td3{
+		width: 9%;
+	}
+	.znsc .multi_selection_td4{
+		width: 25%;
+	}
+	.znsc .multi_selection_td5{
+		width: 10%;
+	}
+	.znsc .multi_selection_td6{
+		width: 10%;
+	}
+	.znsc .multi_selection_td7{
+		width: 10%;
+	}
+	.znsc .multi_selection_td8{
+		width: 10%;
+	}
+	.znsc .multi_selection_td9{
+		width: 10%;
+	}
+	.scxq_mobile_game .multi_selection_tr ul,.scxq_mobile_game .ma_td{ /* 5.29修改 */
+		width: 100%;
+	}
+	.scxq_mobile_game .multi_selection_td2{ /* 5.29修改 */
+		width: 20%;
+	}
+	.scxq_mobile_game .multi_selection_td3{ /* 5.29修改 */
+		width: 10%;
+	}
+	.scxq_mobile_game .multi_selection_td4{ /* 5.29修改 */
+		width: 8%;
+	}
+	.scxq_mobile_game .multi_selection_td5{ /* 5.29修改 */
+		width: 11%;
+	}
+	.scxq_mobile_game .multi_selection_td6{ /* 5.29修改 */
+		width: 15%;
+	}
+	.scxq_mobile_game .multi_selection_td7{ /* 5.29修改 */
+		width: 16%;
+	}
+	.material_auditing .multi_selection_td2{
+		width: 20%;
+	}
+	.material_auditing .multi_selection_td4{
+		width: 19%;
+	}
+	.material_auditing .multi_selection_td9{
+		width: 12%;
+	}
+	.umls_left,.umls_right{
+		width: 48%;
+		padding-left: 14px;
+	}
+	.up_ma_launch_select .assembly_text .assembly_text_tit{
+		width: 60px;
+	}
+	.up_ma_launch_select .pla,.up_ma_launch_select .file_con_text{
+		width: 362px;
+	}
+	
+	.material_orientation .occlzc_right_con{
+		width: 96%;
+	}
+	.material_orientation_con .occlzc_right_tab_con, .material_orientation_con .occlzc_right_con_tab{
+		width: 100%;
+	}
+	.material_orientation .ortc_subset{
+		width: 100%;
+	}
+	.material_orientation .ortc_subset_con ul{
+		width: 88%;
+	}
+	.scxq_pc_game_scbj .tab_table_td1{
+		width: 17%;
+	}
+	.scxq_pc_game_scbj .tab_table_td2{
+		width: 13%;
+	}
+	.scxq_pc_game_scbj .tab_table_td3{
+		width: 22%;
+	}
+	.scxq_pc_game_scbj .tab_table_td4{
+		width: 25%;
+	}
+	.scxq_pc_game_scbj .tab_table_td5{
+		width: 12%;
+	}
+	.scxq_pc_game_scbj .tab_table_td6{
+		width: 10%;
+	}
+	.material_management .tab_td2{
+		width: 20%;
+	}
+	.material_management .tab_td2 a{
+		width: 54%;
+	}
+	.material_management .tab_td3{
+		width: 12%;
+	}
+	.material_management .tab_td4{
+		width: 12%;
+	}
+	.material_management .tab_td5{
+		width: 10%;
+	}
+	.material_management .tab_td6{
+		width: 17%;
+	}
+	.material_management .tab_td8{
+		width: 11%;
+	}
+	.scxq_pc_game_scbj .tab_label{
+		width: 560px;
+	}
+
+}
+
+/* 大屏幕样式 */
+@media only all and (min-width: 1450px){
+	.znsc .tab_td2{
+		width: 32%;
+	}
+	.znsc .tab_td2 a{
+		width: 80%;
+	}
+	.znsc .tab_td3{
+		width: 14%;
+	}
+	.up_ma_btn,.material_orientation_con,.uploading_material .tab_label{ /* 5.29修改 */
+		width: 96%;
+	}
+	.znsc .multi_selection_tr ul,.ma_td{
+		width: 89%;
+	}
+	.znsc .multi_selection_tr li{
+		width: 100%;
+	}
+	.znsc .multi_selection_td1{
+		width: 10%;
+	}
+	.znsc .multi_selection_td2{
+		width: 27%;
+	}
+	.znsc .multi_selection_td3{
+		width: 8%;
+	}
+	.znsc .multi_selection_td4{
+		width: 25%;
+	}
+	.znsc .multi_selection_td5{
+		width: 8%;
+	}
+	.znsc .multi_selection_td6{
+		width: 10%;
+	}
+	.znsc .multi_selection_td7{
+		width: 10%;
+	}
+	.znsc .multi_selection_td8{
+		width: 10%;
+	}
+	.znsc .multi_selection_td9{
+		width: 10%;
+	}
+	.scxq_mobile_game .multi_selection_tr ul,.scxq_mobile_game .ma_td{ /* 5.29修改 */
+		width: 100%;
+	}
+	.scxq_mobile_game .multi_selection_td2{ /* 5.29修改 */
+		width: 20%;
+	}
+	.scxq_mobile_game .multi_selection_td3{ /* 5.29修改 */
+		width: 10%;
+	}
+	.scxq_mobile_game .multi_selection_td4{ /* 5.29修改 */
+		width: 8%;
+	}
+	.scxq_mobile_game .multi_selection_td5{ /* 5.29修改 */
+		width: 11%;
+	}
+	.scxq_mobile_game .multi_selection_td6{ /* 5.29修改 */
+		width: 15%;
+	}
+	.scxq_mobile_game .multi_selection_td7{ /* 5.29修改 */
+		width: 16%;
+	}
+	.material_auditing .multi_selection_td2{
+		width: 24%;
+	}
+	.material_auditing .multi_selection_td4{
+		width: 20%;
+	}
+	.umls_left,.umls_right{
+		width: 48%;
+	}
+	.material_orientation .occlzc_right_con{
+		width: 98%;
+	}
+	.material_orientation_con .occlzc_right_tab_con, .material_orientation_con .occlzc_right_con_tab{
+		width: 100%;
+	}
+	.material_orientation .ortc_subset{
+		width: 100%;
+	}
+	.material_orientation .ortc_subset_con ul{
+		width: 92%;
+	}
+	.scxq_pc_game_scbj .tab_table_td1{
+		width: 20%;
+	}
+	.scxq_pc_game_scbj .tab_table_td2{
+		width: 17%;
+	}
+	.scxq_pc_game_scbj .tab_table_td3{
+		width: 18%;
+	}
+	.scxq_pc_game_scbj .tab_table_td4{
+		width: 25%;
+	}
+	.scxq_pc_game_scbj .tab_table_td5{
+		width: 10%;
+	}
+	.scxq_pc_game_scbj .tab_table_td6{
+		width: 10%;
+	}
+
+	.material_management .tab_td2{
+		width: 36%;
+	}
+	.material_management .tab_td2 a{
+		width: 70%;
+	}
+}

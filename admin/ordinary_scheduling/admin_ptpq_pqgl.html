@@ -1,0 +1,1819 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>O2精准广告系统</title>
+		<link rel="stylesheet" type="text/css" href="../../css/public.css"/>
+		<link rel="stylesheet" type="text/css" href="../../css/jquery.mCustomScrollbar.css"/>
+		<link rel="stylesheet" type="text/css" href="../../css/admin_style.css"/>
+	</head>
+	<body>
+		<div class="shell">
+			<!-- 左边二级分类导航 -->
+			<div class="left_nav">
+				<div class="left_nav_logo"></div>
+				<!-- 媒体管理 -->
+				<div class="media_manage">
+					<p class="classify_tit"><a href="../media_management/admin_mtgl_pc.html"><span></span>媒体管理</a></p>
+					<ul class="classify_con hide">
+						<li class="cch_xj"><a href="../media_management/admin_mtgl_pc.html"><span></span>PC媒体</a></li>
+						<li class="cch_gl"><a href="../media_management/admin_mtgl_move.html"><span></span>移动媒体</a></li>
+						<li class="cch_tz"><a href="../media_management/admin_mtgl_ggjypt.html"><span></span>广告交易平台</a></li>
+					</ul>
+				</div>
+				
+				<!-- 智能排期 -->
+				<div class="ln_con intel_sche">
+					<p class="classify_tit"><a href="../intelligent_scheduling/admin_intel_sche_con.html"><span></span>智能排期(beta)</a></p>
+					<ul class="classify_con hide">
+						<li class="cch_xj"><a href="../intelligent_scheduling/admin_intel_sche_con.html"><span></span>新建排期</a></li>
+						<li class="cch_gl"><a href="../intelligent_scheduling/admin_total_preview.html"><span></span>排期管理</a></li>
+						<li class="cch_tz"><a href="../intelligent_scheduling/admin_tzjm.html"><span></span>动态优化</a></li>
+					</ul>
+				</div>
+				
+				<!-- 普通排期 -->
+				<div class="ln_con ordin_sche">
+					<p class="classify_tit nav_active"><a href="admin_ptpq_inf.html"><span></span>普通排期</a></p>
+					<ul class="classify_con">
+						<li class="cch_xj"><a href="admin_ptpq_inf.html"><span></span>新建排期</a></li>
+						<li class="cch_gl cc_li_active"><a href="admin_ptpq_pqgl.html"><span></span>排期管理</a></li>
+					</ul>
+				</div>
+				
+				<!-- 实时竞价排期 -->
+				<div class="ln_con price_sche">
+					<p class="classify_tit"><a href="../shishijingjiapaiqi/admin_ssjjpq_inf.html"><span></span>实时竞价排期</a></p>
+					<ul class="classify_con hide">
+						<li class="cch_xj"><a href="../shishijingjiapaiqi/admin_ssjjpq_inf.html"><span></span>新建排期</a></li>
+						<li class="cch_gl"><a href="../shishijingjiapaiqi/admin_ssjjpq_pqgl.html"><span></span>排期管理</a></li>
+					</ul>
+				</div>
+				
+				<!-- 智能素材 -->
+				<div class="ln_con intel_material">
+					<p class="classify_tit"><a href="../intelligent_material/admin_znsc_scgl.html"><span></span>智能素材</a></p>
+					<ul class="classify_con hide">
+						<li class="cch_xj"><a href="../intelligent_material/admin_znsc_scgl.html"><span></span>素材管理</a></li>
+						<li class="cch_gl"><a href="../intelligent_material/admin_znsc_scsh.html"><span></span>素材审核</a></li>
+					</ul>
+				</div>
+				
+				<!-- 数据中心 -->
+				<div class="ln_con data_center">
+					<p class="classify_tit"><a href=""><span></span>数据中心</a></p>
+					<ul class="classify_con hide">
+						<li class="cch_xj"><a href=""><span></span></a></li>
+						<li class="cch_gl"><a href=""><span></span></a></li>
+						<li class="cch_tz"><a href=""><span></span></a></li>
+					</ul>
+				</div>
+				
+				<!-- DMP精准设置 -->
+				<div class="ln_con precise_setting">
+					<p class="classify_tit"><a href=""><span></span>DMP精准设置</a></p>
+					<ul class="classify_con hide">
+						<li class="cch_xj"><a href=""><span></span></a></li>
+						<li class="cch_gl"><a href=""><span></span></a></li>
+						<li class="cch_tz"><a href=""><span></span></a></li>
+					</ul>
+				</div>
+				
+				<!-- 系统管理 -->
+				<div class="ln_con system_manage">
+					<p class="classify_tit"><a href="../system_management/admin_xtgl_user_settings.html"><span></span>系统管理</a></p>
+					<ul class="classify_con hide">
+						<li class="cch_xj"><a href="../system_management/admin_xtgl_user_settings.html"><span></span>用户管理</a></li>
+						<li class="cch_gl"><a href="../system_management/admin_xtgl_personal_center.html"><span></span>个人中心</a></li>
+						<li class="cch_tz"><a href="../system_management/admin_xtgl_game_management.html"><span></span>游戏管理</a></li>
+						<li class="cch_tz"><a href="../system_management/admin_xtgl_jztfsz.html"><span></span>精准投放设置</a></li>
+					</ul>
+				</div>
+			</div>
+			
+			<!-- 缩略图导航 -->
+			<div class="thumbnail_nav hide">
+				<div class="tn_logo"></div>
+				<ul class="tn_con">
+					<li class="tn_com_li tn_media_manage">
+						<p class="classify_tit"><span class="tn_span"></span>媒体管理</p>
+						<ul class="classify_con hide">
+							<li class="cch_xj"><a href="../media_management/admin_mtgl_pc.html"><span></span>PC媒体</a></li>
+							<li class="cch_gl"><a href="../media_management/admin_mtgl_move.html"><span></span>移动媒体</a></li>
+							<li class="cch_tz"><a href="../media_management/admin_mtgl_ggjypt.html"><span></span>广告交易平台</a></li>
+						</ul>
+					</li>
+					<li class="tn_com_li tn_intel_sche">
+						<p class="classify_tit"><span class="tn_span"></span>智能排期(beta)</p>
+						<ul class="classify_con hide">
+							<li class="cch_xj"><a href="../intelligent_scheduling/admin_intel_sche_con.html"><span></span>新建排期</a></li>
+							<li class="cch_gl"><a href="../intelligent_scheduling/admin_total_preview.html"><span></span>排期管理</a></li>
+							<li class="cch_tz"><a href="../intelligent_scheduling/admin_tzjm.html"><span></span>动态优化</a></li>
+						</ul>
+					</li>
+					<li class="tn_com_li tn_ordin_sche">
+						<p class="classify_tit"><span class="tn_span"></span>普通排期</p>
+						<ul class="classify_con hide">
+							<li class="cch_xj"><a href="admin_ptpq_inf.html"><span></span>新建排期</a></li>
+							<li class="cch_gl cc_li_active"><a href="admin_ptpq_pqgl.html"><span></span>排期管理</a></li>
+						</ul>
+					</li>
+					<li class="tn_com_li tn_price_sche">
+						<p class="classify_tit"><span class="tn_span"></span>实时竞价排期</p>
+						<ul class="classify_con hide">
+							<li class="cch_xj"><a href="../shishijingjiapaiqi/admin_ssjjpq_inf.html"><span></span>新建排期</a></li>
+							<li class="cch_gl"><a href="../shishijingjiapaiqi/admin_ssjjpq_pqgl.html"><span></span>排期管理</a></li>
+						</ul>
+					</li>
+					<li class="tn_com_li tn_intel_material">
+						<p class="classify_tit"><span class="tn_span"></span>智能素材</p>
+						<ul class="classify_con hide">
+							<li class="cch_xj"><a href="../intelligent_material/admin_znsc_scgl.html"><span></span>素材管理</a></li>
+							<li class="cch_gl"><a href="../intelligent_material/admin_znsc_scsh.html"><span></span>素材审核</a></li>
+						</ul>
+					</li>
+					<li class="tn_com_li tn_data_center">
+						<p class="classify_tit"><span class="tn_span"></span>数据中心</p>
+						<ul class="classify_con hide">
+							<li class="cch_xj"><a href=""><span></span></a></li>
+							<li class="cch_gl"><a href=""><span></span></a></li>
+							<li class="cch_tz"><a href=""><span></span></a></li>
+						</ul>
+					</li>
+					<li class="tn_com_li tn_precise_setting">
+						<p class="classify_tit"><span class="tn_span"></span>DMP精准设置</p>
+						<ul class="classify_con hide">
+							<li class="cch_xj"><a href=""><span></span></a></li>
+							<li class="cch_gl"><a href=""><span></span></a></li>
+							<li class="cch_tz"><a href=""><span></span></a></li>
+						</ul>
+					</li>
+					<li class="tn_com_li tn_system_manage">
+						<p class="classify_tit"><span class="tn_span"></span>系统管理</p>
+						<ul class="classify_con hide">
+							<li class="cch_xj"><a href="../system_management/admin_xtgl_user_settings.html"><span></span>用户管理</a></li>
+							<li class="cch_gl"><a href="../system_management/admin_xtgl_personal_center.html"><span></span>个人中心</a></li>
+							<li class="cch_tz"><a href="../system_management/admin_xtgl_game_management.html"><span></span>游戏管理</a></li>
+							<li class="cch_tz"><a href="../system_management/admin_xtgl_jztfsz.html"><span></span>精准投放设置</a></li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+			
+			<!-- 右边内容区 -->
+			<div class="right_con">
+				<!-- 普通排期信息 -->
+				<div class="ptpq_inf">
+					<div class="int_top clearfix">
+						<div class="int_tit">
+							<p>排期管理</p>
+						</div>
+						<div class="login">
+							<!-- 但没有消息是em为隐藏状态 -->
+							<a href="javascript:" class="mail_btn">
+								<span>
+									<em>2</em>
+								</span>
+							</a>
+							<div class="login_sign_in">
+								<div class="lsi_img">
+									<img src="../../img/ico_16.png"/>
+								</div>
+								<p>艾丽斯...</p>
+								<span class="jt"></span>
+								<div class="lsi_sele hide">
+									<span></span>
+									<p class="qx">权 限<em></em></p>
+									<p class="wb">媒介运营</p>
+									<a href="">退出</a>
+								</div>
+							</div>
+							
+							<!-- 邮件弹窗 -->
+							<div class="mail_popup hide">
+								<span class="mail_popup_triangle"></span>
+								<div class="mail_popup_con_head">
+									<div class="mpch_tab mpch_active">
+										<p>系统通知<span class="hide"></span></p>
+									</div>
+									<!-- 但没有消息是span为隐藏状态 -->
+									<div class="mpch_tab">
+										<p>我的待办<span>2</span></p>
+									</div>
+									<span class="line"></span>
+								</div>
+								<div class="mpc">
+									<ul class="mail_popup_con hide">
+										<li>
+											<div class="mail_popup_con1">
+												<span></span>
+												<p class="mpc_event">动态调整</p>
+												<p class="mpc_time">2018.04.20</p>
+											</div>
+											<p class="mpc_event_con">您的排期《全军出击~2018年4月排期》已经由AI优化完成，请您务必在2018.4.21 16:00前确认 </p>
+											<div class="mpc_see_btn"><a href="">查看详情</a></div>
+										</li>
+										<li>
+											<div class="mail_popup_con1">
+												<span></span>
+												<p class="mpc_event">动态调整</p>
+												<p class="mpc_time">2018.04.20</p>
+											</div>
+											<p class="mpc_event_con">您的排期《全军出击~2018年4月排期》已经由AI优化完成，请您务必在2018.4.21 16:00前确认 </p>
+											<div class="mpc_see_btn"><a href="">查看详情</a></div>
+										</li>
+										<li>
+											<div class="mail_popup_con1">
+												<span></span>
+												<p class="mpc_event">动态调整</p>
+												<p class="mpc_time">2018.04.20</p>
+											</div>
+											<p class="mpc_event_con">您的排期《全军出击~2018年4月排期》已经由AI优化完成，请您务必在2018.4.21 16:00前确认 </p>
+											<div class="mpc_see_btn"><a href="">查看详情</a></div>
+										</li>
+										<li>
+											<div class="mail_popup_con1">
+												<span></span>
+												<p class="mpc_event">动态调整</p>
+												<p class="mpc_time">2018.04.20</p>
+											</div>
+											<p class="mpc_event_con">您的排期《全军出击~2018年4月排期》已经由AI优化完成，请您务必在2018.4.21 16:00前确认 </p>
+											<div class="mpc_see_btn"><a href="">查看详情</a></div>
+										</li>
+									</ul>
+									
+									<!-- 无消息 -->
+									<div class="mpc_not_news">
+										<div class="mpcnn_bg"></div>
+										<p>暂无系统消息</p>
+									</div>
+									<a href="" class="mpc_ckqb_btn">查看全部通知<span></span></a>
+								</div>
+								<div class="mpc hide">
+									<ul class="mail_popup_con">
+										<li>
+											<div class="mail_popup_con1">
+												<span></span>
+												<p class="mpc_event">动态调整</p>
+												<p class="mpc_time">2018.04.20</p>
+											</div>
+											<p class="mpc_event_con">您的排期《全军出击~2018年4月排期》已经由AI优化完成，请您务必在2018.4.21 16:00前确认 </p>
+											<div class="mpc_see_btn"><a href="">查看详情</a></div>
+										</li>
+										<li>
+											<div class="mail_popup_con1">
+												<span></span>
+												<p class="mpc_event">动态调整</p>
+												<p class="mpc_time">2018.04.20</p>
+											</div>
+											<p class="mpc_event_con">您的排期《全军出击~2018年4月排期》已经由AI优化完成，请您务必在2018.4.21 16:00前确认 </p>
+											<div class="mpc_see_btn"><a href="">查看详情</a></div>
+										</li>
+										<li>
+											<div class="mail_popup_con1">
+												<span></span>
+												<p class="mpc_event">动态调整</p>
+												<p class="mpc_time">2018.04.20</p>
+											</div>
+											<p class="mpc_event_con">您的排期《全军出击~2018年4月排期》已经由AI优化完成，请您务必在2018.4.21 16:00前确认 </p>
+											<div class="mpc_see_btn"><a href="">查看详情</a></div>
+										</li>
+									</ul>
+									
+									<!-- 无消息 -->
+									<div class="mpc_not_news hide">
+										<div class="mpcnn_bg"></div>
+										<p>暂无代办</p>
+									</div>
+									<a href="" class="mpc_ckqb_btn">查看全部信息<span></span></a>
+								</div>	
+							</div>
+						</div>
+					</div>
+					
+					<!-- 消息提示 -->
+					<div class="sc_message_hints">
+						<span class="scmh_ico"></span>
+						<p>亲爱的艾丽斯，下午好！您有<em>196</em>个待处理事项<a href="javascript:">立即查看</a></p>
+						<span class="scmh_colse"></span>
+					</div>
+					
+					<div class="pp_state clearfix">
+						<ul class="pps_tab">
+							<li class="pps_tab_active">全部</li>
+							<li>审核通过</li>
+							<li>待审核</li>
+							<li>驳回</li>
+							<li>草稿</li>
+							<li>激活</li>
+						</ul>
+						<div class="pps_whole_refurbish">
+							<span></span>
+							<p>全部刷新</p>
+						</div>
+					</div>
+					
+					<div class="ptpq_pqgl_con">
+						<div class="ppc_head">
+							<p class="ppc_td1">ID</p>
+							<p class="ppc_td2">排期名称</p>
+							<p class="ppc_td3">总费用（元）</p>
+							<p class="ppc_td4">投放时间</p>
+							<p class="ppc_td5">排期状态</p>
+							<p class="ppc_td6">查看数据</p>
+							<p class="ppc_td7">刷新</p>
+						</div>
+						
+						<!-- 全部 -->
+						<div class="ppc_table">
+							<ul class="ppc_table_con">
+								<li>
+									<div class="ppc_td1"><p>1327</p></div>
+									<div class="ppc_td2">
+										<div class="ppc_img">
+											<img src="../../img/ico_20.png"/>
+										</div>
+										<p><a href="admin_ptpq_pqgl_details.html">2018年2月单独网吧排期（端游）</a></p>
+									</div>
+									<div class="ppc_td3">
+										<p>7,000,000.00</p>
+									</div>
+									<div class="ppc_td4">
+										<p>2017.3.15-2018.3.30</p>
+									</div>
+									<div class="ppc_td5">
+										<!-- 待审核 -->
+										<div class="wait_audited">
+											<span></span>
+											<p>待审核</p>
+										</div>
+									</div>
+									<div class="ppc_td6">
+										<p><a href="javascript:"><span></span></a></p>
+									</div>
+									<div class="ppc_td7">
+										<p><span></span></p>
+									</div>
+								</li>
+								<li>
+									<div class="ppc_td1"><p>1327</p></div>
+									<div class="ppc_td2">
+										<div class="ppc_img">
+											<img src="../../img/ico_21.png"/>
+										</div>
+										<p><a href="admin_ptpq_pqgl_details.html">2018年2月内配广告排期（绝地求生端游）</a></p>
+									</div>
+									<div class="ppc_td3">
+										<p>7,000,000.00</p>
+									</div>
+									<div class="ppc_td4">
+										<p>2017.3.15-2018.3.30</p>
+									</div>
+									<div class="ppc_td5">
+										<!-- 审核通过 -->
+										<div class="adopt_audited">
+											<span></span>
+											<p>审核通过</p>
+										</div>
+									</div>
+									<div class="ppc_td6">
+										<p><a href="javascript:"><span></span></a></p>
+									</div>
+									<div class="ppc_td7">
+										<p><span></span></p>
+									</div>
+								</li>
+								<li>
+									<div class="ppc_td1"><p>1327</p></div>
+									<div class="ppc_td2">
+										<div class="ppc_img">
+											<img src="../../img/ico_24.png"/>
+										</div>
+										<p><a href="admin_ptpq_pqgl_details.html">王者荣耀3-4月投放</a></p>
+									</div>
+									<div class="ppc_td3">
+										<p>7,000,000.00</p>
+									</div>
+									<div class="ppc_td4">
+										<p>2017.3.15-2018.3.30</p>
+									</div>
+									<div class="ppc_td5">
+										<!-- 激活 -->
+										<div class="activation_audited">
+											<span></span>
+											<p>激活</p>
+										</div>
+									</div>
+									<div class="ppc_td6">
+										<p><a href="javascript:"><span></span></a></p>
+									</div>
+									<div class="ppc_td7">
+										<p><span></span></p>
+									</div>
+								</li>
+								<li>
+									<div class="ppc_td1"><p>1327</p></div>
+									<div class="ppc_td2">
+										<div class="ppc_img">
+											<img src="../../img/ico_24.png"/>
+										</div>
+										<p><a href="admin_ptpq_pqgl_details.html">王者荣耀3-4月投放</a></p>
+									</div>
+									<div class="ppc_td3">
+										<p>7,000,000.00</p>
+									</div>
+									<div class="ppc_td4">
+										<p>2017.3.15-2018.3.30</p>
+									</div>
+									<div class="ppc_td5">
+										<!-- 驳回 -->
+										<div class="rebut">
+											<span></span>
+											<p>驳回</p>
+										</div>
+									</div>
+									<div class="ppc_td6">
+										<p><a href="javascript:"><span></span></a></p>
+									</div>
+									<div class="ppc_td7">
+										<p><span></span></p>
+									</div>
+								</li>
+								<li>
+									<div class="ppc_td1"><p>1327</p></div>
+									<div class="ppc_td2">
+										<div class="ppc_img">
+											<img src="../../img/ico_20.png"/>
+										</div>
+										<p><a href="admin_ptpq_pqgl_details.html">2018年2月单独网吧排期（端游）</a></p>
+									</div>
+									<div class="ppc_td3">
+										<p>7,000,000.00</p>
+									</div>
+									<div class="ppc_td4">
+										<p>2017.3.15-2018.3.30</p>
+									</div>
+									<div class="ppc_td5">
+										<!-- 待审核 -->
+										<div class="wait_audited">
+											<span></span>
+											<p>待审核</p>
+										</div>
+									</div>
+									<div class="ppc_td6">
+										<p><a href="javascript:"><span></span></a></p>
+									</div>
+									<div class="ppc_td7">
+										<p><span></span></p>
+									</div>
+								</li>
+								<li>
+									<div class="ppc_td1"><p>1327</p></div>
+									<div class="ppc_td2">
+										<div class="ppc_img">
+											<img src="../../img/ico_21.png"/>
+										</div>
+										<p><a href="admin_ptpq_pqgl_details.html">2018年2月内配广告排期（绝地求生端游）</a></p>
+									</div>
+									<div class="ppc_td3">
+										<p>7,000,000.00</p>
+									</div>
+									<div class="ppc_td4">
+										<p>2017.3.15-2018.3.30</p>
+									</div>
+									<div class="ppc_td5">
+										<!-- 审核通过 -->
+										<div class="adopt_audited">
+											<span></span>
+											<p>审核通过</p>
+										</div>
+									</div>
+									<div class="ppc_td6">
+										<p><a href="javascript:"><span></span></a></p>
+									</div>
+									<div class="ppc_td7">
+										<p><span></span></p>
+									</div>
+								</li>
+								<li>
+									<div class="ppc_td1"><p>1327</p></div>
+									<div class="ppc_td2">
+										<div class="ppc_img">
+											<img src="../../img/ico_24.png"/>
+										</div>
+										<p><a href="admin_ptpq_pqgl_details.html">王者荣耀3-4月投放</a></p>
+									</div>
+									<div class="ppc_td3">
+										<p>7,000,000.00</p>
+									</div>
+									<div class="ppc_td4">
+										<p>2017.3.15-2018.3.30</p>
+									</div>
+									<div class="ppc_td5">
+										<!-- 激活 -->
+										<div class="activation_audited">
+											<span></span>
+											<p>激活</p>
+										</div>
+									</div>
+									<div class="ppc_td6">
+										<p><a href="javascript:"><span></span></a></p>
+									</div>
+									<div class="ppc_td7">
+										<p><span></span></p>
+									</div>
+								</li>
+								<li>
+									<div class="ppc_td1"><p>1327</p></div>
+									<div class="ppc_td2">
+										<div class="ppc_img">
+											<img src="../../img/ico_24.png"/>
+										</div>
+										<p><a href="admin_ptpq_pqgl_details.html">王者荣耀3-4月投放</a></p>
+									</div>
+									<div class="ppc_td3">
+										<p>7,000,000.00</p>
+									</div>
+									<div class="ppc_td4">
+										<p>2017.3.15-2018.3.30</p>
+									</div>
+									<div class="ppc_td5">
+										<!-- 驳回 -->
+										<div class="rebut">
+											<span></span>
+											<p>驳回</p>
+										</div>
+									</div>
+									<div class="ppc_td6">
+										<p><a href="javascript:"><span></span></a></p>
+									</div>
+									<div class="ppc_td7">
+										<p><span></span></p>
+									</div>
+								</li>
+							</ul>
+							
+							<!-- 分页 -->
+							<div class="paging_device">
+								<!-- 左 -->
+								<div class="pd_prev"></div>
+								<ul class="pd_num">
+									<li class="pd_num_active">1</li>
+									<li>2</li>
+									<li>3</li>
+									<li>4</li>
+									<li>5</li>
+								</ul>
+								<!-- 右 -->
+								<div class="pd_next"></div>
+								<p class="pd_page_num">共5页</p>
+							</div>
+						</div>
+							
+						<!-- 审核通过 -->
+						<div class="ppc_table hide">
+							<ul class="ppc_table_con">
+								<li>
+									<div class="ppc_td1"><p>1327</p></div>
+									<div class="ppc_td2">
+										<div class="ppc_img">
+											<img src="../../img/ico_20.png"/>
+										</div>
+										<p><a href="admin_ptpq_pqgl_details.html">2018年2月单独网吧排期（端游）</a></p>
+									</div>
+									<div class="ppc_td3">
+										<p>7,000,000.00</p>
+									</div>
+									<div class="ppc_td4">
+										<p>2017.3.15-2018.3.30</p>
+									</div>
+									<div class="ppc_td5">
+										<!-- 审核通过 -->
+										<div class="adopt_audited">
+											<span></span>
+											<p>审核通过</p>
+										</div>
+									</div>
+									<div class="ppc_td6">
+										<p><a href="javascript:"><span></span></a></p>
+									</div>
+									<div class="ppc_td7">
+										<p><span></span></p>
+									</div>
+								</li>
+								<li>
+									<div class="ppc_td1"><p>1327</p></div>
+									<div class="ppc_td2">
+										<div class="ppc_img">
+											<img src="../../img/ico_21.png"/>
+										</div>
+										<p><a href="admin_ptpq_pqgl_details.html">2018年2月内配广告排期（绝地求生端游）</a></p>
+									</div>
+									<div class="ppc_td3">
+										<p>7,000,000.00</p>
+									</div>
+									<div class="ppc_td4">
+										<p>2017.3.15-2018.3.30</p>
+									</div>
+									<div class="ppc_td5">
+										<!-- 审核通过 -->
+										<div class="adopt_audited">
+											<span></span>
+											<p>审核通过</p>
+										</div>
+									</div>
+									<div class="ppc_td6">
+										<p><a href="javascript:"><span></span></a></p>
+									</div>
+									<div class="ppc_td7">
+										<p><span></span></p>
+									</div>
+								</li>
+								<li>
+									<div class="ppc_td1"><p>1327</p></div>
+									<div class="ppc_td2">
+										<div class="ppc_img">
+											<img src="../../img/ico_24.png"/>
+										</div>
+										<p><a href="admin_ptpq_pqgl_details.html">王者荣耀3-4月投放</a></p>
+									</div>
+									<div class="ppc_td3">
+										<p>7,000,000.00</p>
+									</div>
+									<div class="ppc_td4">
+										<p>2017.3.15-2018.3.30</p>
+									</div>
+									<div class="ppc_td5">
+										<!-- 审核通过 -->
+										<div class="adopt_audited">
+											<span></span>
+											<p>审核通过</p>
+										</div>
+									</div>
+									<div class="ppc_td6">
+										<p><a href="javascript:"><span></span></a></p>
+									</div>
+									<div class="ppc_td7">
+										<p><span></span></p>
+									</div>
+								</li>
+								<li>
+									<div class="ppc_td1"><p>1327</p></div>
+									<div class="ppc_td2">
+										<div class="ppc_img">
+											<img src="../../img/ico_24.png"/>
+										</div>
+										<p><a href="admin_ptpq_pqgl_details.html">王者荣耀3-4月投放</a></p>
+									</div>
+									<div class="ppc_td3">
+										<p>7,000,000.00</p>
+									</div>
+									<div class="ppc_td4">
+										<p>2017.3.15-2018.3.30</p>
+									</div>
+									<div class="ppc_td5">
+										<!-- 审核通过 -->
+										<div class="adopt_audited">
+											<span></span>
+											<p>审核通过</p>
+										</div>
+									</div>
+									<div class="ppc_td6">
+										<p><a href="javascript:"><span></span></a></p>
+									</div>
+									<div class="ppc_td7">
+										<p><span></span></p>
+									</div>
+								</li>
+								<li>
+									<div class="ppc_td1"><p>1327</p></div>
+									<div class="ppc_td2">
+										<div class="ppc_img">
+											<img src="../../img/ico_20.png"/>
+										</div>
+										<p><a href="admin_ptpq_pqgl_details.html">2018年2月单独网吧排期（端游）</a></p>
+									</div>
+									<div class="ppc_td3">
+										<p>7,000,000.00</p>
+									</div>
+									<div class="ppc_td4">
+										<p>2017.3.15-2018.3.30</p>
+									</div>
+									<div class="ppc_td5">
+										<!-- 审核通过 -->
+										<div class="adopt_audited">
+											<span></span>
+											<p>审核通过</p>
+										</div>
+									</div>
+									<div class="ppc_td6">
+										<p><a href="javascript:"><span></span></a></p>
+									</div>
+									<div class="ppc_td7">
+										<p><span></span></p>
+									</div>
+								</li>
+								<li>
+									<div class="ppc_td1"><p>1327</p></div>
+									<div class="ppc_td2">
+										<div class="ppc_img">
+											<img src="../../img/ico_21.png"/>
+										</div>
+										<p><a href="admin_ptpq_pqgl_details.html">2018年2月内配广告排期（绝地求生端游）</a></p>
+									</div>
+									<div class="ppc_td3">
+										<p>7,000,000.00</p>
+									</div>
+									<div class="ppc_td4">
+										<p>2017.3.15-2018.3.30</p>
+									</div>
+									<div class="ppc_td5">
+										<!-- 审核通过 -->
+										<div class="adopt_audited">
+											<span></span>
+											<p>审核通过</p>
+										</div>
+									</div>
+									<div class="ppc_td6">
+										<p><a href="javascript:"><span></span></a></p>
+									</div>
+									<div class="ppc_td7">
+										<p><span></span></p>
+									</div>
+								</li>
+								<li>
+									<div class="ppc_td1"><p>1327</p></div>
+									<div class="ppc_td2">
+										<div class="ppc_img">
+											<img src="../../img/ico_24.png"/>
+										</div>
+										<p><a href="admin_ptpq_pqgl_details.html">王者荣耀3-4月投放</a></p>
+									</div>
+									<div class="ppc_td3">
+										<p>7,000,000.00</p>
+									</div>
+									<div class="ppc_td4">
+										<p>2017.3.15-2018.3.30</p>
+									</div>
+									<div class="ppc_td5">
+										<!-- 审核通过 -->
+										<div class="adopt_audited">
+											<span></span>
+											<p>审核通过</p>
+										</div>
+									</div>
+									<div class="ppc_td6">
+										<p><a href="javascript:"><span></span></a></p>
+									</div>
+									<div class="ppc_td7">
+										<p><span></span></p>
+									</div>
+								</li>
+								<li>
+									<div class="ppc_td1"><p>1327</p></div>
+									<div class="ppc_td2">
+										<div class="ppc_img">
+											<img src="../../img/ico_24.png"/>
+										</div>
+										<p><a href="admin_ptpq_pqgl_details.html">王者荣耀3-4月投放</a></p>
+									</div>
+									<div class="ppc_td3">
+										<p>7,000,000.00</p>
+									</div>
+									<div class="ppc_td4">
+										<p>2017.3.15-2018.3.30</p>
+									</div>
+									<div class="ppc_td5">
+										<!-- 审核通过 -->
+										<div class="adopt_audited">
+											<span></span>
+											<p>审核通过</p>
+										</div>
+									</div>
+									<div class="ppc_td6">
+										<p><a href="javascript:"><span></span></a></p>
+									</div>
+									<div class="ppc_td7">
+										<p><span></span></p>
+									</div>
+								</li>
+							</ul>
+							
+							<!-- 分页 -->
+							<div class="paging_device">
+								<!-- 左 -->
+								<div class="pd_prev"></div>
+								<ul class="pd_num">
+									<li class="pd_num_active">1</li>
+									<li>2</li>
+									<li>3</li>
+									<li>4</li>
+									<li>5</li>
+								</ul>
+								<!-- 右 -->
+								<div class="pd_next"></div>
+								<p class="pd_page_num">共5页</p>
+							</div>
+						</div>
+						
+						<!-- 待审核 -->
+						<div class="ppc_table hide">
+							<ul class="ppc_table_con">
+								<li>
+									<div class="ppc_td1"><p>1327</p></div>
+									<div class="ppc_td2">
+										<div class="ppc_img">
+											<img src="../../img/ico_20.png"/>
+										</div>
+										<p><a href="admin_ptpq_pqgl_details.html">2018年2月单独网吧排期（端游）</a></p>
+									</div>
+									<div class="ppc_td3">
+										<p>7,000,000.00</p>
+									</div>
+									<div class="ppc_td4">
+										<p>2017.3.15-2018.3.30</p>
+									</div>
+									<div class="ppc_td5">
+										<!-- 待审核 -->
+										<div class="wait_audited">
+											<span></span>
+											<p>待审核</p>
+										</div>
+									</div>
+									<div class="ppc_td6">
+										<p><a href="javascript:"><span></span></a></p>
+									</div>
+									<div class="ppc_td7">
+										<p><span></span></p>
+									</div>
+								</li>
+								<li>
+									<div class="ppc_td1"><p>1327</p></div>
+									<div class="ppc_td2">
+										<div class="ppc_img">
+											<img src="../../img/ico_21.png"/>
+										</div>
+										<p><a href="admin_ptpq_pqgl_details.html">2018年2月内配广告排期（绝地求生端游）</a></p>
+									</div>
+									<div class="ppc_td3">
+										<p>7,000,000.00</p>
+									</div>
+									<div class="ppc_td4">
+										<p>2017.3.15-2018.3.30</p>
+									</div>
+									<div class="ppc_td5">
+										<!-- 待审核 -->
+										<div class="wait_audited">
+											<span></span>
+											<p>待审核</p>
+										</div>
+									</div>
+									<div class="ppc_td6">
+										<p><a href="javascript:"><span></span></a></p>
+									</div>
+									<div class="ppc_td7">
+										<p><span></span></p>
+									</div>
+								</li>
+								<li>
+									<div class="ppc_td1"><p>1327</p></div>
+									<div class="ppc_td2">
+										<div class="ppc_img">
+											<img src="../../img/ico_24.png"/>
+										</div>
+										<p><a href="admin_ptpq_pqgl_details.html">王者荣耀3-4月投放</a></p>
+									</div>
+									<div class="ppc_td3">
+										<p>7,000,000.00</p>
+									</div>
+									<div class="ppc_td4">
+										<p>2017.3.15-2018.3.30</p>
+									</div>
+									<div class="ppc_td5">
+										<!-- 待审核 -->
+										<div class="wait_audited">
+											<span></span>
+											<p>待审核</p>
+										</div>
+									</div>
+									<div class="ppc_td6">
+										<p><a href="javascript:"><span></span></a></p>
+									</div>
+									<div class="ppc_td7">
+										<p><span></span></p>
+									</div>
+								</li>
+								<li>
+									<div class="ppc_td1"><p>1327</p></div>
+									<div class="ppc_td2">
+										<div class="ppc_img">
+											<img src="../../img/ico_24.png"/>
+										</div>
+										<p><a href="admin_ptpq_pqgl_details.html">王者荣耀3-4月投放</a></p>
+									</div>
+									<div class="ppc_td3">
+										<p>7,000,000.00</p>
+									</div>
+									<div class="ppc_td4">
+										<p>2017.3.15-2018.3.30</p>
+									</div>
+									<div class="ppc_td5">
+										<!-- 待审核 -->
+										<div class="wait_audited">
+											<span></span>
+											<p>待审核</p>
+										</div>
+									</div>
+									<div class="ppc_td6">
+										<p><a href="javascript:"><span></span></a></p>
+									</div>
+									<div class="ppc_td7">
+										<p><span></span></p>
+									</div>
+								</li>
+								<li>
+									<div class="ppc_td1"><p>1327</p></div>
+									<div class="ppc_td2">
+										<div class="ppc_img">
+											<img src="../../img/ico_20.png"/>
+										</div>
+										<p><a href="admin_ptpq_pqgl_details.html">2018年2月单独网吧排期（端游）</a></p>
+									</div>
+									<div class="ppc_td3">
+										<p>7,000,000.00</p>
+									</div>
+									<div class="ppc_td4">
+										<p>2017.3.15-2018.3.30</p>
+									</div>
+									<div class="ppc_td5">
+										<!-- 待审核 -->
+										<div class="wait_audited">
+											<span></span>
+											<p>待审核</p>
+										</div>
+									</div>
+									<div class="ppc_td6">
+										<p><a href="javascript:"><span></span></a></p>
+									</div>
+									<div class="ppc_td7">
+										<p><span></span></p>
+									</div>
+								</li>
+								<li>
+									<div class="ppc_td1"><p>1327</p></div>
+									<div class="ppc_td2">
+										<div class="ppc_img">
+											<img src="../../img/ico_21.png"/>
+										</div>
+										<p><a href="admin_ptpq_pqgl_details.html">2018年2月内配广告排期（绝地求生端游）</a></p>
+									</div>
+									<div class="ppc_td3">
+										<p>7,000,000.00</p>
+									</div>
+									<div class="ppc_td4">
+										<p>2017.3.15-2018.3.30</p>
+									</div>
+									<div class="ppc_td5">
+										<!-- 待审核 -->
+										<div class="wait_audited">
+											<span></span>
+											<p>待审核</p>
+										</div>
+									</div>
+									<div class="ppc_td6">
+										<p><a href="javascript:"><span></span></a></p>
+									</div>
+									<div class="ppc_td7">
+										<p><span></span></p>
+									</div>
+								</li>
+								<li>
+									<div class="ppc_td1"><p>1327</p></div>
+									<div class="ppc_td2">
+										<div class="ppc_img">
+											<img src="../../img/ico_24.png"/>
+										</div>
+										<p><a href="admin_ptpq_pqgl_details.html">王者荣耀3-4月投放</a></p>
+									</div>
+									<div class="ppc_td3">
+										<p>7,000,000.00</p>
+									</div>
+									<div class="ppc_td4">
+										<p>2017.3.15-2018.3.30</p>
+									</div>
+									<div class="ppc_td5">
+										<!-- 待审核 -->
+										<div class="wait_audited">
+											<span></span>
+											<p>待审核</p>
+										</div>
+									</div>
+									<div class="ppc_td6">
+										<p><a href="javascript:"><span></span></a></p>
+									</div>
+									<div class="ppc_td7">
+										<p><span></span></p>
+									</div>
+								</li>
+								<li>
+									<div class="ppc_td1"><p>1327</p></div>
+									<div class="ppc_td2">
+										<div class="ppc_img">
+											<img src="../../img/ico_24.png"/>
+										</div>
+										<p><a href="admin_ptpq_pqgl_details.html">王者荣耀3-4月投放</a></p>
+									</div>
+									<div class="ppc_td3">
+										<p>7,000,000.00</p>
+									</div>
+									<div class="ppc_td4">
+										<p>2017.3.15-2018.3.30</p>
+									</div>
+									<div class="ppc_td5">
+										<!-- 待审核 -->
+										<div class="wait_audited">
+											<span></span>
+											<p>待审核</p>
+										</div>
+									</div>
+									<div class="ppc_td6">
+										<p><a href="javascript:"><span></span></a></p>
+									</div>
+									<div class="ppc_td7">
+										<p><span></span></p>
+									</div>
+								</li>
+							</ul>
+							
+							<!-- 分页 -->
+							<div class="paging_device">
+								<!-- 左 -->
+								<div class="pd_prev"></div>
+								<ul class="pd_num">
+									<li class="pd_num_active">1</li>
+									<li>2</li>
+									<li>3</li>
+									<li>4</li>
+									<li>5</li>
+								</ul>
+								<!-- 右 -->
+								<div class="pd_next"></div>
+								<p class="pd_page_num">共5页</p>
+							</div>
+						</div>
+							
+						<!-- 驳回 -->
+						<div class="ppc_table hide">
+							<ul class="ppc_table_con">
+								<li>
+									<div class="ppc_td1"><p>1327</p></div>
+									<div class="ppc_td2">
+										<div class="ppc_img">
+											<img src="../../img/ico_20.png"/>
+										</div>
+										<p><a href="admin_ptpq_pqgl_details.html">2018年2月单独网吧排期（端游）</a></p>
+									</div>
+									<div class="ppc_td3">
+										<p>7,000,000.00</p>
+									</div>
+									<div class="ppc_td4">
+										<p>2017.3.15-2018.3.30</p>
+									</div>
+									<div class="ppc_td5">
+										<!-- 驳回 -->
+										<div class="rebut">
+											<span></span>
+											<p>驳回</p>
+										</div>
+									</div>
+									<div class="ppc_td6">
+										<p><a href="javascript:"><span></span></a></p>
+									</div>
+									<div class="ppc_td7">
+										<p><span></span></p>
+									</div>
+								</li>
+								<li>
+									<div class="ppc_td1"><p>1327</p></div>
+									<div class="ppc_td2">
+										<div class="ppc_img">
+											<img src="../../img/ico_21.png"/>
+										</div>
+										<p><a href="admin_ptpq_pqgl_details.html">2018年2月内配广告排期（绝地求生端游）</a></p>
+									</div>
+									<div class="ppc_td3">
+										<p>7,000,000.00</p>
+									</div>
+									<div class="ppc_td4">
+										<p>2017.3.15-2018.3.30</p>
+									</div>
+									<div class="ppc_td5">
+										<!-- 驳回 -->
+										<div class="rebut">
+											<span></span>
+											<p>驳回</p>
+										</div>
+									</div>
+									<div class="ppc_td6">
+										<p><a href="javascript:"><span></span></a></p>
+									</div>
+									<div class="ppc_td7">
+										<p><span></span></p>
+									</div>
+								</li>
+								<li>
+									<div class="ppc_td1"><p>1327</p></div>
+									<div class="ppc_td2">
+										<div class="ppc_img">
+											<img src="../../img/ico_24.png"/>
+										</div>
+										<p><a href="admin_ptpq_pqgl_details.html">王者荣耀3-4月投放</a></p>
+									</div>
+									<div class="ppc_td3">
+										<p>7,000,000.00</p>
+									</div>
+									<div class="ppc_td4">
+										<p>2017.3.15-2018.3.30</p>
+									</div>
+									<div class="ppc_td5">
+										<!-- 驳回 -->
+										<div class="rebut">
+											<span></span>
+											<p>驳回</p>
+										</div>
+									</div>
+									<div class="ppc_td6">
+										<p><a href="javascript:"><span></span></a></p>
+									</div>
+									<div class="ppc_td7">
+										<p><span></span></p>
+									</div>
+								</li>
+								<li>
+									<div class="ppc_td1"><p>1327</p></div>
+									<div class="ppc_td2">
+										<div class="ppc_img">
+											<img src="../../img/ico_24.png"/>
+										</div>
+										<p><a href="admin_ptpq_pqgl_details.html">王者荣耀3-4月投放</a></p>
+									</div>
+									<div class="ppc_td3">
+										<p>7,000,000.00</p>
+									</div>
+									<div class="ppc_td4">
+										<p>2017.3.15-2018.3.30</p>
+									</div>
+									<div class="ppc_td5">
+										<!-- 驳回 -->
+										<div class="rebut">
+											<span></span>
+											<p>驳回</p>
+										</div>
+									</div>
+									<div class="ppc_td6">
+										<p><a href="javascript:"><span></span></a></p>
+									</div>
+									<div class="ppc_td7">
+										<p><span></span></p>
+									</div>
+								</li>
+								<li>
+									<div class="ppc_td1"><p>1327</p></div>
+									<div class="ppc_td2">
+										<div class="ppc_img">
+											<img src="../../img/ico_20.png"/>
+										</div>
+										<p><a href="admin_ptpq_pqgl_details.html">2018年2月单独网吧排期（端游）</a></p>
+									</div>
+									<div class="ppc_td3">
+										<p>7,000,000.00</p>
+									</div>
+									<div class="ppc_td4">
+										<p>2017.3.15-2018.3.30</p>
+									</div>
+									<div class="ppc_td5">
+										<!-- 驳回 -->
+										<div class="rebut">
+											<span></span>
+											<p>驳回</p>
+										</div>
+									</div>
+									<div class="ppc_td6">
+										<p><a href="javascript:"><span></span></a></p>
+									</div>
+									<div class="ppc_td7">
+										<p><span></span></p>
+									</div>
+								</li>
+								<li>
+									<div class="ppc_td1"><p>1327</p></div>
+									<div class="ppc_td2">
+										<div class="ppc_img">
+											<img src="../../img/ico_21.png"/>
+										</div>
+										<p><a href="admin_ptpq_pqgl_details.html">2018年2月内配广告排期（绝地求生端游）</a></p>
+									</div>
+									<div class="ppc_td3">
+										<p>7,000,000.00</p>
+									</div>
+									<div class="ppc_td4">
+										<p>2017.3.15-2018.3.30</p>
+									</div>
+									<div class="ppc_td5">
+										<!-- 驳回 -->
+										<div class="rebut">
+											<span></span>
+											<p>驳回</p>
+										</div>
+									</div>
+									<div class="ppc_td6">
+										<p><a href="javascript:"><span></span></a></p>
+									</div>
+									<div class="ppc_td7">
+										<p><span></span></p>
+									</div>
+								</li>
+								<li>
+									<div class="ppc_td1"><p>1327</p></div>
+									<div class="ppc_td2">
+										<div class="ppc_img">
+											<img src="../../img/ico_24.png"/>
+										</div>
+										<p><a href="admin_ptpq_pqgl_details.html">王者荣耀3-4月投放</a></p>
+									</div>
+									<div class="ppc_td3">
+										<p>7,000,000.00</p>
+									</div>
+									<div class="ppc_td4">
+										<p>2017.3.15-2018.3.30</p>
+									</div>
+									<div class="ppc_td5">
+										<!-- 驳回 -->
+										<div class="rebut">
+											<span></span>
+											<p>驳回</p>
+										</div>
+									</div>
+									<div class="ppc_td6">
+										<p><a href="javascript:"><span></span></a></p>
+									</div>
+									<div class="ppc_td7">
+										<p><span></span></p>
+									</div>
+								</li>
+								<li>
+									<div class="ppc_td1"><p>1327</p></div>
+									<div class="ppc_td2">
+										<div class="ppc_img">
+											<img src="../../img/ico_24.png"/>
+										</div>
+										<p><a href="admin_ptpq_pqgl_details.html">王者荣耀3-4月投放</a></p>
+									</div>
+									<div class="ppc_td3">
+										<p>7,000,000.00</p>
+									</div>
+									<div class="ppc_td4">
+										<p>2017.3.15-2018.3.30</p>
+									</div>
+									<div class="ppc_td5">
+										<!-- 驳回 -->
+										<div class="rebut">
+											<span></span>
+											<p>驳回</p>
+										</div>
+									</div>
+									<div class="ppc_td6">
+										<p><a href="javascript:"><span></span></a></p>
+									</div>
+									<div class="ppc_td7">
+										<p><span></span></p>
+									</div>
+								</li>
+							</ul>
+							
+							<!-- 分页 -->
+							<div class="paging_device">
+								<!-- 左 -->
+								<div class="pd_prev"></div>
+								<ul class="pd_num">
+									<li class="pd_num_active">1</li>
+									<li>2</li>
+									<li>3</li>
+									<li>4</li>
+									<li>5</li>
+								</ul>
+								<!-- 右 -->
+								<div class="pd_next"></div>
+								<p class="pd_page_num">共5页</p>
+							</div>
+						</div>
+							
+						<!-- 草稿 -->
+						<div class="ppc_table hide">
+							<ul class="ppc_table_con">
+								<li>
+									<div class="ppc_td1"><p>1327</p></div>
+									<div class="ppc_td2">
+										<div class="ppc_img">
+											<img src="../../img/ico_20.png"/>
+										</div>
+										<p><a href="admin_ptpq_pqgl_details.html">2018年2月单独网吧排期（端游）</a></p>
+									</div>
+									<div class="ppc_td3">
+										<p>7,000,000.00</p>
+									</div>
+									<div class="ppc_td4">
+										<p>2017.3.15-2018.3.30</p>
+									</div>
+									<div class="ppc_td5">
+										<!-- 草稿 -->
+										<div class="draft">
+											<span></span>
+											<p>草稿</p>
+										</div>
+									</div>
+									<div class="ppc_td6">
+										<p><a href="javascript:"><span></span></a></p>
+									</div>
+									<div class="ppc_td7">
+										<p><span></span></p>
+									</div>
+								</li>
+								<li>
+									<div class="ppc_td1"><p>1327</p></div>
+									<div class="ppc_td2">
+										<div class="ppc_img">
+											<img src="../../img/ico_21.png"/>
+										</div>
+										<p><a href="admin_ptpq_pqgl_details.html">2018年2月内配广告排期（绝地求生端游）</a></p>
+									</div>
+									<div class="ppc_td3">
+										<p>7,000,000.00</p>
+									</div>
+									<div class="ppc_td4">
+										<p>2017.3.15-2018.3.30</p>
+									</div>
+									<div class="ppc_td5">
+										<!-- 草稿 -->
+										<div class="draft">
+											<span></span>
+											<p>草稿</p>
+										</div>
+									</div>
+									<div class="ppc_td6">
+										<p><a href="javascript:"><span></span></a></p>
+									</div>
+									<div class="ppc_td7">
+										<p><span></span></p>
+									</div>
+								</li>
+								<li>
+									<div class="ppc_td1"><p>1327</p></div>
+									<div class="ppc_td2">
+										<div class="ppc_img">
+											<img src="../../img/ico_24.png"/>
+										</div>
+										<p><a href="admin_ptpq_pqgl_details.html">王者荣耀3-4月投放</a></p>
+									</div>
+									<div class="ppc_td3">
+										<p>7,000,000.00</p>
+									</div>
+									<div class="ppc_td4">
+										<p>2017.3.15-2018.3.30</p>
+									</div>
+									<div class="ppc_td5">
+										<!-- 草稿 -->
+										<div class="draft">
+											<span></span>
+											<p>草稿</p>
+										</div>
+									</div>
+									<div class="ppc_td6">
+										<p><a href="javascript:"><span></span></a></p>
+									</div>
+									<div class="ppc_td7">
+										<p><span></span></p>
+									</div>
+								</li>
+								<li>
+									<div class="ppc_td1"><p>1327</p></div>
+									<div class="ppc_td2">
+										<div class="ppc_img">
+											<img src="../../img/ico_24.png"/>
+										</div>
+										<p><a href="admin_ptpq_pqgl_details.html">王者荣耀3-4月投放</a></p>
+									</div>
+									<div class="ppc_td3">
+										<p>7,000,000.00</p>
+									</div>
+									<div class="ppc_td4">
+										<p>2017.3.15-2018.3.30</p>
+									</div>
+									<div class="ppc_td5">
+										<!-- 草稿 -->
+										<div class="draft">
+											<span></span>
+											<p>草稿</p>
+										</div>
+									</div>
+									<div class="ppc_td6">
+										<p><a href="javascript:"><span></span></a></p>
+									</div>
+									<div class="ppc_td7">
+										<p><span></span></p>
+									</div>
+								</li>
+								<li>
+									<div class="ppc_td1"><p>1327</p></div>
+									<div class="ppc_td2">
+										<div class="ppc_img">
+											<img src="../../img/ico_20.png"/>
+										</div>
+										<p><a href="admin_ptpq_pqgl_details.html">2018年2月单独网吧排期（端游）</a></p>
+									</div>
+									<div class="ppc_td3">
+										<p>7,000,000.00</p>
+									</div>
+									<div class="ppc_td4">
+										<p>2017.3.15-2018.3.30</p>
+									</div>
+									<div class="ppc_td5">
+										<!-- 草稿 -->
+										<div class="draft">
+											<span></span>
+											<p>草稿</p>
+										</div>
+									</div>
+									<div class="ppc_td6">
+										<p><a href="javascript:"><span></span></a></p>
+									</div>
+									<div class="ppc_td7">
+										<p><span></span></p>
+									</div>
+								</li>
+								<li>
+									<div class="ppc_td1"><p>1327</p></div>
+									<div class="ppc_td2">
+										<div class="ppc_img">
+											<img src="../../img/ico_21.png"/>
+										</div>
+										<p><a href="admin_ptpq_pqgl_details.html">2018年2月内配广告排期（绝地求生端游）</a></p>
+									</div>
+									<div class="ppc_td3">
+										<p>7,000,000.00</p>
+									</div>
+									<div class="ppc_td4">
+										<p>2017.3.15-2018.3.30</p>
+									</div>
+									<div class="ppc_td5">
+										<!-- 草稿 -->
+										<div class="draft">
+											<span></span>
+											<p>草稿</p>
+										</div>
+									</div>
+									<div class="ppc_td6">
+										<p><a href="javascript:"><span></span></a></p>
+									</div>
+									<div class="ppc_td7">
+										<p><span></span></p>
+									</div>
+								</li>
+								<li>
+									<div class="ppc_td1"><p>1327</p></div>
+									<div class="ppc_td2">
+										<div class="ppc_img">
+											<img src="../../img/ico_24.png"/>
+										</div>
+										<p><a href="admin_ptpq_pqgl_details.html">王者荣耀3-4月投放</a></p>
+									</div>
+									<div class="ppc_td3">
+										<p>7,000,000.00</p>
+									</div>
+									<div class="ppc_td4">
+										<p>2017.3.15-2018.3.30</p>
+									</div>
+									<div class="ppc_td5">
+										<!-- 草稿 -->
+										<div class="draft">
+											<span></span>
+											<p>草稿</p>
+										</div>
+									</div>
+									<div class="ppc_td6">
+										<p><a href="javascript:"><span></span></a></p>
+									</div>
+									<div class="ppc_td7">
+										<p><span></span></p>
+									</div>
+								</li>
+								<li>
+									<div class="ppc_td1"><p>1327</p></div>
+									<div class="ppc_td2">
+										<div class="ppc_img">
+											<img src="../../img/ico_24.png"/>
+										</div>
+										<p><a href="admin_ptpq_pqgl_details.html">王者荣耀3-4月投放</a></p>
+									</div>
+									<div class="ppc_td3">
+										<p>7,000,000.00</p>
+									</div>
+									<div class="ppc_td4">
+										<p>2017.3.15-2018.3.30</p>
+									</div>
+									<div class="ppc_td5">
+										<!-- 草稿 -->
+										<div class="draft">
+											<span></span>
+											<p>草稿</p>
+										</div>
+									</div>
+									<div class="ppc_td6">
+										<p><a href="javascript:"><span></span></a></p>
+									</div>
+									<div class="ppc_td7">
+										<p><span></span></p>
+									</div>
+								</li>
+							</ul>
+							
+							<!-- 分页 -->
+							<div class="paging_device">
+								<!-- 左 -->
+								<div class="pd_prev"></div>
+								<ul class="pd_num">
+									<li class="pd_num_active">1</li>
+									<li>2</li>
+									<li>3</li>
+									<li>4</li>
+									<li>5</li>
+								</ul>
+								<!-- 右 -->
+								<div class="pd_next"></div>
+								<p class="pd_page_num">共5页</p>
+							</div>
+						</div>
+						
+						<!-- 激活 -->
+						<div class="ppc_table hide">
+							<ul class="ppc_table_con">
+								<li>
+									<div class="ppc_td1"><p>1327</p></div>
+									<div class="ppc_td2">
+										<div class="ppc_img">
+											<img src="../../img/ico_20.png"/>
+										</div>
+										<p><a href="admin_ptpq_pqgl_details.html">2018年2月单独网吧排期（端游）</a></p>
+									</div>
+									<div class="ppc_td3">
+										<p>7,000,000.00</p>
+									</div>
+									<div class="ppc_td4">
+										<p>2017.3.15-2018.3.30</p>
+									</div>
+									<div class="ppc_td5">
+										<!-- 激活 -->
+										<div class="activation_audited">
+											<span></span>
+											<p>激活</p>
+										</div>
+									</div>
+									<div class="ppc_td6">
+										<p><a href="javascript:"><span></span></a></p>
+									</div>
+									<div class="ppc_td7">
+										<p><span></span></p>
+									</div>
+								</li>
+								<li>
+									<div class="ppc_td1"><p>1327</p></div>
+									<div class="ppc_td2">
+										<div class="ppc_img">
+											<img src="../../img/ico_21.png"/>
+										</div>
+										<p><a href="admin_ptpq_pqgl_details.html">2018年2月内配广告排期（绝地求生端游）</a></p>
+									</div>
+									<div class="ppc_td3">
+										<p>7,000,000.00</p>
+									</div>
+									<div class="ppc_td4">
+										<p>2017.3.15-2018.3.30</p>
+									</div>
+									<div class="ppc_td5">
+										<!-- 激活 -->
+										<div class="activation_audited">
+											<span></span>
+											<p>激活</p>
+										</div>
+									</div>
+									<div class="ppc_td6">
+										<p><a href="javascript:"><span></span></a></p>
+									</div>
+									<div class="ppc_td7">
+										<p><span></span></p>
+									</div>
+								</li>
+								<li>
+									<div class="ppc_td1"><p>1327</p></div>
+									<div class="ppc_td2">
+										<div class="ppc_img">
+											<img src="../../img/ico_24.png"/>
+										</div>
+										<p><a href="admin_ptpq_pqgl_details.html">王者荣耀3-4月投放</a></p>
+									</div>
+									<div class="ppc_td3">
+										<p>7,000,000.00</p>
+									</div>
+									<div class="ppc_td4">
+										<p>2017.3.15-2018.3.30</p>
+									</div>
+									<div class="ppc_td5">
+										<!-- 激活 -->
+										<div class="activation_audited">
+											<span></span>
+											<p>激活</p>
+										</div>
+									</div>
+									<div class="ppc_td6">
+										<p><a href="javascript:"><span></span></a></p>
+									</div>
+									<div class="ppc_td7">
+										<p><span></span></p>
+									</div>
+								</li>
+								<li>
+									<div class="ppc_td1"><p>1327</p></div>
+									<div class="ppc_td2">
+										<div class="ppc_img">
+											<img src="../../img/ico_24.png"/>
+										</div>
+										<p><a href="admin_ptpq_pqgl_details.html">王者荣耀3-4月投放</a></p>
+									</div>
+									<div class="ppc_td3">
+										<p>7,000,000.00</p>
+									</div>
+									<div class="ppc_td4">
+										<p>2017.3.15-2018.3.30</p>
+									</div>
+									<div class="ppc_td5">
+										<!-- 激活 -->
+										<div class="activation_audited">
+											<span></span>
+											<p>激活</p>
+										</div>
+									</div>
+									<div class="ppc_td6">
+										<p><a href="javascript:"><span></span></a></p>
+									</div>
+									<div class="ppc_td7">
+										<p><span></span></p>
+									</div>
+								</li>
+								<li>
+									<div class="ppc_td1"><p>1327</p></div>
+									<div class="ppc_td2">
+										<div class="ppc_img">
+											<img src="../../img/ico_20.png"/>
+										</div>
+										<p><a href="admin_ptpq_pqgl_details.html">2018年2月单独网吧排期（端游）</a></p>
+									</div>
+									<div class="ppc_td3">
+										<p>7,000,000.00</p>
+									</div>
+									<div class="ppc_td4">
+										<p>2017.3.15-2018.3.30</p>
+									</div>
+									<div class="ppc_td5">
+										<!-- 激活 -->
+										<div class="activation_audited">
+											<span></span>
+											<p>激活</p>
+										</div>
+									</div>
+									<div class="ppc_td6">
+										<p><a href="javascript:"><span></span></a></p>
+									</div>
+									<div class="ppc_td7">
+										<p><span></span></p>
+									</div>
+								</li>
+								<li>
+									<div class="ppc_td1"><p>1327</p></div>
+									<div class="ppc_td2">
+										<div class="ppc_img">
+											<img src="../../img/ico_21.png"/>
+										</div>
+										<p><a href="admin_ptpq_pqgl_details.html">2018年2月内配广告排期（绝地求生端游）</a></p>
+									</div>
+									<div class="ppc_td3">
+										<p>7,000,000.00</p>
+									</div>
+									<div class="ppc_td4">
+										<p>2017.3.15-2018.3.30</p>
+									</div>
+									<div class="ppc_td5">
+										<!-- 激活 -->
+										<div class="activation_audited">
+											<span></span>
+											<p>激活</p>
+										</div>
+									</div>
+									<div class="ppc_td6">
+										<p><a href="javascript:"><span></span></a></p>
+									</div>
+									<div class="ppc_td7">
+										<p><span></span></p>
+									</div>
+								</li>
+								<li>
+									<div class="ppc_td1"><p>1327</p></div>
+									<div class="ppc_td2">
+										<div class="ppc_img">
+											<img src="../../img/ico_24.png"/>
+										</div>
+										<p><a href="admin_ptpq_pqgl_details.html">王者荣耀3-4月投放</a></p>
+									</div>
+									<div class="ppc_td3">
+										<p>7,000,000.00</p>
+									</div>
+									<div class="ppc_td4">
+										<p>2017.3.15-2018.3.30</p>
+									</div>
+									<div class="ppc_td5">
+										<!-- 激活 -->
+										<div class="activation_audited">
+											<span></span>
+											<p>激活</p>
+										</div>
+									</div>
+									<div class="ppc_td6">
+										<p><a href="javascript:"><span></span></a></p>
+									</div>
+									<div class="ppc_td7">
+										<p><span></span></p>
+									</div>
+								</li>
+								<li>
+									<div class="ppc_td1"><p>1327</p></div>
+									<div class="ppc_td2">
+										<div class="ppc_img">
+											<img src="../../img/ico_24.png"/>
+										</div>
+										<p><a href="admin_ptpq_pqgl_details.html">王者荣耀3-4月投放</a></p>
+									</div>
+									<div class="ppc_td3">
+										<p>7,000,000.00</p>
+									</div>
+									<div class="ppc_td4">
+										<p>2017.3.15-2018.3.30</p>
+									</div>
+									<div class="ppc_td5">
+										<!-- 激活 -->
+										<div class="activation_audited">
+											<span></span>
+											<p>激活</p>
+										</div>
+									</div>
+									<div class="ppc_td6">
+										<p><a href="javascript:"><span></span></a></p>
+									</div>
+									<div class="ppc_td7">
+										<p><span></span></p>
+									</div>
+								</li>
+							</ul>
+							
+							<!-- 分页 -->
+							<div class="paging_device">
+								<!-- 左 -->
+								<div class="pd_prev"></div>
+								<ul class="pd_num">
+									<li class="pd_num_active">1</li>
+									<li>2</li>
+									<li>3</li>
+									<li>4</li>
+									<li>5</li>
+								</ul>
+								<!-- 右 -->
+								<div class="pd_next"></div>
+								<p class="pd_page_num">共5页</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			<div class="admin_popup hide">
+				<!--全部刷新  弹窗-->
+				<div class="ap_con set_wrong whole_renovate hide">
+					<div class="set_wrong_icon"></div>
+					<p>是否全部刷新？</p>
+					<a href="">确认</a>
+				</div>
+			</div>
+		</div>
+		<script src="../../js/jquery-1.7.2.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../../js/jquery.mCustomScrollbar.concat.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../../js/admin.js" type="text/javascript" charset="utf-8"></script>
+	</body>
+</html>

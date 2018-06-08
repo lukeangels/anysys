@@ -1,0 +1,398 @@
+/* 用户管理 */
+.user_settings .tab_label li p{
+	position: relative;
+}
+.user_settings .tab_label li span{
+	position: absolute;
+	top: 0;
+	left: 52px;
+	width: auto;
+	height: 14px;
+	font-size: 12px;
+	border-radius: 14px;
+	line-height: 14px;
+	background: #ed2020;
+	color: #FFFFFF;
+	padding: 0 4px;
+}
+.user_settings .tab_td2{
+	font-size: 14px;
+	padding: 0 10px;
+	box-sizing: border-box;
+}
+.user_settings .tab_td1{
+	padding-left: 40px;
+}
+.user_settings .tab_td1,.user_settings .tab_td2,.user_settings .tab_td3,.user_settings .tab_td4,.user_settings .tab_td5,
+.user_settings .tab_td6{
+	width: 170px;
+}
+.new_user{
+	font-size: 0;
+	line-height: 60px;
+	cursor: pointer;
+}
+.new_user span{
+	width: 18px;
+	height: 18px;
+	vertical-align: middle;
+	background: url(../ossweb-img/images/sprite.png) no-repeat -746px -336px;
+}
+.new_user p{
+	font-size: 14px;
+	padding: 0 30px 0 10px;
+	vertical-align: top;
+}
+.new_user:hover span{
+	background-position: 0 -394px;
+}
+.new_user:hover p{
+	color: #3771EF;
+}
+.user_settings .tab_head,.personal_center .tab_head{
+	width: 100% !important;
+}
+.tgbh_btn span,.tgbh_btn a{
+	vertical-align: top;
+}
+.tgbh_btn{
+	height: 90px;
+}
+.tgbh_btn span{
+	position: relative;
+	width: 1px;
+	height: 14px;
+	background: #CCCCCC;
+	top: 50%;
+	transform: translateY(-50%);
+	-webkit-transform: translateY(-50%);
+	margin: 0 10px;
+}
+.tgbh_btn a:hover{
+	color: #3771EF;
+}
+
+/* 个人中心 */
+.grzx_tr{
+	width: auto;
+	height: 129px;
+	line-height: 129px;
+	padding: 0 28px;
+	border-bottom: 1px solid #EEEEEE;
+}
+.mail_center .tab_table_con{
+	border: none;
+}
+.personal_center .tab_table_tbody{
+	margin-top: 10px;
+}
+.personal_center .tab_table_tbody p{
+	font-size: 14px;
+}
+.grzx_tr_con{
+	line-height: 1;
+	vertical-align: middle;	
+}
+.grzx_tr_con_top{
+	padding-bottom: 14px;	
+}
+.grzx_tr_con_top span{
+	width: 6px;
+	height: 6px;
+	border-radius: 100%;
+	background: #8fceff;
+	vertical-align: middle;
+}
+.grzx_tr_con_top p{
+	vertical-align: top;
+	padding-left: 14px;
+	font-size: 16px;
+}
+.gtct_left{
+	height: 16px;
+	line-height: 16px;
+}
+.gtct_time{
+	font-size: 12px;
+	color: #999999;
+}
+.grzx_tr_con_text{
+	line-height: 24px;
+}
+.operation_record .tab_td1{
+	width: 255px;
+	padding-left: 44px;
+}
+.operation_record .tab_td3{
+	width: 220px;
+}
+.operation_record .tab_td2{
+	width: 478px;
+	padding: 0 10px;
+	box-sizing: border-box;
+}
+.operation_record .tab_td4{
+	width: 170px;
+}
+.operation_record .tab_td2 p{
+	vertical-align: middle;
+}
+.operation_record .tab_td2 span{
+	line-height: 24px;
+}
+
+/* 游戏管理 */
+.mpc_newly_build{
+	width: 1167px;
+	margin: 28px auto 0;
+	
+}
+.game_management .tab_td2{
+	padding-left: 10px;
+	width: 156px;
+	box-sizing: border-box;
+}
+.game_management .tab_td1{
+	width: 160px;
+	font-size: 0;
+	padding-left: 28px;
+}
+.game_management .tab_td1 p{
+	padding-left: 26px;
+}
+.game_management .tab_td2 p,.game_management .tab_td1 p{
+	font-size: 14px;
+	vertical-align: top;
+}
+.game_management .ts_img{
+	margin: 0;
+}
+.game_management .tab_td3{
+	width: 142px;
+}
+.game_management .tab_td4,.game_management .tab_td5{
+	width: 170px;
+}
+.game_management .tab_td5 p,.game_management .tab_td6 p{
+	vertical-align: middle;
+	width: 100%;
+}
+.game_management .tab_td5 a,.game_management .tab_td6 span{
+	line-height: 24px;
+	word-break: break-all;
+}
+.game_management .tab_td5 a:hover{
+	color: #3771EF;
+}
+.game_management .tab_td6{
+	width: 218px;
+}
+.game_management .bottom_btn{
+	margin: 0 auto;
+}
+.game_management_btn{
+	width: 1167px;
+	margin: 0 auto;
+	padding-bottom: 50px;
+}
+.game_management_btn .frame_btn{
+	margin: 0;
+}
+
+
+/* 精准投放设置 */
+.jztf_con_top{
+	width: 1167px;
+	height: 60px;
+	margin: 28px auto 0;
+	background: #FFFFFF;
+	padding: 0 20px;
+	box-sizing: border-box;
+}
+.jztf_con_top p,.jztf_con_top .float_right{
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
+	-webkit-transform: translateY(-50%);
+}
+.jztf_con_top p{
+	font-size: 16px;
+}
+.jztf_con_top span{
+	width: 66px;
+	height: 30px;
+	font-size: 14px;
+	text-align: center;
+	line-height: 30px;
+	cursor: pointer;
+}
+.jztf_con_box{
+	width: 1167px;
+	height: auto;
+	margin: 0 auto;
+}
+.jztf_con{
+	margin-left: -20px;
+	font-size: 0;
+}
+.jztf_con li{
+	width: 368px;
+	height: 120px;
+	vertical-align: top;
+	line-height: 120px;
+	margin: 20px 0 0 20px;
+	background: #FFFFFF;
+	padding: 0 24px;
+	box-sizing: border-box;
+}
+.jztf_con li span{
+	width: 6px;
+	height: 6px;
+	border-radius: 100%;
+	vertical-align: middle;
+}
+.jztf_con .float_left p{
+	vertical-align: top;
+	font-size: 14px;
+	padding-left: 17px;
+}
+.jztf_con_right_num{
+	font-size: 48px;
+	vertical-align: top;
+	text-align: center;
+}
+.jztf_con_right_num input[type="text"]{
+	border: 1px solid #CCCCCC;
+	width: 82px;
+	padding: 0 10px;
+	border-radius: 2px;
+}
+.jztf_con_right_num p{
+	max-width: 82px;
+}
+.jztf_con_right_unit{
+	font-size: 16px;
+	padding-left: 10px;
+	vertical-align: top;
+}
+.float_right_text{
+	font-size: 16px;
+	padding-right: 10px;
+	vertical-align: top;
+}
+
+/* 弹窗 */
+.assembly_text,.game_management_pop .mtgl_pop_con{
+	width: 482px;
+	margin: 0 auto;
+}
+.admin_popup .bottom_btn{
+	text-align: center;
+	margin: 40px auto 0;
+}
+.game_management_pop .mtgl_pop_con textarea{
+	width: 358px;
+}
+
+/* 大屏幕样式 */
+@media only all and (min-width: 1450px){
+	.user_settings .tab_td1,.user_settings .tab_td2,.user_settings .tab_td3,.user_settings .tab_td4,.user_settings .tab_td5,
+	.user_settings .tab_td6{
+		width: 14.3%;
+	}
+	.operation_record .tab_td1{
+		width: 23%;
+	}
+	.operation_record .tab_td2{
+		width: 35%;
+	}
+	.operation_record .tab_td3{
+		width: 23%;
+	}
+	.operation_record .tab_td4{
+		width: 15%;
+	}
+	.mpc_newly_build,.game_management_btn,.jztf_con_top,.jztf_con_box{
+		width: 96%;
+	}
+	.game_management .tab_td1{
+		width: 12%;
+	}
+	.game_management .tab_td2{
+		width: 15%;
+	}
+	.game_management .tab_td3{
+		width: 12.5%;
+	}
+	.game_management .tab_td4{
+		width: 12%;
+	}
+	.game_management .tab_td5{
+		width: 15%;
+	}
+	.game_management .tab_td6{
+		width: 20%;
+	}
+	.jztf_con li{
+		width: 31.8%;
+	}
+}
+
+/* 小屏幕样式 */
+@media only screen and (min-width: 1024px) and (max-width: 1439px) {
+	.user_settings .tab_td1,.user_settings .tab_td2,.user_settings .tab_td3,.user_settings .tab_td4,.user_settings .tab_td5,
+	.user_settings .tab_td6{
+		width: 13.6%;
+	}
+	.user_settings .tab_label{
+		width: 62%
+	}
+	.operation_record .tab_td1{
+		width: 20%;
+	}
+	.operation_record .tab_td2{
+		width: 35%;
+	}
+	.operation_record .tab_td3{
+		width: 20%;
+	}
+	.operation_record .tab_td4{
+		width: 20%;
+	}
+	.user_settings .tab_label li{
+		margin: -20px 10px 0;
+		padding: 0 10px;
+		
+	}
+	.mpc_newly_build,.game_management_btn,.jztf_con_top,.jztf_con_box{
+		width: 96%;
+	}
+	.game_management .tab_td1{
+		width: 12%;
+	}
+	.game_management .tab_td2{
+		width: 13%;
+	}
+	.game_management .tab_td3{
+		width: 12.5%;
+	}
+	.game_management .tab_td4{
+		width: 12%;
+	}
+	.game_management .tab_td5{
+		width: 14%;
+	}
+	.game_management .tab_td6{
+		width: 19%;
+	}
+	.jztf_con li{
+		width: 31.1%;
+		padding: 0 10px;
+	}
+	.jztf_con li .float_left p{
+		padding-left: 5px;
+	}
+	.jztf_con li input[type=text]{
+		width: 40px;
+	}
+}

@@ -1,0 +1,703 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>O2精准广告系统</title>
+		<link rel="stylesheet" type="text/css" href="../../css/public.css"/>
+		<link rel="stylesheet" type="text/css" href="../../css/common.css"/>
+		<link rel="stylesheet" type="text/css" href="../../css/jquery.mCustomScrollbar.css"/>
+		<link rel="stylesheet" type="text/css" href="../../css/admin_style.css"/>
+	</head>
+	<body>
+		<div class="shell">
+			<!-- 左边二级分类导航 -->
+			<div class="left_nav">
+				<div class="left_nav_logo"></div>
+				<!-- 媒体管理 -->
+				<div class="media_manage">
+					<p class="classify_tit nav_active"><a href="admin_mtgl_pc.html"><span></span>媒体管理</a></p>
+					<ul class="classify_con">
+						<li class="cch_xj"><a href="admin_mtgl_pc.html"><span></span>PC媒体</a></li>
+						<li class="cch_gl"><a href="admin_mtgl_move.html"><span></span>移动媒体</a></li>
+						<li class="cch_tz cc_li_active"><a href="admin_mtgl_ggjypt.html"><span></span>广告交易平台</a></li>
+					</ul>
+				</div>
+				
+				<!-- 智能排期 -->
+				<div class="ln_con intel_sche">
+					<p class="classify_tit"><a href="../intelligent_scheduling/admin_intel_sche_con.html"><span></span>智能排期(beta)</a></p>
+					<ul class="classify_con hide">
+						<li class="cch_xj"><a href="../intelligent_scheduling/admin_intel_sche_con.html"><span></span>新建排期</a></li>
+						<li class="cch_gl"><a href="../intelligent_scheduling/admin_total_preview.html"><span></span>排期管理</a></li>
+						<li class="cch_tz"><a href="../intelligent_scheduling/admin_tzjm.html"><span></span>动态优化</a></li>
+					</ul>
+				</div>
+				
+				<!-- 普通排期 -->
+				<div class="ln_con ordin_sche">
+					<p class="classify_tit"><a href="../ordinary_scheduling/admin_ptpq_inf.html"><span></span>普通排期</a></p>
+					<ul class="classify_con hide">
+						<li class="cch_xj"><a href="../ordinary_scheduling/admin_ptpq_inf.html"><span></span>新建排期</a></li>
+						<li class="cch_gl"><a href="../ordinary_scheduling/admin_ptpq_pqgl.html"><span></span>排期管理</a></li>
+					</ul>
+				</div>
+				
+				<!-- 实时竞价排期 -->
+				<div class="ln_con price_sche">
+					<p class="classify_tit"><a href="../shishijingjiapaiqi/admin_ssjjpq_inf.html"><span></span>实时竞价排期</a></p>
+					<ul class="classify_con hide">
+						<li class="cch_xj"><a href="../shishijingjiapaiqi/admin_ssjjpq_inf.html"><span></span>新建排期</a></li>
+						<li class="cch_gl"><a href="../shishijingjiapaiqi/admin_ssjjpq_pqgl.html"><span></span>排期管理</a></li>
+					</ul>
+				</div>
+				
+				<!-- 智能素材 -->
+				<div class="ln_con intel_material">
+					<p class="classify_tit"><a href="../intelligent_material/admin_znsc_scgl.html"><span></span>智能素材</a></p>
+					<ul class="classify_con hide">
+						<li class="cch_xj"><a href="../intelligent_material/admin_znsc_scgl.html"><span></span>素材管理</a></li>
+						<li class="cch_gl"><a href="../intelligent_material/admin_znsc_scsh.html"><span></span>素材审核</a></li>
+					</ul>
+				</div>
+				
+				<!-- 数据中心 -->
+				<div class="ln_con data_center">
+					<p class="classify_tit"><a href=""><span></span>数据中心</a></p>
+					<ul class="classify_con hide">
+						<li class="cch_xj"><a href=""><span></span></a></li>
+						<li class="cch_gl"><a href=""><span></span></a></li>
+						<li class="cch_tz"><a href=""><span></span></a></li>
+					</ul>
+				</div>
+				
+				<!-- DMP精准设置 -->
+				<div class="ln_con precise_setting">
+					<p class="classify_tit"><a href=""><span></span>DMP精准设置</a></p>
+					<ul class="classify_con hide">
+						<li class="cch_xj"><a href=""><span></span></a></li>
+						<li class="cch_gl"><a href=""><span></span></a></li>
+						<li class="cch_tz"><a href=""><span></span></a></li>
+					</ul>
+				</div>
+				
+				<!-- 系统管理 -->
+				<div class="ln_con system_manage">
+					<p class="classify_tit"><a href="../system_management/admin_xtgl_user_settings.html"><span></span>系统管理</a></p>
+					<ul class="classify_con hide">
+						<li class="cch_xj"><a href="../system_management/admin_xtgl_user_settings.html"><span></span>用户管理</a></li>
+						<li class="cch_gl"><a href="../system_management/admin_xtgl_personal_center.html"><span></span>个人中心</a></li>
+						<li class="cch_tz"><a href="../system_management/admin_xtgl_game_management.html"><span></span>游戏管理</a></li>
+						<li class="cch_tz"><a href="../system_management/admin_xtgl_jztfsz.html"><span></span>精准投放设置</a></li>
+					</ul>
+				</div>
+			</div>
+			
+			<!-- 缩略图导航 -->
+			<div class="thumbnail_nav hide">
+				<div class="tn_logo"></div>
+				<ul class="tn_con">
+					<li class="tn_com_li tn_media_manage nav_active">
+						<p class="classify_tit"><span class="tn_span"></span>媒体管理</p>
+						<ul class="classify_con hide">
+							<li class="cch_xj"><a href="admin_mtgl_pc.html"><span></span>PC媒体</a></li>
+							<li class="cch_gl"><a href="admin_mtgl_move.html"><span></span>移动媒体</a></li>
+							<li class="cch_tz cc_li_active"><a href="admin_mtgl_ggjypt.html"><span></span>广告交易平台</a></li>
+						</ul>
+					</li>
+					<li class="tn_com_li tn_intel_sche">
+						<p class="classify_tit"><span class="tn_span"></span>智能排期(beta)</p>
+						<ul class="classify_con hide">
+							<li class="cch_xj"><a href="../intelligent_scheduling/admin_intel_sche_con.html"><span></span>新建排期</a></li>
+							<li class="cch_gl"><a href="../intelligent_scheduling/admin_total_preview.html"><span></span>排期管理</a></li>
+							<li class="cch_tz"><a href="../intelligent_scheduling/admin_tzjm.html"><span></span>动态优化</a></li>
+						</ul>
+					</li>
+					<li class="tn_com_li tn_ordin_sche">
+						<p class="classify_tit"><span class="tn_span"></span>普通排期</p>
+						<ul class="classify_con hide">
+							<li class="cch_xj"><a href="../ordinary_scheduling/admin_ptpq_inf.html"><span></span>新建排期</a></li>
+							<li class="cch_gl"><a href="../ordinary_scheduling/admin_ptpq_pqgl.html"><span></span>排期管理</a></li>
+						</ul>
+					</li>
+					<li class="tn_com_li tn_price_sche">
+						<p class="classify_tit"><span class="tn_span"></span>实时竞价排期</p>
+						<ul class="classify_con hide">
+							<li class="cch_xj"><a href="../shishijingjiapaiqi/admin_ssjjpq_inf.html"><span></span>新建排期</a></li>
+							<li class="cch_gl"><a href="../shishijingjiapaiqi/admin_ssjjpq_pqgl.html"><span></span>排期管理</a></li>
+						</ul>
+					</li>
+					<li class="tn_com_li tn_intel_material">
+						<p class="classify_tit"><span class="tn_span"></span>智能素材</p>
+						<ul class="classify_con hide">
+							<li class="cch_xj"><a href="../intelligent_material/admin_znsc_scgl.html"><span></span>素材管理</a></li>
+							<li class="cch_gl"><a href="../intelligent_material/admin_znsc_scsh.html"><span></span>素材审核</a></li>
+						</ul>
+					</li>
+					<li class="tn_com_li tn_data_center">
+						<p class="classify_tit"><span class="tn_span"></span>数据中心</p>
+						<ul class="classify_con hide">
+							<li class="cch_xj"><a href=""><span></span></a></li>
+							<li class="cch_gl"><a href=""><span></span></a></li>
+							<li class="cch_tz"><a href=""><span></span></a></li>
+						</ul>
+					</li>
+					<li class="tn_com_li tn_precise_setting">
+						<p class="classify_tit"><span class="tn_span"></span>DMP精准设置</p>
+						<ul class="classify_con hide">
+							<li class="cch_xj"><a href=""><span></span></a></li>
+							<li class="cch_gl"><a href=""><span></span></a></li>
+							<li class="cch_tz"><a href=""><span></span></a></li>
+						</ul>
+					</li>
+					<li class="tn_com_li tn_system_manage">
+						<p class="classify_tit"><span class="tn_span"></span>系统管理</p>
+						<ul class="classify_con hide">
+							<li class="cch_xj"><a href="../system_management/admin_xtgl_user_settings.html"><span></span>用户管理</a></li>
+							<li class="cch_gl"><a href="../system_management/admin_xtgl_personal_center.html"><span></span>个人中心</a></li>
+							<li class="cch_tz"><a href="../system_management/admin_xtgl_game_management.html"><span></span>游戏管理</a></li>
+							<li class="cch_tz"><a href="../system_management/admin_xtgl_jztfsz.html"><span></span>精准投放设置</a></li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+			
+			<!-- 右边内容区 -->
+			<div class="right_con">
+				<!-- 广告交易平台详情 -->
+				<div class="ggjypt_details">
+					<div class="int_top clearfix">
+						<div class="int_tit">
+							<p><a href="admin_mtgl_ggjypt.html" class="blue">广告交易平台</a></p>
+							<span>></span>
+							<p>InMobi-DSP</p>
+						</div>
+						<div class="login">
+							<!-- 但没有消息是em为隐藏状态 -->
+							<a href="javascript:" class="mail_btn">
+								<span>
+									<em>2</em>
+								</span>
+							</a>
+							<div class="login_sign_in">
+								<div class="lsi_img">
+									<img src="../../img/ico_16.png"/>
+								</div>
+								<p>艾丽斯...</p>
+								<span class="jt"></span>
+								<div class="lsi_sele hide">
+									<span></span>
+									<p class="qx">权 限<em></em></p>
+									<p class="wb">媒介运营</p>
+									<a href="">退出</a>
+								</div>
+							</div>
+							
+							<!-- 邮件弹窗 -->
+							<div class="mail_popup hide">
+								<span class="mail_popup_triangle"></span>
+								<div class="mail_popup_con_head">
+									<div class="mpch_tab mpch_active">
+										<p>系统通知<span class="hide"></span></p>
+									</div>
+									<!-- 但没有消息是span为隐藏状态 -->
+									<div class="mpch_tab">
+										<p>我的待办<span>2</span></p>
+									</div>
+									<span class="line"></span>
+								</div>
+								<div class="mpc">
+									<ul class="mail_popup_con hide">
+										<li>
+											<div class="mail_popup_con1">
+												<span></span>
+												<p class="mpc_event">动态调整</p>
+												<p class="mpc_time">2018.04.20</p>
+											</div>
+											<p class="mpc_event_con">您的排期《全军出击~2018年4月排期》已经由AI优化完成，请您务必在2018.4.21 16:00前确认 </p>
+											<div class="mpc_see_btn"><a href="">查看详情</a></div>
+										</li>
+										<li>
+											<div class="mail_popup_con1">
+												<span></span>
+												<p class="mpc_event">动态调整</p>
+												<p class="mpc_time">2018.04.20</p>
+											</div>
+											<p class="mpc_event_con">您的排期《全军出击~2018年4月排期》已经由AI优化完成，请您务必在2018.4.21 16:00前确认 </p>
+											<div class="mpc_see_btn"><a href="">查看详情</a></div>
+										</li>
+										<li>
+											<div class="mail_popup_con1">
+												<span></span>
+												<p class="mpc_event">动态调整</p>
+												<p class="mpc_time">2018.04.20</p>
+											</div>
+											<p class="mpc_event_con">您的排期《全军出击~2018年4月排期》已经由AI优化完成，请您务必在2018.4.21 16:00前确认 </p>
+											<div class="mpc_see_btn"><a href="">查看详情</a></div>
+										</li>
+										<li>
+											<div class="mail_popup_con1">
+												<span></span>
+												<p class="mpc_event">动态调整</p>
+												<p class="mpc_time">2018.04.20</p>
+											</div>
+											<p class="mpc_event_con">您的排期《全军出击~2018年4月排期》已经由AI优化完成，请您务必在2018.4.21 16:00前确认 </p>
+											<div class="mpc_see_btn"><a href="">查看详情</a></div>
+										</li>
+									</ul>
+									
+									<!-- 无消息 -->
+									<div class="mpc_not_news">
+										<div class="mpcnn_bg"></div>
+										<p>暂无系统消息</p>
+									</div>
+									<a href="" class="mpc_ckqb_btn">查看全部通知<span></span></a>
+								</div>
+								<div class="mpc hide">
+									<ul class="mail_popup_con">
+										<li>
+											<div class="mail_popup_con1">
+												<span></span>
+												<p class="mpc_event">动态调整</p>
+												<p class="mpc_time">2018.04.20</p>
+											</div>
+											<p class="mpc_event_con">您的排期《全军出击~2018年4月排期》已经由AI优化完成，请您务必在2018.4.21 16:00前确认 </p>
+											<div class="mpc_see_btn"><a href="">查看详情</a></div>
+										</li>
+										<li>
+											<div class="mail_popup_con1">
+												<span></span>
+												<p class="mpc_event">动态调整</p>
+												<p class="mpc_time">2018.04.20</p>
+											</div>
+											<p class="mpc_event_con">您的排期《全军出击~2018年4月排期》已经由AI优化完成，请您务必在2018.4.21 16:00前确认 </p>
+											<div class="mpc_see_btn"><a href="">查看详情</a></div>
+										</li>
+										<li>
+											<div class="mail_popup_con1">
+												<span></span>
+												<p class="mpc_event">动态调整</p>
+												<p class="mpc_time">2018.04.20</p>
+											</div>
+											<p class="mpc_event_con">您的排期《全军出击~2018年4月排期》已经由AI优化完成，请您务必在2018.4.21 16:00前确认 </p>
+											<div class="mpc_see_btn"><a href="">查看详情</a></div>
+										</li>
+									</ul>
+									
+									<!-- 无消息 -->
+									<div class="mpc_not_news hide">
+										<div class="mpcnn_bg"></div>
+										<p>暂无代办</p>
+									</div>
+									<a href="" class="mpc_ckqb_btn">查看全部信息<span></span></a>
+								</div>	
+							</div>
+						</div>
+					</div>
+					
+					<!-- 消息提示 -->
+					<div class="sc_message_hints">
+						<span class="scmh_ico"></span>
+						<p>亲爱的艾丽斯，下午好！您有<em>196</em>个待处理事项<a href="javascript:">立即查看</a></p>
+						<span class="scmh_colse"></span>
+					</div>
+					
+					<div class="pc_details_con">
+						<div class="pdc_top">
+							<div class="pdc_top_img">
+								<img src="../../img/img_31.jpg" alt="" />
+							</div>
+							<div class="pdc_top_text">
+								<p class="pdctt_name">InmoBI</p>
+								<p class="pdctt_describe">最优质的广告交易平台</p>
+							</div>
+							<div class="pdc_btn">
+								<p class="pdcb_new_built"><span></span>新建广告位</p>
+								<p class="pdcb_obtain"><span></span>批量导入广告位</p>
+								<p class="pdcb_export"><span></span>导入广告位模板</p>
+							</div>
+							<div class="pdc_search">
+								<input type="" name="" id="" value="" placeholder="请输入关键字搜索">
+								<span class="pdc_magnifier"></span>
+								<div class="ts_drop_down hide">
+									<p>王者荣耀</p>
+									<p>王者归来</p>
+								</div>
+							</div>
+						</div>
+						
+						<div class="pdc_tbody">
+							<div class="pdc_table_head">
+								<p class="pdc_td2">广告位</p>
+								<p class="pdc_td3">尺寸（长*宽）</p>
+								<p class="pdc_td4">支持素材类型</p>
+								<p class="pdc_td5">素材大小限制</p>
+								<p class="pdc_td6">素材制作要求</p>
+								<p class="pdc_td8">操作</p>
+							</div>
+							<ul class="pdc_table">
+								<li class="li_tr pdc_tr">
+									<div class="pdc_td2">
+										<p>640 * 960</p>
+									</div>
+									<div class="pdc_td3">
+										<p>W:960  L:640</p>
+									</div>
+									<div class="pdc_td4">
+										<p>jpg/png</p>
+									</div>
+									<div class="pdc_td5">
+										<p>100kb</p>
+									</div>
+									<div class="pdc_td6">
+										<p>高端大气上档次，单调奢华有内涵</p>
+									</div>
+									<div class="pdc_td8">
+										<span class="modify"></span>
+										<span class="delete"></span>
+									</div>
+								</li>
+								<li class="li_tr pdc_tr">
+									<div class="pdc_td2">
+										<p>640 * 960</p>
+									</div>
+									<div class="pdc_td3">
+										<p>W:960  L:640</p>
+									</div>
+									<div class="pdc_td4">
+										<p>jpg/png</p>
+									</div>
+									<div class="pdc_td5">
+										<p>100kb</p>
+									</div>
+									<div class="pdc_td6">
+										<p>高端大气上档次，单调奢华有内涵</p>
+									</div>
+									<div class="pdc_td8">
+										<span class="modify"></span>
+										<span class="delete"></span>
+									</div>
+								</li>
+								<li class="li_tr pdc_tr">
+									<div class="pdc_td2">
+										<p>640 * 960</p>
+									</div>
+									<div class="pdc_td3">
+										<p>W:960  L:640</p>
+									</div>
+									<div class="pdc_td4">
+										<p>jpg/png</p>
+									</div>
+									<div class="pdc_td5">
+										<p>100kb</p>
+									</div>
+									<div class="pdc_td6">
+										<p>高端大气上档次，单调奢华有内涵</p>
+									</div>
+									<div class="pdc_td8">
+										<span class="modify"></span>
+										<span class="delete"></span>
+									</div>
+								</li>
+								<li class="li_tr pdc_tr">
+									<div class="pdc_td2">
+										<p>640 * 960</p>
+									</div>
+									<div class="pdc_td3">
+										<p>W:960  L:640</p>
+									</div>
+									<div class="pdc_td4">
+										<p>jpg/png</p>
+									</div>
+									<div class="pdc_td5">
+										<p>100kb</p>
+									</div>
+									<div class="pdc_td6">
+										<p>高端大气上档次，单调奢华有内涵</p>
+									</div>
+									<div class="pdc_td8">
+										<span class="modify"></span>
+										<span class="delete"></span>
+									</div>
+								</li>
+								<li class="li_tr pdc_tr">
+									<div class="pdc_td2">
+										<p>640 * 960</p>
+									</div>
+									<div class="pdc_td3">
+										<p>W:960  L:640</p>
+									</div>
+									<div class="pdc_td4">
+										<p>jpg/png</p>
+									</div>
+									<div class="pdc_td5">
+										<p>100kb</p>
+									</div>
+									<div class="pdc_td6">
+										<p>高端大气上档次，单调奢华有内涵</p>
+									</div>
+									<div class="pdc_td8">
+										<span class="modify"></span>
+										<span class="delete"></span>
+									</div>
+								</li>
+								<li class="li_tr pdc_tr">
+									<div class="pdc_td2">
+										<p>640 * 960</p>
+									</div>
+									<div class="pdc_td3">
+										<p>W:960  L:640</p>
+									</div>
+									<div class="pdc_td4">
+										<p>jpg/png</p>
+									</div>
+									<div class="pdc_td5">
+										<p>100kb</p>
+									</div>
+									<div class="pdc_td6">
+										<p>高端大气上档次，单调奢华有内涵</p>
+									</div>
+									<div class="pdc_td8">
+										<span class="modify"></span>
+										<span class="delete"></span>
+									</div>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			<!-- 弹窗 -->
+			<div class="admin_popup hide">
+				<!-- 新增广告位弹窗 -->
+				<div class="mtgl_pop newly_added hide">
+					<div class="admin_popup_close"></div>
+					<h5>新增广告位</h5>
+					<div class="newly_added_prompt">
+						<p class="nap_belonged_name">InMobi-DSP</p>
+						<p class="nap_xh_prompt">（标 * 号为必填项）</p>
+					</div>
+					<div class="mtgl_pop_con_box">
+						<div class="mtgl_pop_con">
+							<p><span>广告位名称</span></p>
+							<input type="text" id="" value="" placeholder="请输入广告位名称"/>
+							<span class="mtglpc_asterisk">*</span>
+						</div>
+						<div class="mtgl_pop_con">
+							<p>外部媒体广告位ID</p>
+							<input type="text" id="" value="" placeholder="请输入外部媒体广告位ID"/>
+							<span class="mtglpc_asterisk">*</span>
+						</div>
+						<div class="mtgl_pop_con">
+							<p>外部媒体deal ID</p>
+							<input type="text" id="" value="" placeholder="请输入外部媒体deal ID"/>
+							<span class="mtglpc_asterisk">*</span>
+						</div>
+						<div class="mtgl_pop_con">
+							<p>尺寸(PX)</p>
+							<div class="mpc_size">
+								<input type="text" value="" placeholder="长" class="mpc_size_long"/>
+								<span>x</span>
+								<input type="text" value="" placeholder="宽" class="mpc_size_wide"/>
+							</div>
+							<span class="mtglpc_asterisk">*</span>
+						</div>
+						<div class="mtgl_pop_con">
+							<p>素材文件K值</p>
+							<div class="mpc_k_num">
+								<input type="text" id="" value="" placeholder="请输入素材文件K值大小"/>
+								<span>k</span>
+							</div>
+							<span class="mtglpc_asterisk">*</span>
+						</div>
+						<div class="mtgl_pop_con">
+							<p>素材格式</p>
+							<div class="mpc_format">
+								<div class="mpc_multi_selection">
+									<input type="checkbox" name="" id="dx1" value="" />
+									<label for="dx1"><em></em></label>
+									<span>gif</span>
+								</div>
+								<div class="mpc_multi_selection">
+									<input type="checkbox" name="" id="dx2" value="" />
+									<label for="dx2"><em></em></label>
+									<span>jpeg</span>
+								</div>
+								<div class="mpc_multi_selection">
+									<input type="checkbox" name="" id="dx3" value="" />
+									<label for="dx3"><em></em></label>
+									<span>jpg</span>
+								</div>
+								<div class="mpc_multi_selection">
+									<input type="checkbox" name="" id="dx4" value="" />
+									<label for="dx4"><em></em></label>
+									<span>png</span>
+								</div>
+								<div class="mpc_multi_selection">
+									<input type="checkbox" name="" id="dx5" value="" />
+									<label for="dx5"><em></em></label>
+									<span>bmp</span>
+								</div>
+								<div class="mpc_multi_selection">
+									<input type="checkbox" name="" id="dx6" value="" />
+									<label for="dx6"><em></em></label>
+									<span>swf</span>
+								</div>
+								<div class="mpc_multi_selection">
+									<input type="checkbox" name="" id="dx7" value="" />
+									<label for="dx7"><em></em></label>
+									<span>mp4</span>
+								</div>
+								<div class="mpc_multi_selection">
+									<input type="checkbox" name="" id="dx8" value="" />
+									<label for="dx8"><em></em></label>
+									<span>flv</span>
+								</div>
+							</div>
+							<span class="mtglpc_asterisk">*</span>
+						</div>
+						<div class="mtgl_pop_con">
+							<p><span>素材制作格式要求</span></p>
+							<textarea name=""></textarea>
+						</div>
+					</div>
+						
+					<div class="mtgl_popup_btn bottom_btn">
+						<a href="" class="mtglpb_hold gradual_change_btn">保 存</a>
+					</div>
+				</div>
+				
+				<!-- 编辑广告位弹窗 -->
+				<div class="mtgl_pop bj_newly_added hide">
+					<div class="admin_popup_close"></div>
+					<h5>编辑广告位</h5>
+					<div class="newly_added_prompt">
+						<p class="nap_belonged_name">InMobi-DSP</p>
+						<p class="nap_xh_prompt">（标 * 号为必填项）</p>
+					</div>
+					<div class="mtgl_pop_con_box">
+						<div class="mtgl_pop_con">
+							<p><span>广告位名称</span></p>
+							<input type="text" id="" value="InMobi-DSP" placeholder="请输入广告位名称"/>
+							<span class="mtglpc_asterisk">*</span>
+						</div>
+						<div class="mtgl_pop_con">
+							<p>外部媒体广告位ID</p>
+							<input type="text" id="" value="" placeholder="请输入外部媒体广告位ID"/>
+							<span class="mtglpc_asterisk">*</span>
+						</div>
+						<div class="mtgl_pop_con">
+							<p>外部媒体deal ID</p>
+							<input type="text" id="" value="" placeholder="请输入外部媒体deal ID"/>
+							<span class="mtglpc_asterisk">*</span>
+						</div>
+						<div class="mtgl_pop_con">
+							<p>尺寸(PX)</p>
+							<div class="mpc_size">
+								<input type="text" value="640" placeholder="长" class="mpc_size_long"/>
+								<span>x</span>
+								<input type="text" value="960" placeholder="宽" class="mpc_size_wide"/>
+							</div>
+							<span class="mtglpc_asterisk">*</span>
+						</div>
+						<div class="mtgl_pop_con">
+							<p>素材文件K值</p>
+							<div class="mpc_k_num">
+								<input type="text" id="" value="100" placeholder="请输入素材文件K值大小"/>
+								<span>k</span>
+							</div>
+							<span class="mtglpc_asterisk">*</span>
+						</div>
+						<div class="mtgl_pop_con">
+							<p>素材格式</p>
+							<div class="mpc_format">
+								<div class="mpc_multi_selection">
+									<input type="checkbox" name="" id="dx1" value="" />
+									<label for="dx1"><em></em></label>
+									<span>gif</span>
+								</div>
+								<div class="mpc_multi_selection">
+									<input type="checkbox" name="" id="dx2" value="" />
+									<label for="dx2"><em></em></label>
+									<span>jpeg</span>
+								</div>
+								<div class="mpc_multi_selection">
+									<input type="checkbox" name="" id="dx3" value="" checked="checked"/>
+									<label for="dx3" class="mrc_label_active"><em></em></label>
+									<span>jpg</span>
+								</div>
+								<div class="mpc_multi_selection">
+									<input type="checkbox" name="" id="dx4" value="" checked="checked"/>
+									<label for="dx4" class="mrc_label_active"><em></em></label>
+									<span>png</span>
+								</div>
+								<div class="mpc_multi_selection">
+									<input type="checkbox" name="" id="dx5" value="" />
+									<label for="dx5"><em></em></label>
+									<span>bmp</span>
+								</div>
+								<div class="mpc_multi_selection">
+									<input type="checkbox" name="" id="dx6" value="" />
+									<label for="dx6"><em></em></label>
+									<span>swf</span>
+								</div>
+								<div class="mpc_multi_selection">
+									<input type="checkbox" name="" id="dx7" value="" />
+									<label for="dx7"><em></em></label>
+									<span>mp4</span>
+								</div>
+								<div class="mpc_multi_selection">
+									<input type="checkbox" name="" id="dx8" value="" />
+									<label for="dx8"><em></em></label>
+									<span>flv</span>
+								</div>
+							</div>
+							<span class="mtglpc_asterisk">*</span>
+						</div>
+						<div class="mtgl_pop_con">
+							<p><span>素材制作格式要求</span></p>
+							<textarea name="">高端大气上档次，单调奢华有内涵</textarea>
+						</div>
+					</div>
+						
+					<div class="mtgl_popup_btn bottom_btn">
+						<a href="" class="mtglpb_hold gradual_change_btn">保 存</a>
+					</div>
+				</div>
+				
+				<!-- 删除弹窗 -->
+				<div class="mtgl_pop mtgl_delete hide">
+					<div class="mtgl_delete_ico"></div>
+					<p>确定删除该广告位？</p>
+					<div class="mtgl_delete_btn bottom_btn">
+						<a href="" class="mtgldb_confirm gradual_change_btn">确认</a>
+						<a href="" class="mtgldb_cancel frame_btn">取消</a>
+					</div>
+				</div>
+				
+				<!-- 批量导入广告位 -->
+				<div class="mtgl_pop import_adve hide">
+					<div class="admin_popup_close"></div>
+					<h5>批量导入广告位</h5>
+					<div class="import_adve_con">
+						<p class="iac_name">上传文件</p>
+						
+						<div class="iac_file_con">
+							<p class="iac_file_con_text">您还未选择任何文件</p>
+							<label>
+								<input type="file" name="" value="" accept=".xls,.xlsx"/>
+								<p class="iac_file_con_xz">选择文件</p>
+								<p class="iac_file_con_cx hide">重新上传</p>
+							</label>
+							<p class="iac_file_con_prompt">注：上传的素材格式为excel</p>
+						</div>
+					</div>
+					<a href="" class="import_adve_btn">上传</a>
+				</div>
+			</div>
+		</div>
+		<script src="../../js/jquery-1.7.2.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../../js/jquery.mCustomScrollbar.concat.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../../js/admin.js" type="text/javascript" charset="utf-8"></script>
+	</body>
+</html>

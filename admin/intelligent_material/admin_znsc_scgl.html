@@ -1,0 +1,870 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>O2精准广告系统</title>
+		<link rel="stylesheet" type="text/css" href="../../css/public.css"/>
+		<link rel="stylesheet" type="text/css" href="../../css/jquery.mCustomScrollbar.css"/>
+		<link rel="stylesheet" type="text/css" href="../../css/admin_style.css"/>
+		<link rel="stylesheet" type="text/css" href="../../css/admin_znsc.css"/>
+		<link rel="stylesheet" type="text/css" href="../../css/common.css"/>
+	</head>
+	<body>
+		<div class="shell">
+			<!-- 左边二级分类导航 -->
+			<div class="left_nav">
+				<div class="left_nav_logo"></div>
+				<!-- 媒体管理 -->
+				<div class="media_manage">
+					<p class="classify_tit"><a href="../media_management/admin_mtgl_pc.html"><span></span>媒体管理</a></p>
+					<ul class="classify_con hide">
+						<li class="cch_xj"><a href="../media_management/admin_mtgl_pc.html"><span></span>PC媒体</a></li>
+						<li class="cch_gl"><a href="../media_management/admin_mtgl_move.html"><span></span>移动媒体</a></li>
+						<li class="cch_tz"><a href="../media_management/admin_mtgl_ggjypt.html"><span></span>广告交易平台</a></li>
+					</ul>
+				</div>
+				
+				<!-- 智能排期 -->
+				<div class="ln_con intel_sche">
+					<p class="classify_tit"><a href="../intelligent_scheduling/admin_intel_sche_con.html"><span></span>智能排期(beta)</a></p>
+					<ul class="classify_con hide">
+						<li class="cch_xj"><a href="../intelligent_scheduling/admin_intel_sche_con.html"><span></span>新建排期</a></li>
+						<li class="cch_gl"><a href="../intelligent_scheduling/admin_total_preview.html"><span></span>排期管理</a></li>
+						<li class="cch_tz"><a href="../intelligent_scheduling/admin_tzjm.html"><span></span>动态优化</a></li>
+					</ul>
+				</div>
+				
+				<!-- 普通排期 -->
+				<div class="ln_con ordin_sche">
+					<p class="classify_tit"><a href="../ordinary_scheduling/admin_ptpq_inf.html"><span></span>普通排期</a></p>
+					<ul class="classify_con hide">
+						<li class="cch_xj"><a href="../ordinary_scheduling/admin_ptpq_inf.html"><span></span>新建排期</a></li>
+						<li class="cch_gl"><a href="../ordinary_scheduling/admin_ptpq_pqgl.html"><span></span>排期管理</a></li>
+					</ul>
+				</div>
+				
+				<!-- 实时竞价排期 -->
+				<div class="ln_con price_sche">
+					<p class="classify_tit"><a href="../shishijingjiapaiqi/admin_ssjjpq_inf.html"><span></span>实时竞价排期</a></p>
+					<ul class="classify_con hide">
+						<li class="cch_xj"><a href="../shishijingjiapaiqi/admin_ssjjpq_inf.html"><span></span>新建排期</a></li>
+						<li class="cch_gl"><a href="../shishijingjiapaiqi/admin_ssjjpq_pqgl.html"><span></span>排期管理</a></li>
+					</ul>
+				</div>
+				
+				<!-- 智能素材 -->
+				<div class="ln_con intel_material">
+					<p class="classify_tit nav_active"><a href="admin_znsc_scgl.html"><span></span>智能素材</a></p>
+					<ul class="classify_con">
+						<li class="cch_xj cc_li_active"><a href="admin_znsc_scgl.html"><span></span>素材管理</a></li>
+						<li class="cch_gl"><a href="admin_znsc_scsh.html"><span></span>素材审核</a></li>
+					</ul>
+				</div>
+				
+				<!-- 数据中心 -->
+				<div class="ln_con data_center">
+					<p class="classify_tit"><a href=""><span></span>数据中心</a></p>
+					<ul class="classify_con hide">
+						<li class="cch_xj"><a href=""><span></span></a></li>
+						<li class="cch_gl"><a href=""><span></span></a></li>
+						<li class="cch_tz"><a href=""><span></span></a></li>
+					</ul>
+				</div>
+				
+				<!-- DMP精准设置 -->
+				<div class="ln_con precise_setting">
+					<p class="classify_tit"><a href=""><span></span>DMP精准设置</a></p>
+					<ul class="classify_con hide">
+						<li class="cch_xj"><a href=""><span></span></a></li>
+						<li class="cch_gl"><a href=""><span></span></a></li>
+						<li class="cch_tz"><a href=""><span></span></a></li>
+					</ul>
+				</div>
+				
+				<!-- 系统管理 -->
+				<div class="ln_con system_manage">
+					<p class="classify_tit"><a href="../system_management/admin_xtgl_user_settings.html"><span></span>系统管理</a></p>
+					<ul class="classify_con hide">
+						<li class="cch_xj"><a href="../system_management/admin_xtgl_user_settings.html"><span></span>用户管理</a></li>
+						<li class="cch_gl"><a href="../system_management/admin_xtgl_personal_center.html"><span></span>个人中心</a></li>
+						<li class="cch_tz"><a href="../system_management/admin_xtgl_game_management.html"><span></span>游戏管理</a></li>
+						<li class="cch_tz"><a href="../system_management/admin_xtgl_jztfsz.html"><span></span>精准投放设置</a></li>
+					</ul>
+				</div>
+			</div>
+			
+			<!-- 缩略图导航 -->
+			<div class="thumbnail_nav hide">
+				<div class="tn_logo"></div>
+				<ul class="tn_con">
+					<li class="tn_com_li tn_media_manage">
+						<p class="classify_tit"><span class="tn_span"></span>媒体管理</p>
+						<ul class="classify_con hide">
+							<li class="cch_xj"><a href="../media_management/admin_mtgl_pc.html"><span></span>PC媒体</a></li>
+							<li class="cch_gl"><a href="../media_management/admin_mtgl_move.html"><span></span>移动媒体</a></li>
+							<li class="cch_tz"><a href="../media_management/admin_mtgl_ggjypt.html"><span></span>广告交易平台</a></li>
+						</ul>
+					</li>
+					<li class="tn_com_li tn_intel_sche">
+						<p class="classify_tit"><span class="tn_span"></span>智能排期(beta)</p>
+						<ul class="classify_con hide">
+							<li class="cch_xj"><a href="../intelligent_scheduling/admin_intel_sche_con.html"><span></span>新建排期</a></li>
+							<li class="cch_gl"><a href="../intelligent_scheduling/admin_total_preview.html"><span></span>排期管理</a></li>
+							<li class="cch_tz"><a href="../intelligent_scheduling/admin_tzjm.html"><span></span>动态优化</a></li>
+						</ul>
+					</li>
+					<li class="tn_com_li tn_ordin_sche">
+						<p class="classify_tit"><span class="tn_span"></span>普通排期</p>
+						<ul class="classify_con hide">
+							<li class="cch_xj"><a href="../ordinary_scheduling/admin_ptpq_inf.html"><span></span>新建排期</a></li>
+							<li class="cch_gl"><a href="../ordinary_scheduling/admin_ptpq_pqgl.html"><span></span>排期管理</a></li>
+						</ul>
+					</li>
+					<li class="tn_com_li tn_price_sche">
+						<p class="classify_tit"><span class="tn_span"></span>实时竞价排期</p>
+						<ul class="classify_con hide">
+							<li class="cch_xj"><a href="../shishijingjiapaiqi/admin_ssjjpq_inf.html"><span></span>新建排期</a></li>
+							<li class="cch_gl"><a href="../shishijingjiapaiqi/admin_ssjjpq_pqgl.html"><span></span>排期管理</a></li>
+						</ul>
+					</li>
+					<li class="tn_com_li tn_intel_material nav_active">
+						<p class="classify_tit"><span class="tn_span"></span>智能素材</p>
+						<ul class="classify_con hide">
+							<li class="cch_xj cc_li_active"><a href="admin_znsc_scgl.html"><span></span>素材管理</a></li>
+							<li class="cch_gl"><a href="admin_znsc_scsh.html"><span></span>素材审核</a></li>
+						</ul>
+					</li>
+					<li class="tn_com_li tn_data_center">
+						<p class="classify_tit"><span class="tn_span"></span>数据中心</p>
+						<ul class="classify_con hide">
+							<li class="cch_xj"><a href=""><span></span></a></li>
+							<li class="cch_gl"><a href=""><span></span></a></li>
+							<li class="cch_tz"><a href=""><span></span></a></li>
+						</ul>
+					</li>
+					<li class="tn_com_li tn_precise_setting">
+						<p class="classify_tit"><span class="tn_span"></span>DMP精准设置</p>
+						<ul class="classify_con hide">
+							<li class="cch_xj"><a href=""><span></span></a></li>
+							<li class="cch_gl"><a href=""><span></span></a></li>
+							<li class="cch_tz"><a href=""><span></span></a></li>
+						</ul>
+					</li>
+					<li class="tn_com_li tn_system_manage">
+						<p class="classify_tit"><span class="tn_span"></span>系统管理</p>
+						<ul class="classify_con hide">
+							<li class="cch_xj"><a href="../system_management/admin_xtgl_user_settings.html"><span></span>用户管理</a></li>
+							<li class="cch_gl"><a href="../system_management/admin_xtgl_personal_center.html"><span></span>个人中心</a></li>
+							<li class="cch_tz"><a href="../system_management/admin_xtgl_game_management.html"><span></span>游戏管理</a></li>
+							<li class="cch_tz"><a href="../system_management/admin_xtgl_jztfsz.html"><span></span>精准投放设置</a></li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+			
+			<!-- 右边内容区 -->
+			<div class="right_con">
+				<!-- 智能素材-素材管理 -->
+				<div class="material_management">
+					<div class="int_top clearfix">
+						<div class="int_tit">
+							<p>素材管理</p>
+						</div>
+						<div class="login">
+							<!-- 但没有消息是em为隐藏状态 -->
+							<a href="javascript:" class="mail_btn">
+								<span>
+									<em>2</em>
+								</span>
+							</a>
+							<div class="login_sign_in">
+								<div class="lsi_img">
+									<img src="../../img/ico_16.png"/>
+								</div>
+								<p>艾丽斯...</p>
+								<span class="jt"></span>
+								<div class="lsi_sele hide">
+									<span></span>
+									<p class="qx">权 限<em></em></p>
+									<p class="wb">媒介运营</p>
+									<a href="">退出</a>
+								</div>
+							</div>
+							
+							<!-- 邮件弹窗 -->
+							<div class="mail_popup hide">
+								<span class="mail_popup_triangle"></span>
+								<div class="mail_popup_con_head">
+									<div class="mpch_tab mpch_active">
+										<p>系统通知<span class="hide"></span></p>
+									</div>
+									<!-- 但没有消息是span为隐藏状态 -->
+									<div class="mpch_tab">
+										<p>我的待办<span>2</span></p>
+									</div>
+									<span class="line"></span>
+								</div>
+								<div class="mpc">
+									<ul class="mail_popup_con hide">
+										<li>
+											<div class="mail_popup_con1">
+												<span></span>
+												<p class="mpc_event">动态调整</p>
+												<p class="mpc_time">2018.04.20</p>
+											</div>
+											<p class="mpc_event_con">您的排期《全军出击~2018年4月排期》已经由AI优化完成，请您务必在2018.4.21 16:00前确认 </p>
+											<div class="mpc_see_btn"><a href="">查看详情</a></div>
+										</li>
+										<li>
+											<div class="mail_popup_con1">
+												<span></span>
+												<p class="mpc_event">动态调整</p>
+												<p class="mpc_time">2018.04.20</p>
+											</div>
+											<p class="mpc_event_con">您的排期《全军出击~2018年4月排期》已经由AI优化完成，请您务必在2018.4.21 16:00前确认 </p>
+											<div class="mpc_see_btn"><a href="">查看详情</a></div>
+										</li>
+										<li>
+											<div class="mail_popup_con1">
+												<span></span>
+												<p class="mpc_event">动态调整</p>
+												<p class="mpc_time">2018.04.20</p>
+											</div>
+											<p class="mpc_event_con">您的排期《全军出击~2018年4月排期》已经由AI优化完成，请您务必在2018.4.21 16:00前确认 </p>
+											<div class="mpc_see_btn"><a href="">查看详情</a></div>
+										</li>
+										<li>
+											<div class="mail_popup_con1">
+												<span></span>
+												<p class="mpc_event">动态调整</p>
+												<p class="mpc_time">2018.04.20</p>
+											</div>
+											<p class="mpc_event_con">您的排期《全军出击~2018年4月排期》已经由AI优化完成，请您务必在2018.4.21 16:00前确认 </p>
+											<div class="mpc_see_btn"><a href="">查看详情</a></div>
+										</li>
+									</ul>
+									
+									<!-- 无消息 -->
+									<div class="mpc_not_news">
+										<div class="mpcnn_bg"></div>
+										<p>暂无系统消息</p>
+									</div>
+									<a href="" class="mpc_ckqb_btn">查看全部通知<span></span></a>
+								</div>
+								<div class="mpc hide">
+									<ul class="mail_popup_con">
+										<li>
+											<div class="mail_popup_con1">
+												<span></span>
+												<p class="mpc_event">动态调整</p>
+												<p class="mpc_time">2018.04.20</p>
+											</div>
+											<p class="mpc_event_con">您的排期《全军出击~2018年4月排期》已经由AI优化完成，请您务必在2018.4.21 16:00前确认 </p>
+											<div class="mpc_see_btn"><a href="">查看详情</a></div>
+										</li>
+										<li>
+											<div class="mail_popup_con1">
+												<span></span>
+												<p class="mpc_event">动态调整</p>
+												<p class="mpc_time">2018.04.20</p>
+											</div>
+											<p class="mpc_event_con">您的排期《全军出击~2018年4月排期》已经由AI优化完成，请您务必在2018.4.21 16:00前确认 </p>
+											<div class="mpc_see_btn"><a href="">查看详情</a></div>
+										</li>
+										<li>
+											<div class="mail_popup_con1">
+												<span></span>
+												<p class="mpc_event">动态调整</p>
+												<p class="mpc_time">2018.04.20</p>
+											</div>
+											<p class="mpc_event_con">您的排期《全军出击~2018年4月排期》已经由AI优化完成，请您务必在2018.4.21 16:00前确认 </p>
+											<div class="mpc_see_btn"><a href="">查看详情</a></div>
+										</li>
+									</ul>
+									
+									<!-- 无消息 -->
+									<div class="mpc_not_news hide">
+										<div class="mpcnn_bg"></div>
+										<p>暂无代办</p>
+									</div>
+									<a href="" class="mpc_ckqb_btn">查看全部信息<span></span></a>
+								</div>	
+							</div>
+						</div>
+					</div>
+					
+					<!-- 消息提示 -->
+					<div class="sc_message_hints">
+						<span class="scmh_ico"></span>
+						<p>亲爱的艾丽斯，下午好！您有<em>196</em>个待处理事项<a href="javascript:">立即查看</a></p>
+						<span class="scmh_colse"></span>
+					</div>
+					
+					<div class="tp_state clearfix">
+						<ul class="tab_label">
+							<li class="tab_active">端游素材</li>
+							<li>手游素材</li>
+						</ul>
+						<div class="tp_search">
+							<input type="" name="" id="" value="" placeholder="请输入关键字搜索"/>
+							<span></span>
+							<div class="ts_drop_down hide">
+								<p>王者荣耀</p>
+								<p>王者归来</p>
+							</div>
+						</div>
+					</div>
+					<div class="tab_head">
+						<p class="tab_td1">ID</p>
+						<p class="tab_td2">排期名称</p>
+						<p class="tab_td3">总费用（元）</p>
+						<p class="tab_td6">投放时间</p>
+						<p class="tab_td8">排期状态</p>
+						<p class="tab_td4">素材状态</p>
+						<p class="tab_td5">素材上传</p>
+						<p class="tab_td7">批量删除</p>
+					</div>
+					<div class="tab_table_tbody">
+						
+						<!-- 端游素材 -->
+						<div class="tab_table">
+							<ul class="tab_table_con">
+								<li class="tab_table_tr">
+									<p class="tab_td1">1534</p>
+									<div class="tab_td2">
+										<div class="ts_img">
+											<img src="../../img/ico_20.png"/>
+										</div>
+										<a href="admin_znsc_scgl_duanyou.html"><span class="multiline">2018年2月单独网吧排期（端游）</span></a>
+									</div>
+									<p class="tab_td3">7,000,000.00</p>
+									<p class="tab_td6">2017.3.15-2018.3.30</p>
+									<div class="tab_td8">
+										<!-- 待审核 -->
+										<div class="wait_audited">
+											<span></span>
+											<p>待审核</p>
+										</div>
+									</div>
+									<p class="tab_td4">投满待审核</p>
+									<p class="tab_td5"><a href="admin_znsc_scgl_scsc.html"><span></span></a></p>
+									<div class="tab_td7">
+										<span class="delete pointer"></span>
+									</div>
+								</li>
+								<li class="tab_table_tr">
+									<p class="tab_td1">1534</p>
+									<div class="tab_td2">
+										<div class="ts_img">
+											<img src="../../img/ico_21.png"/>
+										</div>
+										<a href="admin_znsc_scgl_duanyou.html"><span class="multiline">2018年2月内配广告排期（绝地求生端游）</span></a>
+									</div>
+									<p class="tab_td3">7,000,000.00</p>
+									<p class="tab_td6">2017.3.15-2018.3.30</p>
+									<div class="tab_td8">
+										<!-- 审核通过 -->
+										<div class="adopt_audited">
+											<span></span>
+											<p>审核通过</p>
+										</div>
+									</div>
+									<p class="tab_td4">未投满待审核</p>
+									<p class="tab_td5"><a href="admin_znsc_scgl_scsc.html"><span></span></a></p>
+									<div class="tab_td7">
+										<span class="delete pointer"></span>
+									</div>
+								</li>
+								<li class="tab_table_tr">
+									<p class="tab_td1">1534</p>
+									<div class="tab_td2">
+										<div class="ts_img">
+											<img src="../../img/ico_24.png"/>
+										</div>
+										<a href="admin_znsc_scgl_duanyou.html"><span class="multiline">王者荣耀3-4月投放</span></a>
+									</div>
+									<p class="tab_td3">7,000,000.00</p>
+									<p class="tab_td6">2017.3.15-2018.3.30</p>
+									<div class="tab_td8">
+										<!-- 激活 -->
+										<div class="activation_audited">
+											<span></span>
+											<p>激活</p>
+										</div>
+									</div>
+									<p class="tab_td4">未投满待审核</p>
+									<p class="tab_td5"><a href="admin_znsc_scgl_scsc.html"><span></span></a></p>
+									<div class="tab_td7">
+										<span class="delete pointer"></span>
+									</div>
+								</li>
+								<li class="tab_table_tr">
+									<p class="tab_td1">1534</p>
+									<div class="tab_td2">
+										<div class="ts_img">
+											<img src="../../img/ico_20.png"/>
+										</div>
+										<a href="admin_znsc_scgl_duanyou.html"><span class="multiline">2018年2月单独网吧排期（端游）</span></a>
+									</div>
+									<p class="tab_td3">7,000,000.00</p>
+									<p class="tab_td6">2017.3.15-2018.3.30</p>
+									<div class="tab_td8">
+										<!-- 待审核 -->
+										<div class="wait_audited">
+											<span></span>
+											<p>待审核</p>
+										</div>
+									</div>
+									<p class="tab_td4">投满待审核</p>
+									<p class="tab_td5"><a href="admin_znsc_scgl_scsc.html"><span></span></a></p>
+									<div class="tab_td7">
+										<span class="delete pointer"></span>
+									</div>
+								</li>
+								<li class="tab_table_tr">
+									<p class="tab_td1">1534</p>
+									<div class="tab_td2">
+										<div class="ts_img">
+											<img src="../../img/ico_21.png"/>
+										</div>
+										<a href="admin_znsc_scgl_duanyou.html"><span class="multiline">2018年2月内配广告排期（绝地求生端游）</span></a>
+									</div>
+									<p class="tab_td3">7,000,000.00</p>
+									<p class="tab_td6">2017.3.15-2018.3.30</p>
+									<div class="tab_td8">
+										<!-- 审核通过 -->
+										<div class="adopt_audited">
+											<span></span>
+											<p>审核通过</p>
+										</div>
+									</div>
+									<p class="tab_td4">未投满待审核</p>
+									<p class="tab_td5"><a href="admin_znsc_scgl_scsc.html"><span></span></a></p>
+									<div class="tab_td7">
+										<span class="delete pointer"></span>
+									</div>
+								</li>
+								<li class="tab_table_tr">
+									<p class="tab_td1">1534</p>
+									<div class="tab_td2">
+										<div class="ts_img">
+											<img src="../../img/ico_24.png"/>
+										</div>
+										<a href="admin_znsc_scgl_duanyou.html"><span class="multiline">王者荣耀3-4月投放</span></a>
+									</div>
+									<p class="tab_td3">7,000,000.00</p>
+									<p class="tab_td6">2017.3.15-2018.3.30</p>
+									<div class="tab_td8">
+										<!-- 激活 -->
+										<div class="activation_audited">
+											<span></span>
+											<p>激活</p>
+										</div>
+									</div>
+									<p class="tab_td4">未投满待审核</p>
+									<p class="tab_td5"><a href="admin_znsc_scgl_scsc.html"><span></span></a></p>
+									<div class="tab_td7">
+										<span class="delete pointer"></span>
+									</div>
+								</li>
+								<li class="tab_table_tr">
+									<p class="tab_td1">1534</p>
+									<div class="tab_td2">
+										<div class="ts_img">
+											<img src="../../img/ico_20.png"/>
+										</div>
+										<a href="admin_znsc_scgl_duanyou.html"><span class="multiline">2018年2月单独网吧排期（端游）</span></a>
+									</div>
+									<p class="tab_td3">7,000,000.00</p>
+									<p class="tab_td6">2017.3.15-2018.3.30</p>
+									<div class="tab_td8">
+										<!-- 待审核 -->
+										<div class="wait_audited">
+											<span></span>
+											<p>待审核</p>
+										</div>
+									</div>
+									<p class="tab_td4">投满待审核</p>
+									<p class="tab_td5"><a href="admin_znsc_scgl_scsc.html"><span></span></a></p>
+									<div class="tab_td7">
+										<span class="delete pointer"></span>
+									</div>
+								</li>
+								<li class="tab_table_tr">
+									<p class="tab_td1">1534</p>
+									<div class="tab_td2">
+										<div class="ts_img">
+											<img src="../../img/ico_21.png"/>
+										</div>
+										<a href="admin_znsc_scgl_duanyou.html"><span class="multiline">2018年2月内配广告排期（绝地求生端游）</span></a>
+									</div>
+									<p class="tab_td3">7,000,000.00</p>
+									<p class="tab_td6">2017.3.15-2018.3.30</p>
+									<div class="tab_td8">
+										<!-- 审核通过 -->
+										<div class="adopt_audited">
+											<span></span>
+											<p>审核通过</p>
+										</div>
+									</div>
+									<p class="tab_td4">未投满待审核</p>
+									<p class="tab_td5"><a href="admin_znsc_scgl_scsc.html"><span></span></a></p>
+									<div class="tab_td7">
+										<span class="delete pointer"></span>
+									</div>
+								</li>
+							</ul>
+							
+							<!-- 分页 -->
+							<div class="paging_device">
+								<!-- 左 -->
+								<div class="pd_prev"></div>
+								<ul class="pd_num">
+									<li class="pd_num_active">1</li>
+									<li>2</li>
+									<li>3</li>
+									<li>4</li>
+									<li>5</li>
+								</ul>
+								<!-- 右 -->
+								<div class="pd_next"></div>
+								<p class="pd_page_num">共5页</p>
+							</div>
+						</div>
+						
+						<!-- 手游素材 -->
+						<div class="tab_table hide">
+							<ul class="tab_table_con">
+								<li class="tab_table_tr">
+									<p class="tab_td1">15341</p>
+									<div class="tab_td2">
+										<div class="ts_img">
+											<img src="../../img/ico_20.png"/>
+										</div>
+										<a href="admin_znsc_scgl_shouyou.html"><span>2018年2月单独网吧排期（端游）</span></a>
+									</div>
+									<p class="tab_td3">7,000,000.00</p>
+									<p class="tab_td6">2017.3.15-2018.3.30</p>
+									<div class="tab_td8">
+										<!-- 待审核 -->
+										<div class="wait_audited">
+											<span></span>
+											<p>待审核</p>
+										</div>
+									</div>
+									<p class="tab_td4">投满待审核</p>
+									<p class="tab_td5"><a href="admin_znsc_scgl_scsc.html"><span></span></a></p>
+									<div class="tab_td7">
+										<span class="delete pointer"></span>
+									</div>
+								</li>
+								<li class="tab_table_tr">
+									<p class="tab_td1">1534</p>
+									<div class="tab_td2">
+										<div class="ts_img">
+											<img src="../../img/ico_21.png"/>
+										</div>
+										<a href="admin_znsc_scgl_shouyou.html"><span>2018年2月内配广告排期（绝地求生端游）</span></a>
+									</div>
+									<p class="tab_td3">7,000,000.00</p>
+									<p class="tab_td6">2017.3.15-2018.3.30</p>
+									<div class="tab_td8">
+										<!-- 审核通过 -->
+										<div class="adopt_audited">
+											<span></span>
+											<p>审核通过</p>
+										</div>
+									</div>
+									<p class="tab_td4">未投满待审核</p>
+									<p class="tab_td5"><a href="admin_znsc_scgl_scsc.html"><span></span></a></p>
+									<div class="tab_td7">
+										<span class="delete pointer"></span>
+									</div>
+								</li>
+								<li class="tab_table_tr">
+									<p class="tab_td1">1534</p>
+									<div class="tab_td2">
+										<div class="ts_img">
+											<img src="../../img/ico_24.png"/>
+										</div>
+										<a href="admin_znsc_scgl_shouyou.html"><span>王者荣耀3-4月投放</span></a>
+									</div>
+									<p class="tab_td3">7,000,000.00</p>
+									<p class="tab_td6">2017.3.15-2018.3.30</p>
+									<div class="tab_td8">
+										<!-- 激活 -->
+										<div class="activation_audited">
+											<span></span>
+											<p>激活</p>
+										</div>
+									</div>
+									<p class="tab_td4">未投满待审核</p>
+									<p class="tab_td5"><a href="admin_znsc_scgl_scsc.html"><span></span></a></p>
+									<div class="tab_td7">
+										<span class="delete pointer"></span>
+									</div>
+								</li>
+								<li class="tab_table_tr">
+									<p class="tab_td1">1534</p>
+									<div class="tab_td2">
+										<div class="ts_img">
+											<img src="../../img/ico_20.png"/>
+										</div>
+										<a href="admin_znsc_scgl_shouyou.html"><span>2018年2月单独网吧排期（端游）</span></a>
+									</div>
+									<p class="tab_td3">7,000,000.00</p>
+									<p class="tab_td6">2017.3.15-2018.3.30</p>
+									<div class="tab_td8">
+										<!-- 待审核 -->
+										<div class="wait_audited">
+											<span></span>
+											<p>待审核</p>
+										</div>
+									</div>
+									<p class="tab_td4">投满待审核</p>
+									<p class="tab_td5"><a href="admin_znsc_scgl_scsc.html"><span></span></a></p>
+									<div class="tab_td7">
+										<span class="delete pointer"></span>
+									</div>
+								</li>
+								<li class="tab_table_tr">
+									<p class="tab_td1">1534</p>
+									<div class="tab_td2">
+										<div class="ts_img">
+											<img src="../../img/ico_21.png"/>
+										</div>
+										<a href="admin_znsc_scgl_shouyou.html"><span>2018年2月内配广告排期（绝地求生端游）</span></a>
+									</div>
+									<p class="tab_td3">7,000,000.00</p>
+									<p class="tab_td6">2017.3.15-2018.3.30</p>
+									<div class="tab_td8">
+										<!-- 审核通过 -->
+										<div class="adopt_audited">
+											<span></span>
+											<p>审核通过</p>
+										</div>
+									</div>
+									<p class="tab_td4">未投满待审核</p>
+									<p class="tab_td5"><a href="admin_znsc_scgl_scsc.html"><span></span></a></p>
+									<div class="tab_td7">
+										<span class="delete pointer"></span>
+									</div>
+								</li>
+								<li class="tab_table_tr">
+									<p class="tab_td1">1534</p>
+									<div class="tab_td2">
+										<div class="ts_img">
+											<img src="../../img/ico_24.png"/>
+										</div>
+										<a href="admin_znsc_scgl_shouyou.html"><span>王者荣耀3-4月投放</span></a>
+									</div>
+									<p class="tab_td3">7,000,000.00</p>
+									<p class="tab_td6">2017.3.15-2018.3.30</p>
+									<div class="tab_td8">
+										<!-- 激活 -->
+										<div class="activation_audited">
+											<span></span>
+											<p>激活</p>
+										</div>
+									</div>
+									<p class="tab_td4">未投满待审核</p>
+									<p class="tab_td5"><a href="admin_znsc_scgl_scsc.html"><span></span></a></p>
+									<div class="tab_td7">
+										<span class="delete pointer"></span>
+									</div>
+								</li>
+								<li class="tab_table_tr">
+									<p class="tab_td1">1534</p>
+									<div class="tab_td2">
+										<div class="ts_img">
+											<img src="../../img/ico_20.png"/>
+										</div>
+										<a href="admin_znsc_scgl_shouyou.html"><span>2018年2月单独网吧排期（端游）</span></a>
+									</div>
+									<p class="tab_td3">7,000,000.00</p>
+									<p class="tab_td6">2017.3.15-2018.3.30</p>
+									<div class="tab_td8">
+										<!-- 待审核 -->
+										<div class="wait_audited">
+											<span></span>
+											<p>待审核</p>
+										</div>
+									</div>
+									<p class="tab_td4">投满待审核</p>
+									<p class="tab_td5"><a href="admin_znsc_scgl_scsc.html"><span></span></a></p>
+									<div class="tab_td7">
+										<span class="delete pointer"></span>
+									</div>
+								</li>
+								<li class="tab_table_tr">
+									<p class="tab_td1">1534</p>
+									<div class="tab_td2">
+										<div class="ts_img">
+											<img src="../../img/ico_21.png"/>
+										</div>
+										<a href="admin_znsc_scgl_shouyou.html"><span>2018年2月内配广告排期（绝地求生端游）</span></a>
+									</div>
+									<p class="tab_td3">7,000,000.00</p>
+									<p class="tab_td6">2017.3.15-2018.3.30</p>
+									<div class="tab_td8">
+										<!-- 审核通过 -->
+										<div class="adopt_audited">
+											<span></span>
+											<p>审核通过</p>
+										</div>
+									</div>
+									<p class="tab_td4">未投满待审核</p>
+									<p class="tab_td5"><a href="admin_znsc_scgl_scsc.html"><span></span></a></p>
+									<div class="tab_td7">
+										<span class="delete pointer"></span>
+									</div>
+								</li>
+							</ul>
+							
+							<!-- 分页 -->
+							<div class="paging_device">
+								<!-- 左 -->
+								<div class="pd_prev"></div>
+								<ul class="pd_num">
+									<li class="pd_num_active">1</li>
+									<li>2</li>
+									<li>3</li>
+									<li>4</li>
+									<li>5</li>
+								</ul>
+								<!-- 右 -->
+								<div class="pd_next"></div>
+								<p class="pd_page_num">共5页</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			<div class="admin_popup hide">
+				<!-- 批量删除素材 -->
+				<div class="mtgl_pop batch_delete hide">
+					<div class="admin_popup_close"></div>
+					<h5>批量删除素材</h5>
+					<div class="popup_head">
+						<p class="popup_table_td1 inline_block">
+							<span class="chec pointer">全选</span>
+							<span class="not_chec pointer hide">取消</span>
+						</p>
+						<p class="popup_table_td2 inline_block">游戏名称</p>
+						<p class="popup_table_td3 inline_block">上传人</p>
+						<p class="popup_table_td4 inline_block">素材包名称</p>
+						<p class="popup_table_td5 inline_block">发布时间</p>
+					</div>
+					<ul class="popup_table scroll">
+						<li class="popup_table_tr">
+							<div class="popup_table_td1 inline_block">
+								<label class="input_checkbox">
+									<input type="checkbox" name="" id="" value="" />
+									<span></span>
+								</label>
+							</div>
+							<div class="popup_table_td2 inline_block"><p class="multiline">英雄联盟</p></div>
+							<div class="popup_table_td3 inline_block"><p class="multiline">高大上</p></div>
+							<div class="popup_table_td4 inline_block"><p class="multiline">2018年4月5日英雄联盟第二期</p></div>
+							<div class="popup_table_td5 inline_block"><p class="multiline">2018.4.12 19:00</p></div>
+						</li>
+						<li class="popup_table_tr">
+							<div class="popup_table_td1 inline_block">
+								<label class="input_checkbox">
+									<input type="checkbox" name="" id="" value="" />
+									<span></span>
+								</label>
+							</div>
+							<div class="popup_table_td2 inline_block"><p class="multiline">英雄联盟</p></div>
+							<div class="popup_table_td3 inline_block"><p class="multiline">高大上</p></div>
+							<div class="popup_table_td4 inline_block"><p class="multiline">2018年4月5日英雄联盟第二期</p></div>
+							<div class="popup_table_td5 inline_block"><p class="multiline">2018.4.12 19:00</p></div>
+						</li>
+						<li class="popup_table_tr">
+							<div class="popup_table_td1 inline_block">
+								<label class="input_checkbox">
+									<input type="checkbox" name="" id="" value="" />
+									<span></span>
+								</label>
+							</div>
+							<div class="popup_table_td2 inline_block"><p class="multiline">英雄联盟</p></div>
+							<div class="popup_table_td3 inline_block"><p class="multiline">高大上</p></div>
+							<div class="popup_table_td4 inline_block"><p class="multiline">2018年4月5日英雄联盟第二期</p></div>
+							<div class="popup_table_td5 inline_block"><p class="multiline">2018.4.12 19:00</p></div>
+						</li>
+						<li class="popup_table_tr">
+							<div class="popup_table_td1 inline_block">
+								<label class="input_checkbox">
+									<input type="checkbox" name="" id="" value="" />
+									<span></span>
+								</label>
+							</div>
+							<div class="popup_table_td2 inline_block"><p class="multiline">英雄联盟</p></div>
+							<div class="popup_table_td3 inline_block"><p class="multiline">高大上</p></div>
+							<div class="popup_table_td4 inline_block"><p class="multiline">2018年4月5日英雄联盟第二期</p></div>
+							<div class="popup_table_td5 inline_block"><p class="multiline">2018.4.12 19:00</p></div>
+						</li>
+						<li class="popup_table_tr">
+							<div class="popup_table_td1 inline_block">
+								<label class="input_checkbox">
+									<input type="checkbox" name="" id="" value="" />
+									<span></span>
+								</label>
+							</div>
+							<div class="popup_table_td2 inline_block"><p class="multiline">英雄联盟</p></div>
+							<div class="popup_table_td3 inline_block"><p class="multiline">高大上</p></div>
+							<div class="popup_table_td4 inline_block"><p class="multiline">2018年4月5日英雄联盟第二期</p></div>
+							<div class="popup_table_td5 inline_block"><p class="multiline">2018.4.12 19:00</p></div>
+						</li>
+						<li class="popup_table_tr">
+							<div class="popup_table_td1 inline_block">
+								<label class="input_checkbox">
+									<input type="checkbox" name="" id="" value="" />
+									<span></span>
+								</label>
+							</div>
+							<div class="popup_table_td2 inline_block"><p class="multiline">英雄联盟</p></div>
+							<div class="popup_table_td3 inline_block"><p class="multiline">高大上</p></div>
+							<div class="popup_table_td4 inline_block"><p class="multiline">2018年4月5日英雄联盟第二期</p></div>
+							<div class="popup_table_td5 inline_block"><p class="multiline">2018.4.12 19:00</p></div>
+						</li>
+						<li class="popup_table_tr">
+							<div class="popup_table_td1 inline_block">
+								<label class="input_checkbox">
+									<input type="checkbox" name="" id="" value="" />
+									<span></span>
+								</label>
+							</div>
+							<div class="popup_table_td2 inline_block"><p class="multiline">英雄联盟</p></div>
+							<div class="popup_table_td3 inline_block"><p class="multiline">高大上</p></div>
+							<div class="popup_table_td4 inline_block"><p class="multiline">2018年4月5日英雄联盟第二期</p></div>
+							<div class="popup_table_td5 inline_block"><p class="multiline">2018.4.12 19:00</p></div>
+						</li>
+						<li class="popup_table_tr">
+							<div class="popup_table_td1 inline_block">
+								<label class="input_checkbox">
+									<input type="checkbox" name="" id="" value="" />
+									<span></span>
+								</label>
+							</div>
+							<div class="popup_table_td2 inline_block"><p class="multiline">英雄联盟</p></div>
+							<div class="popup_table_td3 inline_block"><p class="multiline">高大上</p></div>
+							<div class="popup_table_td4 inline_block"><p class="multiline">2018年4月5日英雄联盟第二期</p></div>
+							<div class="popup_table_td5 inline_block"><p class="multiline">2018.4.12 19:00</p></div>
+						</li>
+					</ul>
+				
+					<!-- 按键 -->
+					<div class="bottom_btn">
+						<a href="javascript:" class="gradual_change_btn">删 除</a>
+						<a href="javascript:" class="frame_btn">取 消</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script src="../../js/jquery-1.7.2.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../../js/jquery.mCustomScrollbar.concat.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../../js/admin.js" type="text/javascript" charset="utf-8"></script>
+	</body>
+</html>

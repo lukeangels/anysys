@@ -1,0 +1,4048 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>O2精准广告系统</title>
+		<link rel="stylesheet" type="text/css" href="../../css/public.css"/>
+		<link rel="stylesheet" type="text/css" href="../../css/jquery.mCustomScrollbar.css"/>
+		<link rel="stylesheet" type="text/css" href="../../css/common.css"/>
+		<link rel="stylesheet" type="text/css" href="../../css/admin_style.css"/>
+	</head>
+	<body>
+		<div class="shell">
+			<!-- 左边二级分类导航 -->
+			<!-- 完整导航 -->
+			<div class="left_nav">
+				<div class="left_nav_logo"></div>
+				<!-- 媒体管理 -->
+				<div class="media_manage">
+					<p class="classify_tit"><a href="../media_management/admin_mtgl_pc.html"><span></span>媒体管理</a></p>
+					<ul class="classify_con hide">
+						<li class="cch_xj"><a href="../media_management/admin_mtgl_pc.html"><span></span>PC媒体</a></li>
+						<li class="cch_gl"><a href="../media_management/admin_mtgl_move.html"><span></span>移动媒体</a></li>
+						<li class="cch_tz"><a href="../media_management/admin_mtgl_ggjypt.html"><span></span>广告交易平台</a></li>
+					</ul>
+				</div>
+				
+				<!-- 智能排期 -->
+				<div class="ln_con intel_sche">
+					<p class="classify_tit nav_active"><a href="admin_intel_sche_con.html"><span></span>智能排期(beta)</a></p>
+					<ul class="classify_con">
+						<li class="cc_li_active cch_xj"><a href="admin_intel_sche_con.html"><span></span>新建排期</a></li>
+						<li class="cch_gl"><a href="admin_total_preview.html"><span></span>排期管理</a></li>
+						<li class="cch_tz"><a href="admin_tzjm.html"><span></span>动态优化</a></li>
+					</ul>
+				</div>
+				
+				<!-- 普通排期 -->
+				<div class="ln_con ordin_sche">
+					<p class="classify_tit"><a href="../ordinary_scheduling/admin_ptpq_inf.html"><span></span>普通排期</a></p>
+					<ul class="classify_con hide">
+						<li class="cch_xj"><a href="../ordinary_scheduling/admin_ptpq_inf.html"><span></span>新建排期</a></li>
+						<li class="cch_gl"><a href="../ordinary_scheduling/admin_ptpq_pqgl.html"><span></span>排期管理</a></li>
+					</ul>
+				</div>
+				
+				<!-- 实时竞价排期 -->
+				<div class="ln_con price_sche">
+					<p class="classify_tit"><a href="../shishijingjiapaiqi/admin_ssjjpq_inf.html"><span></span>实时竞价排期</a></p>
+					<ul class="classify_con hide">
+						<li class="cch_xj"><a href="../shishijingjiapaiqi/admin_ssjjpq_inf.html"><span></span>新建排期</a></li>
+						<li class="cch_gl"><a href="../shishijingjiapaiqi/admin_ssjjpq_pqgl.html"><span></span>排期管理</a></li>
+					</ul>
+				</div>
+				
+				<!-- 智能素材 -->
+				<div class="ln_con intel_material">
+					<p class="classify_tit"><a href="../intelligent_material/admin_znsc_scgl.html"><span></span>智能素材</a></p>
+					<ul class="classify_con hide">
+						<li class="cch_xj"><a href="../intelligent_material/admin_znsc_scgl.html"><span></span>素材管理</a></li>
+						<li class="cch_gl"><a href="../intelligent_material/admin_znsc_scsh.html"><span></span>素材审核</a></li>
+					</ul>
+				</div>
+				
+				<!-- 数据中心 -->
+				<div class="ln_con data_center">
+					<p class="classify_tit"><a href=""><span></span>数据中心</a></p>
+					<ul class="classify_con hide">
+						<li class="cch_xj"><a href=""><span></span></a></li>
+						<li class="cch_gl"><a href=""><span></span></a></li>
+						<li class="cch_tz"><a href=""><span></span></a></li>
+					</ul>
+				</div>
+				
+				<!-- DMP精准设置 -->
+				<div class="ln_con precise_setting">
+					<p class="classify_tit"><a href=""><span></span>DMP精准设置</a></p>
+					<ul class="classify_con hide">
+						<li class="cch_xj"><a href=""><span></span></a></li>
+						<li class="cch_gl"><a href=""><span></span></a></li>
+						<li class="cch_tz"><a href=""><span></span></a></li>
+					</ul>
+				</div>
+				
+				<!-- 系统管理 -->
+				<div class="ln_con system_manage">
+					<p class="classify_tit"><a href="../system_management/admin_xtgl_user_settings.html"><span></span>系统管理</a></p>
+					<ul class="classify_con hide">
+						<li class="cch_xj"><a href="../system_management/admin_xtgl_user_settings.html"><span></span>用户管理</a></li>
+						<li class="cch_gl"><a href="../system_management/admin_xtgl_personal_center.html"><span></span>个人中心</a></li>
+						<li class="cch_tz"><a href="../system_management/admin_xtgl_game_management.html"><span></span>游戏管理</a></li>
+						<li class="cch_tz"><a href="../system_management/admin_xtgl_jztfsz.html"><span></span>精准投放设置</a></li>
+					</ul>
+				</div>
+			</div>
+			
+			<!-- 缩略图导航 -->
+			<div class="thumbnail_nav hide">
+				<div class="tn_logo"></div>
+				<ul class="tn_con">
+					<li class="tn_com_li tn_media_manage">
+						<p class="classify_tit"><span class="tn_span"></span>媒体管理</p>
+						<ul class="classify_con hide">
+							<li class="cch_xj"><a href="../media_management/admin_mtgl_pc.html"><span></span>PC媒体</a></li>
+							<li class="cch_gl"><a href="../media_management/admin_mtgl_move.html"><span></span>移动媒体</a></li>
+							<li class="cch_tz"><a href="../media_management/admin_mtgl_ggjypt.html"><span></span>广告交易平台</a></li>
+						</ul>
+					</li>
+					<li class="tn_com_li tn_intel_sche nav_active">
+						<p class="classify_tit"><span class="tn_span"></span>智能排期(beta)</p>
+						<ul class="classify_con hide">
+							<li class="cc_li_active cch_xj"><a href="admin_intel_sche_con.html"><span></span>新建排期</a></li>
+							<li class="cch_gl"><a href="admin_total_preview.html"><span></span>排期管理</a></li>
+							<li class="cch_tz"><a href="admin_tzjm.html"><span></span>动态优化</a></li>
+						</ul>
+					</li>
+					<li class="tn_com_li tn_ordin_sche">
+						<p class="classify_tit"><span class="tn_span"></span>普通排期</p>
+						<ul class="classify_con hide">
+							<li class="cch_xj"><a href="../ordinary_scheduling/admin_ptpq_inf.html"><span></span>新建排期</a></li>
+							<li class="cch_gl"><a href="../ordinary_scheduling/admin_ptpq_pqgl.html"><span></span>排期管理</a></li>
+						</ul>
+					</li>
+					<li class="tn_com_li tn_price_sche">
+						<p class="classify_tit"><span class="tn_span"></span>实时竞价排期</p>
+						<ul class="classify_con hide">
+							<li class="cch_xj"><a href="../shishijingjiapaiqi/admin_ssjjpq_inf.html"><span></span>新建排期</a></li>
+							<li class="cch_gl"><a href="../shishijingjiapaiqi/admin_ssjjpq_pqgl.html"><span></span>排期管理</a></li>
+						</ul>
+					</li>
+					<li class="tn_com_li tn_intel_material">
+						<p class="classify_tit"><span class="tn_span"></span>智能素材</p>
+						<ul class="classify_con hide">
+							<li class="cch_xj"><a href="../intelligent_material/admin_znsc_scgl.html"><span></span>素材管理</a></li>
+							<li class="cch_gl"><a href="../intelligent_material/admin_znsc_scsh.html"><span></span>素材审核</a></li>
+						</ul>
+					</li>
+					<li class="tn_com_li tn_data_center">
+						<p class="classify_tit"><span class="tn_span"></span>数据中心</p>
+						<ul class="classify_con hide">
+							<li class="cch_xj"><a href=""><span></span></a></li>
+							<li class="cch_gl"><a href=""><span></span></a></li>
+							<li class="cch_tz"><a href=""><span></span></a></li>
+						</ul>
+					</li>
+					<li class="tn_com_li tn_precise_setting">
+						<p class="classify_tit"><span class="tn_span"></span>DMP精准设置</p>
+						<ul class="classify_con hide">
+							<li class="cch_xj"><a href=""><span></span></a></li>
+							<li class="cch_gl"><a href=""><span></span></a></li>
+							<li class="cch_tz"><a href=""><span></span></a></li>
+						</ul>
+					</li>
+					<li class="tn_com_li tn_system_manage">
+						<p class="classify_tit"><span class="tn_span"></span>系统管理</p>
+						<ul class="classify_con hide">
+							<li class="cch_xj"><a href="../system_management/admin_xtgl_user_settings.html"><span></span>用户管理</a></li>
+							<li class="cch_gl"><a href="../system_management/admin_xtgl_personal_center.html"><span></span>个人中心</a></li>
+							<li class="cch_tz"><a href="../system_management/admin_xtgl_game_management.html"><span></span>游戏管理</a></li>
+							<li class="cch_tz"><a href="../system_management/admin_xtgl_jztfsz.html"><span></span>精准投放设置</a></li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+			
+			<!-- 右边内容区 -->
+			<div class="right_con">
+				<!-- 排期信息 -->
+				<div class="sche_inf rc">
+					<div class="int_top clearfix">
+						<div class="int_tit">
+							<p><a href="admin_intel_sche_con.html" class="blue">填写排期信息</a></p>
+							<span>></span>
+							<p>智能投放方案</p>
+						</div>
+						<div class="login">
+							<!-- 但没有消息是em为隐藏状态 -->
+							<a href="javascript:" class="mail_btn">
+								<span>
+									<em>2</em>
+								</span>
+							</a>
+							<div class="login_sign_in">
+								<div class="lsi_img">
+									<img src="../../img/ico_16.png"/>
+								</div>
+								<p>艾丽斯...</p>
+								<span class="jt"></span>
+								<div class="lsi_sele hide">
+									<span></span>
+									<p class="qx">权 限<em></em></p>
+									<p class="wb">媒介运营</p>
+									<a href="">退出</a>
+								</div>
+							</div>
+							
+							<!-- 邮件弹窗 -->
+							<div class="mail_popup hide">
+								<span class="mail_popup_triangle"></span>
+								<div class="mail_popup_con_head">
+									<div class="mpch_tab mpch_active">
+										<p>系统通知<span class="hide"></span></p>
+									</div>
+									<!-- 但没有消息是span为隐藏状态 -->
+									<div class="mpch_tab">
+										<p>我的待办<span>2</span></p>
+									</div>
+									<span class="line"></span>
+								</div>
+								<div class="mpc">
+									<ul class="mail_popup_con hide">
+										<li>
+											<div class="mail_popup_con1">
+												<span></span>
+												<p class="mpc_event">动态调整</p>
+												<p class="mpc_time">2018.04.20</p>
+											</div>
+											<p class="mpc_event_con">您的排期《全军出击~2018年4月排期》已经由AI优化完成，请您务必在2018.4.21 16:00前确认 </p>
+											<div class="mpc_see_btn"><a href="">查看详情</a></div>
+										</li>
+										<li>
+											<div class="mail_popup_con1">
+												<span></span>
+												<p class="mpc_event">动态调整</p>
+												<p class="mpc_time">2018.04.20</p>
+											</div>
+											<p class="mpc_event_con">您的排期《全军出击~2018年4月排期》已经由AI优化完成，请您务必在2018.4.21 16:00前确认 </p>
+											<div class="mpc_see_btn"><a href="">查看详情</a></div>
+										</li>
+										<li>
+											<div class="mail_popup_con1">
+												<span></span>
+												<p class="mpc_event">动态调整</p>
+												<p class="mpc_time">2018.04.20</p>
+											</div>
+											<p class="mpc_event_con">您的排期《全军出击~2018年4月排期》已经由AI优化完成，请您务必在2018.4.21 16:00前确认 </p>
+											<div class="mpc_see_btn"><a href="">查看详情</a></div>
+										</li>
+										<li>
+											<div class="mail_popup_con1">
+												<span></span>
+												<p class="mpc_event">动态调整</p>
+												<p class="mpc_time">2018.04.20</p>
+											</div>
+											<p class="mpc_event_con">您的排期《全军出击~2018年4月排期》已经由AI优化完成，请您务必在2018.4.21 16:00前确认 </p>
+											<div class="mpc_see_btn"><a href="">查看详情</a></div>
+										</li>
+									</ul>
+									
+									<!-- 无消息 -->
+									<div class="mpc_not_news">
+										<div class="mpcnn_bg"></div>
+										<p>暂无系统消息</p>
+									</div>
+									<a href="" class="mpc_ckqb_btn">查看全部通知<span></span></a>
+								</div>
+								<div class="mpc hide">
+									<ul class="mail_popup_con">
+										<li>
+											<div class="mail_popup_con1">
+												<span></span>
+												<p class="mpc_event">动态调整</p>
+												<p class="mpc_time">2018.04.20</p>
+											</div>
+											<p class="mpc_event_con">您的排期《全军出击~2018年4月排期》已经由AI优化完成，请您务必在2018.4.21 16:00前确认 </p>
+											<div class="mpc_see_btn"><a href="">查看详情</a></div>
+										</li>
+										<li>
+											<div class="mail_popup_con1">
+												<span></span>
+												<p class="mpc_event">动态调整</p>
+												<p class="mpc_time">2018.04.20</p>
+											</div>
+											<p class="mpc_event_con">您的排期《全军出击~2018年4月排期》已经由AI优化完成，请您务必在2018.4.21 16:00前确认 </p>
+											<div class="mpc_see_btn"><a href="">查看详情</a></div>
+										</li>
+										<li>
+											<div class="mail_popup_con1">
+												<span></span>
+												<p class="mpc_event">动态调整</p>
+												<p class="mpc_time">2018.04.20</p>
+											</div>
+											<p class="mpc_event_con">您的排期《全军出击~2018年4月排期》已经由AI优化完成，请您务必在2018.4.21 16:00前确认 </p>
+											<div class="mpc_see_btn"><a href="">查看详情</a></div>
+										</li>
+									</ul>
+									
+									<!-- 无消息 -->
+									<div class="mpc_not_news hide">
+										<div class="mpcnn_bg"></div>
+										<p>暂无代办</p>
+									</div>
+									<a href="" class="mpc_ckqb_btn">查看全部信息<span></span></a>
+								</div>	
+							</div>
+						</div>
+					</div>
+					
+					<!-- 消息提示 -->
+					<div class="sc_message_hints">
+						<span class="scmh_ico"></span>
+						<p>亲爱的艾丽斯，下午好！您有<em>196</em>个待处理事项<a href="javascript:">立即查看</a></p>
+						<span class="scmh_colse"></span>
+					</div>
+					
+					<div class="si_inf">
+						<div class="si_inf_img">
+							<img src="../../img/ico_17.jpg"/>
+						</div>
+						<div class="si_inf1">
+							<div class="si_inf1_box inline_block">	<!-- 5.29修改 -->
+								<p class="si_inf1_game_name">2018年3月百度原生信息流（安卓）技术联调-传奇霸业</p>
+								<p class="si_inf1_time">投放日期：2018.11.12--2018.12.20</p>
+							</div>
+							<a href="javascript:" class="inline_block"></a>
+						</div>
+						<div class="si_inf2">
+							<p class="si_inf_name">游戏名称</p>
+							<p class="si_inf_con">传奇霸业</p>
+						</div>
+						<div class="si_inf3">
+							<p class="si_inf_name">总费用<span>?</span></p>
+							<p class="si_inf_con">3000000.00元</p>
+						</div>
+						<div class="si_inf4">
+							<p class="si_inf_name">审核人</p>
+							<p class="si_inf_con">爱丽丝</p>
+						</div>
+						<div class="si_inf5">
+							<p class="si_inf_name">投放目的</p>
+							<p class="si_inf_con">拉活跃</p>
+						</div>
+						<div class="si_inf6">
+							<p class="si_inf_name">排期状态</p>
+							<p class="si_inf_con">投放中</p>
+						</div>
+						<div class="si_inf_label">
+							<p class="single_line">排期信息</p>
+						</div>
+					</div>
+					<div class="si_throw_in">
+						<div class="sti_tit clearfix">
+							<h5 class="float_left">智能投放方案</h5>
+							<div class="cpa_configure_btn float_right pointer">
+								<span class="inline_block"></span>
+								<p class="inline_block">配置CPA</p>
+							</div>
+							<div class="newly_added_btn float_right">
+								<span class="inline_block"></span>
+								<p class="inline_block">新建媒体</p>
+							</div>
+						</div>
+						
+						<div class="stic_box">
+							<ul class="si_throw_in_con">
+								<li>
+									<div class="sti_li_left">
+										<div class="sti_li_left_img">
+											<img src="../../img/ico_19.png"/>
+											<p>非凡时代</p>
+											<div class="delete_ico_btn inline_block">
+												<a href="javascript:" class="delete"></a>
+											</div>
+										</div>
+										<div class="sll_cost">
+											<p class="sll_cost_p1">推荐费用</p>
+											<div class="sll_cost_p2">
+												<input type="text" name="" id="" value="8000000.00" />
+												<span>元</span>
+											</div>
+										</div>
+										<div class="sll_cost_proportion">
+											<p class="sll_cost_p1">费用占比</p>
+											<div class="sll_cost_p2">
+												<input type="text" name="" id="" value="26.67" />
+												<span>%</span>
+											</div>
+										</div>
+										<div class="sll_platform_ratio">
+											<p class="spr_tit">平台比例</p>
+											<div class="spr_con">
+												<p><span>安卓</span>60.00%</p>
+												<p><span>IOS</span>40.00%</p>
+											</div>
+										</div>
+									</div>
+									<div class="sti_li_right">
+										<div class="sti_li_right_head">
+											<p class="slrt_td1">推荐广告位</p>
+											<p class="slrt_td6">平台</p> <!-- 5.29修改 -->
+											<p class="slrt_td2">最优单价</p>
+											<p class="slrt_td3">推荐费用/占比</p>
+											<p class="slrt_td4">投放日期</p>
+											<p class="slrt_td5">包断</p>
+											<p class="slrt_td7">配置</p>
+										</div>
+										<div class="sti_li_right_tr">
+											<div class="slrt_td1"><p>非凡时代-andriod-15s贴片-爱奇艺</p></div>
+											<div class="slrt_td6"><p>IOS</p></div> <!-- 5.29修改 -->
+											<div class="slrt_td2"><input type="text" name="" id="" value="5.00" />/ CPM</div>
+											<div class="slrt_td3">
+												<div class="slrt_td_span1">
+													<input type="text" name="" id="" value="4000000.00" />
+													<span>元</span>
+												</div>
+												<div class="slrt_td_span2">
+													<input type="text" name="" id="" value="50.00" />
+													<span>%</span>
+												</div>
+											</div>
+											<div class="slrt_td4">
+												<div class="select">
+													<!-- 点击class="pla"后添加class="ign_bule" -->
+													<div class="pla pla_input"><p>2018.22.32-2018.12.12</p><span></span></div>
+													<div class="opti date_option hide">
+														<!-- 年月数 -->
+														<div class="ilct_years_month clearfix">
+															<div class="ilct_month">
+																<span class="ilctm_left_jt"></span>
+																<span class="ilctm_text">6月</span>
+																<span class="ilctm_right_jt"></span>
+															</div>
+															<div class="ilct_years">
+																<em></em>
+																<span>2018年</span>
+															</div>
+														</div>
+														
+														<div class="ilct_date">
+															<!-- 星期 -->
+															<ul class="ilct_date_week">
+																<li>MON</li>
+																<li>TUE</li>
+																<li>WED</li>
+																<li>THU</li>
+																<li>FRL</li>
+																<li>SAT</li>
+																<li>SUN</li>
+															</ul>
+															
+															<!-- 日期 数-->
+															<ul class="ilct_date_day">
+																<!-- 点击投放日期后状态添加class="ilctd_tf",class="ilct_date_ash"是灰色-->
+																<li>
+																	<div class="ilct_date_ds ilctd_ps1"><div class="ilct_date_ds_con"></div></div> <!-- 选中后的底色 -->
+																	<span class="ilct_date_ash ilctd_tf">30</span>
+																	<span class="ilct_date_ash">31</span>
+																	<span class="ilct_date_ash">1</span>
+																	<span class="ilct_date_ash">2</span>
+																	<span>3</span>
+																	<span>4</span>
+																	<span>5</span>
+																</li>
+																<li>
+																	<div class="ilct_date_ds ilctd_ps2"><div class="ilct_date_ds_con"></div></div> <!-- 选中后的底色 -->
+																	
+																	<!-- 点击截止日期后状态添加class="ilctd_jz" -->
+																	<span>6</span>
+																	<span class="ilctd_jz">7</span>
+																	<span>8</span>
+																	<span>9</span>
+																	<span>10</span>
+																	<span>11</span>
+																	<span>12</span>
+																</li>
+																<li>
+																	<div class="ilct_date_ds ilctd_ps3"><div class="ilct_date_ds_con"></div></div> <!-- 选中后的底色 -->
+																	<span>13</span>
+																	<span>14</span>
+																	<span>15</span>
+																	<span>16</span>
+																	<span>17</span>
+																	<span>18</span>
+																	<span>19</span>
+																</li>
+																<li>
+																	<div class="ilct_date_ds ilctd_ps4"><div class="ilct_date_ds_con"></div></div> <!-- 选中后的底色 -->
+																	<span>20</span>
+																	<span>21</span>
+																	<span>22</span>
+																	<span>23</span>
+																	<span>24</span>
+																	<span>25</span>
+																	<span>26</span>
+																</li>
+																<li>
+																	<div class="ilct_date_ds ilctd_ps5"><div class="ilct_date_ds_con"></div></div> <!-- 选中后的底色 -->
+																	<span>27</span>
+																	<span>28</span>
+																	<span>29</span>
+																	<span>30</span>
+																	<span>1</span>
+																	<span>2</span>
+																	<span>3</span>
+																</li>
+																
+															</ul>
+															<!-- 选择提示 -->
+															<div class="ilctd_choice_prompt">
+																<!-- 点击投放日期前 -->
+																<div class="ilctdcp_p1">请选择开始投放日期</div>
+																
+																<!-- 点击截止日期前 -->
+																<div class="ilctdcp_p2 hide">请选择投放截止日期</div>
+																
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+											<p class="slrt_td5">否</p>
+											<!-- 5.29修改 -->
+											<div class="slrt_td7 inline_block">
+												<a href="javascript:" class="channel_allocation_btn inline_block"></a>
+											</div>
+										</div>
+										<div class="sti_li_right_tr">
+											<div class="slrt_td1"><p>非凡时代-andriod-15s贴片-爱奇艺</p></div>
+											<div class="slrt_td6"><p>安卓</p></div> <!-- 5.29修改 -->
+											<div class="slrt_td2"><input type="text" name="" id="" value="5.00" />/ CPM</div>
+											<div class="slrt_td3">
+												<div class="slrt_td_span1">
+													<input type="text" name="" id="" value="4000000.00" />
+													<span>元</span>
+												</div>
+												<div class="slrt_td_span2">
+													<input type="text" name="" id="" value="50.00" />
+													<span>%</span>
+												</div>
+											</div>
+											<div class="slrt_td4">
+												<div class="select">
+													<!-- 点击class="pla"后添加class="ign_bule" -->
+													<div class="pla pla_input"><p>2018.22.32-2018.12.12</p><span></span></div>
+													<div class="opti date_option hide">
+														<!-- 年月数 -->
+														<div class="ilct_years_month clearfix">
+															<div class="ilct_month">
+																<span class="ilctm_left_jt"></span>
+																<span class="ilctm_text">6月</span>
+																<span class="ilctm_right_jt"></span>
+															</div>
+															<div class="ilct_years">
+																<em></em>
+																<span>2018年</span>
+															</div>
+														</div>
+														
+														<div class="ilct_date">
+															<!-- 星期 -->
+															<ul class="ilct_date_week">
+																<li>MON</li>
+																<li>TUE</li>
+																<li>WED</li>
+																<li>THU</li>
+																<li>FRL</li>
+																<li>SAT</li>
+																<li>SUN</li>
+															</ul>
+															
+															<!-- 日期 数-->
+															<ul class="ilct_date_day">
+																<!-- 点击投放日期后状态添加class="ilctd_tf",class="ilct_date_ash"是灰色-->
+																<li>
+																	<div class="ilct_date_ds ilctd_ps1"><div class="ilct_date_ds_con"></div></div> <!-- 选中后的底色 -->
+																	<span class="ilct_date_ash ilctd_tf">30</span>
+																	<span class="ilct_date_ash">31</span>
+																	<span class="ilct_date_ash">1</span>
+																	<span class="ilct_date_ash">2</span>
+																	<span>3</span>
+																	<span>4</span>
+																	<span>5</span>
+																</li>
+																<li>
+																	<div class="ilct_date_ds ilctd_ps2"><div class="ilct_date_ds_con"></div></div> <!-- 选中后的底色 -->
+																	
+																	<!-- 点击截止日期后状态添加class="ilctd_jz" -->
+																	<span>6</span>
+																	<span class="ilctd_jz">7</span>
+																	<span>8</span>
+																	<span>9</span>
+																	<span>10</span>
+																	<span>11</span>
+																	<span>12</span>
+																</li>
+																<li>
+																	<div class="ilct_date_ds ilctd_ps3"><div class="ilct_date_ds_con"></div></div> <!-- 选中后的底色 -->
+																	<span>13</span>
+																	<span>14</span>
+																	<span>15</span>
+																	<span>16</span>
+																	<span>17</span>
+																	<span>18</span>
+																	<span>19</span>
+																</li>
+																<li>
+																	<div class="ilct_date_ds ilctd_ps4"><div class="ilct_date_ds_con"></div></div> <!-- 选中后的底色 -->
+																	<span>20</span>
+																	<span>21</span>
+																	<span>22</span>
+																	<span>23</span>
+																	<span>24</span>
+																	<span>25</span>
+																	<span>26</span>
+																</li>
+																<li>
+																	<div class="ilct_date_ds ilctd_ps5"><div class="ilct_date_ds_con"></div></div> <!-- 选中后的底色 -->
+																	<span>27</span>
+																	<span>28</span>
+																	<span>29</span>
+																	<span>30</span>
+																	<span>1</span>
+																	<span>2</span>
+																	<span>3</span>
+																</li>
+																
+															</ul>
+															<!-- 选择提示 -->
+															<div class="ilctd_choice_prompt">
+																<!-- 点击投放日期前 -->
+																<div class="ilctdcp_p1">请选择开始投放日期</div>
+																
+																<!-- 点击截止日期前 -->
+																<div class="ilctdcp_p2 hide">请选择投放截止日期</div>
+																
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+											<p class="slrt_td5">否</p>
+											<!-- 5.29修改 -->
+											<div class="slrt_td7 inline_block">
+												<a href="javascript:" class="channel_allocation_btn inline_block"></a>
+											</div>
+										</div>
+									</div>
+								</li>
+								<li>
+									<div class="sti_li_left">
+										<div class="sti_li_left_img">
+											<img src="../../img/ico_18.png"/>
+											<p>多盟DSP</p>
+											<div class="delete_ico_btn inline_block">
+												<a href="javascript:" class="delete"></a>
+											</div>
+										</div>
+										<div class="sll_cost">
+											<p class="sll_cost_p1">推荐费用</p>
+											<div class="sll_cost_p2">
+												<input type="text" name="" id="" value="8000000.00" />
+												<span>元</span>
+											</div>
+										</div>
+										<div class="sll_cost_proportion">
+											<p class="sll_cost_p1">费用占比</p>
+											<div class="sll_cost_p2">
+												<input type="text" name="" id="" value="26.67" />
+												<span>%</span>
+											</div>
+										</div>
+										<div class="sll_platform_ratio">
+											<p class="spr_tit">平台比例</p>
+											<div class="spr_con">
+												<p><span>安卓</span>60.00%</p>
+												<p><span>IOS</span>40.00%</p>
+											</div>
+										</div>
+									</div>
+									<div class="sti_li_right">
+										<div class="sti_li_right_head">
+											<p class="slrt_td1">推荐广告位</p>
+											<p class="slrt_td6">平台</p> <!-- 5.29修改 -->
+											<p class="slrt_td2">最优单价</p>
+											<p class="slrt_td3">推荐费用/占比</p>
+											<p class="slrt_td4">投放日期</p>
+											<p class="slrt_td5">包断</p>
+											<p class="slrt_td7">配置</p>
+										</div>
+										<div class="sti_li_right_tr">
+											<div class="slrt_td1"><p>非凡时代-andriod-15s贴片-爱奇艺</p></div>
+											<div class="slrt_td6"><p>IOS</p></div> <!-- 5.29修改 -->
+											<div class="slrt_td2"><input type="text" name="" id="" value="5.00" />/ CPM</div>
+											<div class="slrt_td3">
+												<div class="slrt_td_span1">
+													<input type="text" name="" id="" value="4000000.00" />
+													<span>元</span>
+												</div>
+												<div class="slrt_td_span2">
+													<input type="text" name="" id="" value="50.00" />
+													<span>%</span>
+												</div>
+											</div>
+											<div class="slrt_td4">
+												<div class="select">
+													<!-- 点击class="pla"后添加class="ign_bule" -->
+													<div class="pla pla_input"><p>2018.22.32-2018.12.12</p><span></span></div>
+													<div class="opti date_option hide">
+														<!-- 年月数 -->
+														<div class="ilct_years_month clearfix">
+															<div class="ilct_month">
+																<span class="ilctm_left_jt"></span>
+																<span class="ilctm_text">6月</span>
+																<span class="ilctm_right_jt"></span>
+															</div>
+															<div class="ilct_years">
+																<em></em>
+																<span>2018年</span>
+															</div>
+														</div>
+														
+														<div class="ilct_date">
+															<!-- 星期 -->
+															<ul class="ilct_date_week">
+																<li>MON</li>
+																<li>TUE</li>
+																<li>WED</li>
+																<li>THU</li>
+																<li>FRL</li>
+																<li>SAT</li>
+																<li>SUN</li>
+															</ul>
+															
+															<!-- 日期 数-->
+															<ul class="ilct_date_day">
+																<!-- 点击投放日期后状态添加class="ilctd_tf",class="ilct_date_ash"是灰色-->
+																<li>
+																	<div class="ilct_date_ds ilctd_ps1"><div class="ilct_date_ds_con"></div></div> <!-- 选中后的底色 -->
+																	<span class="ilct_date_ash ilctd_tf">30</span>
+																	<span class="ilct_date_ash">31</span>
+																	<span class="ilct_date_ash">1</span>
+																	<span class="ilct_date_ash">2</span>
+																	<span>3</span>
+																	<span>4</span>
+																	<span>5</span>
+																</li>
+																<li>
+																	<div class="ilct_date_ds ilctd_ps2"><div class="ilct_date_ds_con"></div></div> <!-- 选中后的底色 -->
+																	
+																	<!-- 点击截止日期后状态添加class="ilctd_jz" -->
+																	<span>6</span>
+																	<span class="ilctd_jz">7</span>
+																	<span>8</span>
+																	<span>9</span>
+																	<span>10</span>
+																	<span>11</span>
+																	<span>12</span>
+																</li>
+																<li>
+																	<div class="ilct_date_ds ilctd_ps3"><div class="ilct_date_ds_con"></div></div> <!-- 选中后的底色 -->
+																	<span>13</span>
+																	<span>14</span>
+																	<span>15</span>
+																	<span>16</span>
+																	<span>17</span>
+																	<span>18</span>
+																	<span>19</span>
+																</li>
+																<li>
+																	<div class="ilct_date_ds ilctd_ps4"><div class="ilct_date_ds_con"></div></div> <!-- 选中后的底色 -->
+																	<span>20</span>
+																	<span>21</span>
+																	<span>22</span>
+																	<span>23</span>
+																	<span>24</span>
+																	<span>25</span>
+																	<span>26</span>
+																</li>
+																<li>
+																	<div class="ilct_date_ds ilctd_ps5"><div class="ilct_date_ds_con"></div></div> <!-- 选中后的底色 -->
+																	<span>27</span>
+																	<span>28</span>
+																	<span>29</span>
+																	<span>30</span>
+																	<span>1</span>
+																	<span>2</span>
+																	<span>3</span>
+																</li>
+																
+															</ul>
+															<!-- 选择提示 -->
+															<div class="ilctd_choice_prompt">
+																<!-- 点击投放日期前 -->
+																<div class="ilctdcp_p1">请选择开始投放日期</div>
+																
+																<!-- 点击截止日期前 -->
+																<div class="ilctdcp_p2 hide">请选择投放截止日期</div>
+																
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+											<p class="slrt_td5">否</p>
+											<!-- 5.29修改 -->
+											<div class="slrt_td7 inline_block">
+												<a href="javascript:" class="channel_allocation_btn inline_block"></a>
+											</div>
+										</div>
+										<div class="sti_li_right_tr">
+											<div class="slrt_td1"><p>非凡时代-andriod-15s贴片-爱奇艺</p></div>
+											<div class="slrt_td6"><p>安卓</p></div> <!-- 5.29修改 -->
+											<div class="slrt_td2"><input type="text" name="" id="" value="5.00" />/ CPM</div>
+											<div class="slrt_td3">
+												<div class="slrt_td_span1">
+													<input type="text" name="" id="" value="4000000.00" />
+													<span>元</span>
+												</div>
+												<div class="slrt_td_span2">
+													<input type="text" name="" id="" value="50.00" />
+													<span>%</span>
+												</div>
+											</div>
+											<div class="slrt_td4">
+												<div class="select">
+													<!-- 点击class="pla"后添加class="ign_bule" -->
+													<div class="pla pla_input"><p>2018.22.32-2018.12.12</p><span></span></div>
+													<div class="opti date_option hide">
+														<!-- 年月数 -->
+														<div class="ilct_years_month clearfix">
+															<div class="ilct_month">
+																<span class="ilctm_left_jt"></span>
+																<span class="ilctm_text">6月</span>
+																<span class="ilctm_right_jt"></span>
+															</div>
+															<div class="ilct_years">
+																<em></em>
+																<span>2018年</span>
+															</div>
+														</div>
+														
+														<div class="ilct_date">
+															<!-- 星期 -->
+															<ul class="ilct_date_week">
+																<li>MON</li>
+																<li>TUE</li>
+																<li>WED</li>
+																<li>THU</li>
+																<li>FRL</li>
+																<li>SAT</li>
+																<li>SUN</li>
+															</ul>
+															
+															<!-- 日期 数-->
+															<ul class="ilct_date_day">
+																<!-- 点击投放日期后状态添加class="ilctd_tf",class="ilct_date_ash"是灰色-->
+																<li>
+																	<div class="ilct_date_ds ilctd_ps1"><div class="ilct_date_ds_con"></div></div> <!-- 选中后的底色 -->
+																	<span class="ilct_date_ash ilctd_tf">30</span>
+																	<span class="ilct_date_ash">31</span>
+																	<span class="ilct_date_ash">1</span>
+																	<span class="ilct_date_ash">2</span>
+																	<span>3</span>
+																	<span>4</span>
+																	<span>5</span>
+																</li>
+																<li>
+																	<div class="ilct_date_ds ilctd_ps2"><div class="ilct_date_ds_con"></div></div> <!-- 选中后的底色 -->
+																	
+																	<!-- 点击截止日期后状态添加class="ilctd_jz" -->
+																	<span>6</span>
+																	<span class="ilctd_jz">7</span>
+																	<span>8</span>
+																	<span>9</span>
+																	<span>10</span>
+																	<span>11</span>
+																	<span>12</span>
+																</li>
+																<li>
+																	<div class="ilct_date_ds ilctd_ps3"><div class="ilct_date_ds_con"></div></div> <!-- 选中后的底色 -->
+																	<span>13</span>
+																	<span>14</span>
+																	<span>15</span>
+																	<span>16</span>
+																	<span>17</span>
+																	<span>18</span>
+																	<span>19</span>
+																</li>
+																<li>
+																	<div class="ilct_date_ds ilctd_ps4"><div class="ilct_date_ds_con"></div></div> <!-- 选中后的底色 -->
+																	<span>20</span>
+																	<span>21</span>
+																	<span>22</span>
+																	<span>23</span>
+																	<span>24</span>
+																	<span>25</span>
+																	<span>26</span>
+																</li>
+																<li>
+																	<div class="ilct_date_ds ilctd_ps5"><div class="ilct_date_ds_con"></div></div> <!-- 选中后的底色 -->
+																	<span>27</span>
+																	<span>28</span>
+																	<span>29</span>
+																	<span>30</span>
+																	<span>1</span>
+																	<span>2</span>
+																	<span>3</span>
+																</li>
+																
+															</ul>
+															<!-- 选择提示 -->
+															<div class="ilctd_choice_prompt">
+																<!-- 点击投放日期前 -->
+																<div class="ilctdcp_p1">请选择开始投放日期</div>
+																
+																<!-- 点击截止日期前 -->
+																<div class="ilctdcp_p2 hide">请选择投放截止日期</div>
+																
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+											<p class="slrt_td5">否</p>
+											<!-- 5.29修改 -->
+											<div class="slrt_td7 inline_block">
+												<a href="javascript:" class="channel_allocation_btn inline_block"></a>
+											</div>
+										</div>
+									</div>
+								</li>
+								<li>
+									<div class="sti_li_left">
+										<div class="sti_li_left_img">
+											<img src="../../img/ico_19.png"/>
+											<p>新浪微博</p>
+											<div class="delete_ico_btn inline_block">
+												<a href="javascript:" class="delete"></a>
+											</div>
+										</div>
+										<div class="sll_cost">
+											<p class="sll_cost_p1">推荐费用</p>
+											<div class="sll_cost_p2">
+												<input type="text" name="" id="" value="8000000.00" />
+												<span>元</span>
+											</div>
+										</div>
+										<div class="sll_cost_proportion">
+											<p class="sll_cost_p1">费用占比</p>
+											<div class="sll_cost_p2">
+												<input type="text" name="" id="" value="26.67" />
+												<span>%</span>
+											</div>
+										</div>
+										<div class="sll_platform_ratio">
+											<p class="spr_tit">平台比例</p>
+											<div class="spr_con">
+												<p><span>安卓</span>60.00%</p>
+												<p><span>IOS</span>40.00%</p>
+											</div>
+										</div>
+									</div>
+									<div class="sti_li_right">
+										<div class="sti_li_right_head">
+											<p class="slrt_td1">推荐广告位</p>
+											<p class="slrt_td6">平台</p> <!-- 5.29修改 -->
+											<p class="slrt_td2">最优单价</p>
+											<p class="slrt_td3">推荐费用/占比</p>
+											<p class="slrt_td4">投放日期</p>
+											<p class="slrt_td5">包断</p>
+											<p class="slrt_td7">配置</p>
+										</div>
+										<div class="sti_li_right_tr">
+											<div class="slrt_td1"><p>非凡时代-andriod-15s贴片-爱奇艺</p></div>
+											<div class="slrt_td6"><p>IOS</p></div> <!-- 5.29修改 -->
+											<div class="slrt_td2"><input type="text" name="" id="" value="5.00" />/ CPM</div>
+											<div class="slrt_td3">
+												<div class="slrt_td_span1">
+													<input type="text" name="" id="" value="4000000.00" />
+													<span>元</span>
+												</div>
+												<div class="slrt_td_span2">
+													<input type="text" name="" id="" value="50.00" />
+													<span>%</span>
+												</div>
+											</div>
+											<div class="slrt_td4">
+												<div class="select">
+													<!-- 点击class="pla"后添加class="ign_bule" -->
+													<div class="pla pla_input"><p>2018.22.32-2018.12.12</p><span></span></div>
+													<div class="opti date_option hide">
+														<!-- 年月数 -->
+														<div class="ilct_years_month clearfix">
+															<div class="ilct_month">
+																<span class="ilctm_left_jt"></span>
+																<span class="ilctm_text">6月</span>
+																<span class="ilctm_right_jt"></span>
+															</div>
+															<div class="ilct_years">
+																<em></em>
+																<span>2018年</span>
+															</div>
+														</div>
+														
+														<div class="ilct_date">
+															<!-- 星期 -->
+															<ul class="ilct_date_week">
+																<li>MON</li>
+																<li>TUE</li>
+																<li>WED</li>
+																<li>THU</li>
+																<li>FRL</li>
+																<li>SAT</li>
+																<li>SUN</li>
+															</ul>
+															
+															<!-- 日期 数-->
+															<ul class="ilct_date_day">
+																<!-- 点击投放日期后状态添加class="ilctd_tf",class="ilct_date_ash"是灰色-->
+																<li>
+																	<div class="ilct_date_ds ilctd_ps1"><div class="ilct_date_ds_con"></div></div> <!-- 选中后的底色 -->
+																	<span class="ilct_date_ash ilctd_tf">30</span>
+																	<span class="ilct_date_ash">31</span>
+																	<span class="ilct_date_ash">1</span>
+																	<span class="ilct_date_ash">2</span>
+																	<span>3</span>
+																	<span>4</span>
+																	<span>5</span>
+																</li>
+																<li>
+																	<div class="ilct_date_ds ilctd_ps2"><div class="ilct_date_ds_con"></div></div> <!-- 选中后的底色 -->
+																	
+																	<!-- 点击截止日期后状态添加class="ilctd_jz" -->
+																	<span>6</span>
+																	<span class="ilctd_jz">7</span>
+																	<span>8</span>
+																	<span>9</span>
+																	<span>10</span>
+																	<span>11</span>
+																	<span>12</span>
+																</li>
+																<li>
+																	<div class="ilct_date_ds ilctd_ps3"><div class="ilct_date_ds_con"></div></div> <!-- 选中后的底色 -->
+																	<span>13</span>
+																	<span>14</span>
+																	<span>15</span>
+																	<span>16</span>
+																	<span>17</span>
+																	<span>18</span>
+																	<span>19</span>
+																</li>
+																<li>
+																	<div class="ilct_date_ds ilctd_ps4"><div class="ilct_date_ds_con"></div></div> <!-- 选中后的底色 -->
+																	<span>20</span>
+																	<span>21</span>
+																	<span>22</span>
+																	<span>23</span>
+																	<span>24</span>
+																	<span>25</span>
+																	<span>26</span>
+																</li>
+																<li>
+																	<div class="ilct_date_ds ilctd_ps5"><div class="ilct_date_ds_con"></div></div> <!-- 选中后的底色 -->
+																	<span>27</span>
+																	<span>28</span>
+																	<span>29</span>
+																	<span>30</span>
+																	<span>1</span>
+																	<span>2</span>
+																	<span>3</span>
+																</li>
+																
+															</ul>
+															<!-- 选择提示 -->
+															<div class="ilctd_choice_prompt">
+																<!-- 点击投放日期前 -->
+																<div class="ilctdcp_p1">请选择开始投放日期</div>
+																
+																<!-- 点击截止日期前 -->
+																<div class="ilctdcp_p2 hide">请选择投放截止日期</div>
+																
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+											<p class="slrt_td5">否</p>
+											<!-- 5.29修改 -->
+											<div class="slrt_td7 inline_block">
+												<a href="javascript:" class="channel_allocation_btn inline_block"></a>
+											</div>
+										</div>
+										<div class="sti_li_right_tr">
+											<div class="slrt_td1"><p>非凡时代-andriod-15s贴片-爱奇艺</p></div>
+											<div class="slrt_td6"><p>安卓</p></div> <!-- 5.29修改 -->
+											<div class="slrt_td2"><input type="text" name="" id="" value="5.00" />/ CPM</div>
+											<div class="slrt_td3">
+												<div class="slrt_td_span1">
+													<input type="text" name="" id="" value="4000000.00" />
+													<span>元</span>
+												</div>
+												<div class="slrt_td_span2">
+													<input type="text" name="" id="" value="50.00" />
+													<span>%</span>
+												</div>
+											</div>
+											<div class="slrt_td4">
+												<div class="select">
+													<!-- 点击class="pla"后添加class="ign_bule" -->
+													<div class="pla pla_input"><p>2018.22.32-2018.12.12</p><span></span></div>
+													<div class="opti date_option hide">
+														<!-- 年月数 -->
+														<div class="ilct_years_month clearfix">
+															<div class="ilct_month">
+																<span class="ilctm_left_jt"></span>
+																<span class="ilctm_text">6月</span>
+																<span class="ilctm_right_jt"></span>
+															</div>
+															<div class="ilct_years">
+																<em></em>
+																<span>2018年</span>
+															</div>
+														</div>
+														
+														<div class="ilct_date">
+															<!-- 星期 -->
+															<ul class="ilct_date_week">
+																<li>MON</li>
+																<li>TUE</li>
+																<li>WED</li>
+																<li>THU</li>
+																<li>FRL</li>
+																<li>SAT</li>
+																<li>SUN</li>
+															</ul>
+															
+															<!-- 日期 数-->
+															<ul class="ilct_date_day">
+																<!-- 点击投放日期后状态添加class="ilctd_tf",class="ilct_date_ash"是灰色-->
+																<li>
+																	<div class="ilct_date_ds ilctd_ps1"><div class="ilct_date_ds_con"></div></div> <!-- 选中后的底色 -->
+																	<span class="ilct_date_ash ilctd_tf">30</span>
+																	<span class="ilct_date_ash">31</span>
+																	<span class="ilct_date_ash">1</span>
+																	<span class="ilct_date_ash">2</span>
+																	<span>3</span>
+																	<span>4</span>
+																	<span>5</span>
+																</li>
+																<li>
+																	<div class="ilct_date_ds ilctd_ps2"><div class="ilct_date_ds_con"></div></div> <!-- 选中后的底色 -->
+																	
+																	<!-- 点击截止日期后状态添加class="ilctd_jz" -->
+																	<span>6</span>
+																	<span class="ilctd_jz">7</span>
+																	<span>8</span>
+																	<span>9</span>
+																	<span>10</span>
+																	<span>11</span>
+																	<span>12</span>
+																</li>
+																<li>
+																	<div class="ilct_date_ds ilctd_ps3"><div class="ilct_date_ds_con"></div></div> <!-- 选中后的底色 -->
+																	<span>13</span>
+																	<span>14</span>
+																	<span>15</span>
+																	<span>16</span>
+																	<span>17</span>
+																	<span>18</span>
+																	<span>19</span>
+																</li>
+																<li>
+																	<div class="ilct_date_ds ilctd_ps4"><div class="ilct_date_ds_con"></div></div> <!-- 选中后的底色 -->
+																	<span>20</span>
+																	<span>21</span>
+																	<span>22</span>
+																	<span>23</span>
+																	<span>24</span>
+																	<span>25</span>
+																	<span>26</span>
+																</li>
+																<li>
+																	<div class="ilct_date_ds ilctd_ps5"><div class="ilct_date_ds_con"></div></div> <!-- 选中后的底色 -->
+																	<span>27</span>
+																	<span>28</span>
+																	<span>29</span>
+																	<span>30</span>
+																	<span>1</span>
+																	<span>2</span>
+																	<span>3</span>
+																</li>
+																
+															</ul>
+															<!-- 选择提示 -->
+															<div class="ilctd_choice_prompt">
+																<!-- 点击投放日期前 -->
+																<div class="ilctdcp_p1">请选择开始投放日期</div>
+																
+																<!-- 点击截止日期前 -->
+																<div class="ilctdcp_p2 hide">请选择投放截止日期</div>
+																
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+											<p class="slrt_td5">否</p>
+											<!-- 5.29修改 -->
+											<div class="slrt_td7 inline_block">
+												<a href="javascript:" class="channel_allocation_btn inline_block"></a>
+											</div>
+										</div>
+									</div>
+								</li>
+							</ul>
+						
+							<!-- 5.29修改 -->
+							<!-- 分页 -->
+							<div class="paging_device">
+								<!-- 左 -->
+								<div class="pd_prev"></div>
+								<ul class="pd_num">
+									<li class="pd_num_active">1</li>
+									<li>2</li>
+									<li>3</li>
+									<li>4</li>
+									<li>5</li>
+								</ul>
+								<!-- 右 -->
+								<div class="pd_next"></div>
+								<p class="pd_page_num">共5页</p>
+							</div>
+						</div>
+						
+					</div>
+					
+					<!-- 5.29修改 -->
+					<div class="si_overview">
+						<h5>方案总览</h5>
+						<div class="sio_head">
+							<p class="sio_td1 inline_block">媒体</p>
+							<p class="sio_td2 inline_block">历史CPA</p>
+							<p class="sio_td3 inline_block">金额</p>
+							<p class="sio_td4 inline_block">比例</p>
+						</div>
+						<ul>
+							<li>
+								<div class="sio_td1 inline_block">
+									<div class="sio_td_img inline_block">
+										<img src="../../img/ico_18.png"/>
+									</div>
+									<p class="inline_block"><span class="multiline">多盟DSP</span></p>
+								</div>
+								<p class="sio_td2 inline_block">34.65</p>
+								<p class="sio_td3 inline_block">200,000,000.00</p>
+								<p class="sio_td4 inline_block">30.65%</p>
+							</li>
+							<li>
+								<div class="sio_td1 inline_block">
+									<div class="sio_td_img inline_block">
+										<img src="../../img/ico_19.png"/>
+									</div>
+									<p class="inline_block"><span class="multiline">非凡时代</span></p>
+								</div>
+								<p class="sio_td2 inline_block">34.65</p>
+								<p class="sio_td3 inline_block">200,000,000.00</p>
+								<p class="sio_td4 inline_block">30.65%</p>
+							</li>
+							<li>
+								<div class="sio_td1 inline_block">
+									<div class="sio_td_img inline_block">
+										<img src="../../img/ico_18.png"/>
+									</div>
+									<p class="inline_block"><span class="multiline">新浪微博</span></p>
+								</div>
+								<p class="sio_td2 inline_block">34.65</p>
+								<p class="sio_td3 inline_block">200,000,000.00</p>
+								<p class="sio_td4 inline_block">30.65%</p>
+							</li>
+						</ul>
+					</div>
+					
+					<!-- 5.29修改 -->
+					<div class="sti_btn bottom_btn">
+						<a href="javascript:" class="he_btn gradual_change_btn">提交审核</a>
+						<a href="javascript:" class="bc_btn frame_btn">保存为草稿</a>
+						<a href="javascript:" class="frame_btn">智能方案生成</a>
+					</div>
+				</div>
+			</div>
+			
+			<!-- 弹窗 -->
+			<div class="admin_popup hide">
+				
+				<!--设置金额与总金额不符  弹窗-->
+				<div class="ap_con set_wrong set_money_wrong  hide">
+					<div class="set_wrong_icon"></div>
+					<p>设置金额与总金额不符!</p>
+					<a href="">重新设置</a>
+				</div>
+				
+				<!--设置占费比错误 弹窗-->
+				<div class="ap_con set_wrong set_percent_wrong hide">
+					<div class="set_wrong_icon"></div>
+					<p>设置费用占比错误!</p>
+					<a href="">重新设置</a>
+				</div>
+				
+				<!-- 保存草稿弹窗 -->
+				<div class="ap_con set_wrong set_save hide">
+					<div class="set_wrong_icon"></div>
+					<p>您的广告方案已经被保存为草稿<br />您可以前往“排期管理”选择“草稿”进行修改提交</p>
+					<a href="">确认</a>
+				</div>
+				
+				<!-- 5.29修改 -->
+				<!-- 渠道配置弹窗 -->
+				<div class="ap_con channel_allocation hide"> <!-- 5.29修改 -->
+					<div class="admin_popup_close"></div>
+					<h5>渠道配置</h5>
+					<div class="ca_table_head">
+						<p class="ca_td1">
+							<span class="chec">全选</span>
+							<span class="not_chec hide">取消</span>
+						</p>
+						<p class="ca_td4">渠道ID</p>
+						<p class="ca_td2">渠道名称</p>
+						<p class="ca_td3">下载链接</p>
+					</div>
+					<ul class="ca_table scroll">
+						<li class="li_tr ca_tr">
+							<div class="ca_td1">
+								<label>
+									<span></span>
+									<input type="checkbox" name="checkbox" value="" />
+								</label>
+							</div>
+							<div class="ca_td4">
+								<p class="single_line">10022244</p>
+							</div>
+							<div class="ca_td2">
+								<p>非凡时代</p>
+							</div>
+							<div class="ca_td3">
+								<input type="text" name="" id="" value="" placeholder="请输入下载链接" class="inline_block"/>
+							</div>
+						</li>
+						<li class="li_tr ca_tr">
+							<div class="ca_td1">
+								<label>
+									<span></span>
+									<input type="checkbox" name="checkbox" value="" />
+								</label>
+							</div>
+							<div class="ca_td4">
+								<p class="single_line">10022244</p>
+							</div>
+							<div class="ca_td2">
+								<p>非凡时代</p>
+							</div>
+							<div class="ca_td3">
+								<input type="text" name="" id="" value="" placeholder="请输入下载链接" class="inline_block"/>
+							</div>
+						</li>
+						<li class="li_tr ca_tr">
+							<div class="ca_td1">
+								<label>
+									<span></span>
+									<input type="checkbox" name="checkbox" value="" />
+								</label>
+							</div>
+							<div class="ca_td4">
+								<p class="single_line">10022244</p>
+							</div>
+							<div class="ca_td2">
+								<p>非凡时代</p>
+							</div>
+							<div class="ca_td3">
+								<input type="text" name="" id="" value="" placeholder="请输入下载链接" class="inline_block"/>
+							</div>
+						</li>
+						<li class="li_tr ca_tr">
+							<div class="ca_td1">
+								<label>
+									<span></span>
+									<input type="checkbox" name="checkbox" value="" />
+								</label>
+							</div>
+							<div class="ca_td4">
+								<p class="single_line">10022244</p>
+							</div>
+							<div class="ca_td2">
+								<p>非凡时代</p>
+							</div>
+							<div class="ca_td3">
+								<input type="text" name="" id="" value="" placeholder="请输入下载链接" class="inline_block"/>
+							</div>
+						</li>
+						<li class="li_tr ca_tr">
+							<div class="ca_td1">
+								<label>
+									<span></span>
+									<input type="checkbox" name="checkbox" value="" />
+								</label>
+							</div>
+							<div class="ca_td4">
+								<p class="single_line">10022244</p>
+							</div>
+							<div class="ca_td2">
+								<p>非凡时代</p>
+							</div>
+							<div class="ca_td3">
+								<input type="text" name="" id="" value="" placeholder="请输入下载链接" class="inline_block"/>
+							</div>
+						</li>
+						<li class="li_tr ca_tr">
+							<div class="ca_td1">
+								<label>
+									<span></span>
+									<input type="checkbox" name="checkbox" value="" />
+								</label>
+							</div>
+							<div class="ca_td4">
+								<p class="single_line">10022244</p>
+							</div>
+							<div class="ca_td2">
+								<p>非凡时代</p>
+							</div>
+							<div class="ca_td3">
+								<input type="text" name="" id="" value="" placeholder="请输入下载链接" class="inline_block"/>
+							</div>
+						</li>
+					</ul>
+					<div class="ca_btn">
+						<a href="" class="ca_btn_confirm">确认</a>
+						<a href="" class="ca_btn_cancel">取消</a>
+					</div>
+				</div>
+			
+				<!-- 修改排期信息 -->
+				<div class="mtgl_pop modify_inf hide">
+					<div class="admin_popup_close"></div>
+					<h5>修改排期信息</h5>
+					<div class="assembly_text">
+						<p class="assembly_text_tit">排期名称</p>
+						<p class="assembly_text_con inline_block single_line">2018年3月百度原生信息流（安卓） 技术联调-传奇霸业</p>
+					</div>
+					<div class="assembly_text">
+						<p class="assembly_text_tit">游戏名称</p>
+						<p class="assembly_text_con inline_block single_line">王者荣耀</p>
+					</div>
+					<div class="assembly_text">
+						<p class="assembly_text_tit">投放日期</p>
+						<div class="select">
+							<!-- 点击class="pla"后添加class="ign_bule" -->
+							<div class="pla pla_input"><p>2018.22.32-2018.12.12</p><span></span></div>
+							<div class="opti date_option hide">
+								<!-- 年月数 -->
+								<div class="ilct_years_month clearfix">
+									<div class="ilct_month">
+										<span class="ilctm_left_jt"></span>
+										<span class="ilctm_text">6月</span>
+										<span class="ilctm_right_jt"></span>
+									</div>
+									<div class="ilct_years">
+										<em></em>
+										<span>2018年</span>
+									</div>
+								</div>
+								
+								<div class="ilct_date">
+									<!-- 星期 -->
+									<ul class="ilct_date_week">
+										<li>MON</li>
+										<li>TUE</li>
+										<li>WED</li>
+										<li>THU</li>
+										<li>FRL</li>
+										<li>SAT</li>
+										<li>SUN</li>
+									</ul>
+									
+									<!-- 日期 数-->
+									<ul class="ilct_date_day">
+										<!-- 点击投放日期后状态添加class="ilctd_tf",class="ilct_date_ash"是灰色-->
+										<li>
+											<div class="ilct_date_ds ilctd_ps1"><div class="ilct_date_ds_con"></div></div> <!-- 选中后的底色 -->
+											<span class="ilct_date_ash ilctd_tf">30</span>
+											<span class="ilct_date_ash">31</span>
+											<span class="ilct_date_ash">1</span>
+											<span class="ilct_date_ash">2</span>
+											<span>3</span>
+											<span>4</span>
+											<span>5</span>
+										</li>
+										<li>
+											<div class="ilct_date_ds ilctd_ps2"><div class="ilct_date_ds_con"></div></div> <!-- 选中后的底色 -->
+											
+											<!-- 点击截止日期后状态添加class="ilctd_jz" -->
+											<span>6</span>
+											<span class="ilctd_jz">7</span>
+											<span>8</span>
+											<span>9</span>
+											<span>10</span>
+											<span>11</span>
+											<span>12</span>
+										</li>
+										<li>
+											<div class="ilct_date_ds ilctd_ps3"><div class="ilct_date_ds_con"></div></div> <!-- 选中后的底色 -->
+											<span>13</span>
+											<span>14</span>
+											<span>15</span>
+											<span>16</span>
+											<span>17</span>
+											<span>18</span>
+											<span>19</span>
+										</li>
+										<li>
+											<div class="ilct_date_ds ilctd_ps4"><div class="ilct_date_ds_con"></div></div> <!-- 选中后的底色 -->
+											<span>20</span>
+											<span>21</span>
+											<span>22</span>
+											<span>23</span>
+											<span>24</span>
+											<span>25</span>
+											<span>26</span>
+										</li>
+										<li>
+											<div class="ilct_date_ds ilctd_ps5"><div class="ilct_date_ds_con"></div></div> <!-- 选中后的底色 -->
+											<span>27</span>
+											<span>28</span>
+											<span>29</span>
+											<span>30</span>
+											<span>1</span>
+											<span>2</span>
+											<span>3</span>
+										</li>
+										
+									</ul>
+									<!-- 选择提示 -->
+									<div class="ilctd_choice_prompt">
+										<!-- 点击投放日期前 -->
+										<div class="ilctdcp_p1">请选择开始投放日期</div>
+										
+										<!-- 点击截止日期前 -->
+										<div class="ilctdcp_p2 hide">请选择投放截止日期</div>
+										
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					
+					<div class="assembly_text">
+						<p class="assembly_text_tit">总费用</p>
+						<input type="text" name="" id="" value="30000000" placeholder="请输入总费用"/>
+					</div>
+					<div class="assembly_text">
+						<p class="assembly_text_tit">审核人</p>
+						<p class="assembly_text_con inline_block single_line">爱丽丝</p>
+					</div>
+					<div class="assembly_text">
+						<p class="assembly_text_tit">投放目的</p>
+						<p class="assembly_text_con inline_block single_line">拉活跃</p>
+					</div>
+					<div class="assembly_text">
+						<p class="assembly_text_tit">排期状态</p>
+						<p class="assembly_text_con inline_block single_line">投放中</p>
+					</div>
+					
+					<!-- 按键 -->
+					<div class="bottom_btn">
+						<a href="javascript:" class="gradual_change_btn">保存</a>
+						<a href="javascript:" class="frame_btn">取消</a>
+					</div>
+				</div>
+			
+				<!-- 新增媒体 -->
+				<div class="mtgl_pop new_media_inf hide">
+					<div class="admin_popup_close"></div>
+					<h5>修改排期信息</h5>
+					<div class="nmi_choice">
+						<div class="select_box">
+							<div class="assembly_text inline_block">
+								<p class="assembly_text_tit">选择媒体</p>
+								<div class="select">
+									<!-- 点击class="iw_pla"后添加class="ign_bule" -->
+									<div class="pla pla_input"><input type="text" placeholder="请选择或输入必选媒体" value=""><span></span></div>
+									
+									<!-- 选择时出现的下拉菜单 -->
+									<div class="opti text_option hide">
+										<span>王者荣耀</span>
+										<span>QQ飞车</span>
+										<span>QQ炫舞</span>
+										<span>奥拉星</span>
+										<span>崩坏3</span>
+										<span>刺激战场</span>
+										<span>楚留香</span>
+										<span>刀塔传奇</span>
+									</div>
+									
+									<!-- 输入时出现的下拉菜单 -->
+									<div class="input_option hide">
+										<span>王者荣耀</span>
+									</div>
+								</div>
+							</div>
+							<!-- 当选择一个媒体后，出现这个媒体框，所有选中的每个都添加在下框中 -->
+							<div class="already_chosen inline_block">
+								<p class="inline_block"><em>英雄联盟</em><span></span></p>
+							</div>
+						</div>
+						<ul class="nmi_choice_con scroll">
+							<li>
+								<div class="sti_li_left">
+									<div class="sti_li_left_img">
+										<img src="../../img/ico_19.png"/>
+										<p>非凡时代</p>
+									</div>
+									<div class="sll_cost">
+										<p class="sll_cost_p1">推荐费用</p>
+										<div class="sll_cost_p2">
+											<input type="text" name="" id="" value="8000000.00" />
+											<span>元</span>
+										</div>
+									</div>
+									<div class="sll_cost_proportion">
+										<p class="sll_cost_p1">费用占比</p>
+										<div class="sll_cost_p2">
+											<input type="text" name="" id="" value="26.67" />
+											<span>%</span>
+										</div>
+									</div>
+								</div>
+								<div class="sti_li_right">
+									<div class="sti_li_right_head">
+										<p class="slrt_td1">广告位</p>
+										<p class="slrt_td6">平台</p> <!-- 5.29修改 -->
+										<p class="slrt_td2">单价设置</p>
+										<p class="slrt_td3">投放费用</p>
+										<p class="slrt_td4">投放日期</p>
+										<p class="slrt_td5">包断</p>
+									</div>
+									<div class="sti_li_right_tr">
+										<div class="slrt_td1"><p>非凡时代-andriod-15s贴片-爱奇艺</p></div>
+										<div class="slrt_td6"><p>IOS</p></div> <!-- 5.29修改 -->
+										<div class="slrt_td2"><input type="text" name="" id="" value="5.00" />/ CPM</div>
+										<div class="slrt_td3">
+											<div class="slrt_td_span1">
+												<input type="text" name="" id="" value="4000000.00" />
+												<span>元</span>
+											</div>
+										</div>
+										<div class="slrt_td4">
+											<div class="select">
+												<!-- 点击class="pla"后添加class="ign_bule" -->
+												<div class="pla pla_input"><p>2018.22.32-2018.12.12</p><span></span></div>
+												<div class="opti date_option hide">
+													<!-- 年月数 -->
+													<div class="ilct_years_month clearfix">
+														<div class="ilct_month">
+															<span class="ilctm_left_jt"></span>
+															<span class="ilctm_text">6月</span>
+															<span class="ilctm_right_jt"></span>
+														</div>
+														<div class="ilct_years">
+															<em></em>
+															<span>2018年</span>
+														</div>
+													</div>
+													
+													<div class="ilct_date">
+														<!-- 星期 -->
+														<ul class="ilct_date_week">
+															<li>MON</li>
+															<li>TUE</li>
+															<li>WED</li>
+															<li>THU</li>
+															<li>FRL</li>
+															<li>SAT</li>
+															<li>SUN</li>
+														</ul>
+														
+														<!-- 日期 数-->
+														<ul class="ilct_date_day">
+															<!-- 点击投放日期后状态添加class="ilctd_tf",class="ilct_date_ash"是灰色-->
+															<li>
+																<div class="ilct_date_ds ilctd_ps1"><div class="ilct_date_ds_con"></div></div> <!-- 选中后的底色 -->
+																<span class="ilct_date_ash ilctd_tf">30</span>
+																<span class="ilct_date_ash">31</span>
+																<span class="ilct_date_ash">1</span>
+																<span class="ilct_date_ash">2</span>
+																<span>3</span>
+																<span>4</span>
+																<span>5</span>
+															</li>
+															<li>
+																<div class="ilct_date_ds ilctd_ps2"><div class="ilct_date_ds_con"></div></div> <!-- 选中后的底色 -->
+																
+																<!-- 点击截止日期后状态添加class="ilctd_jz" -->
+																<span>6</span>
+																<span class="ilctd_jz">7</span>
+																<span>8</span>
+																<span>9</span>
+																<span>10</span>
+																<span>11</span>
+																<span>12</span>
+															</li>
+															<li>
+																<div class="ilct_date_ds ilctd_ps3"><div class="ilct_date_ds_con"></div></div> <!-- 选中后的底色 -->
+																<span>13</span>
+																<span>14</span>
+																<span>15</span>
+																<span>16</span>
+																<span>17</span>
+																<span>18</span>
+																<span>19</span>
+															</li>
+															<li>
+																<div class="ilct_date_ds ilctd_ps4"><div class="ilct_date_ds_con"></div></div> <!-- 选中后的底色 -->
+																<span>20</span>
+																<span>21</span>
+																<span>22</span>
+																<span>23</span>
+																<span>24</span>
+																<span>25</span>
+																<span>26</span>
+															</li>
+															<li>
+																<div class="ilct_date_ds ilctd_ps5"><div class="ilct_date_ds_con"></div></div> <!-- 选中后的底色 -->
+																<span>27</span>
+																<span>28</span>
+																<span>29</span>
+																<span>30</span>
+																<span>1</span>
+																<span>2</span>
+																<span>3</span>
+															</li>
+															
+														</ul>
+														<!-- 选择提示 -->
+														<div class="ilctd_choice_prompt">
+															<!-- 点击投放日期前 -->
+															<div class="ilctdcp_p1">请选择开始投放日期</div>
+															
+															<!-- 点击截止日期前 -->
+															<div class="ilctdcp_p2 hide">请选择投放截止日期</div>
+															
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="slrt_td5 inline_block">
+											<div class="input_radio_con inline_block">
+												<label class="inline_block input_radio_active">
+													<input type="radio" name="whether1" id="" value="" checked="checked">
+													<span></span>
+												</label>
+												<p class="inline_block nmicc_yes">是</p>
+												<label class="inline_block">
+													<input type="radio" name="whether1" id="" value="">
+													<span></span>
+												</label>
+												<p class="inline_block nmicc_no">否</p>
+											</div>
+										</div>
+									</div>
+									<div class="sti_li_right_tr">
+										<div class="slrt_td1"><p>非凡时代-andriod-15s贴片-爱奇艺</p></div>
+										<div class="slrt_td6"><p>IOS</p></div> <!-- 5.29修改 -->
+										<div class="slrt_td2"><input type="text" name="" id="" value="5.00" />/ CPM</div>
+										<div class="slrt_td3">
+											<div class="slrt_td_span1">
+												<input type="text" name="" id="" value="4000000.00" />
+												<span>元</span>
+											</div>
+										</div>
+										<div class="slrt_td4">
+											<div class="select">
+												<!-- 点击class="pla"后添加class="ign_bule" -->
+												<div class="pla pla_input"><p>2018.22.32-2018.12.12</p><span></span></div>
+												<div class="opti date_option hide">
+													<!-- 年月数 -->
+													<div class="ilct_years_month clearfix">
+														<div class="ilct_month">
+															<span class="ilctm_left_jt"></span>
+															<span class="ilctm_text">6月</span>
+															<span class="ilctm_right_jt"></span>
+														</div>
+														<div class="ilct_years">
+															<em></em>
+															<span>2018年</span>
+														</div>
+													</div>
+													
+													<div class="ilct_date">
+														<!-- 星期 -->
+														<ul class="ilct_date_week">
+															<li>MON</li>
+															<li>TUE</li>
+															<li>WED</li>
+															<li>THU</li>
+															<li>FRL</li>
+															<li>SAT</li>
+															<li>SUN</li>
+														</ul>
+														
+														<!-- 日期 数-->
+														<ul class="ilct_date_day">
+															<!-- 点击投放日期后状态添加class="ilctd_tf",class="ilct_date_ash"是灰色-->
+															<li>
+																<div class="ilct_date_ds ilctd_ps1"><div class="ilct_date_ds_con"></div></div> <!-- 选中后的底色 -->
+																<span class="ilct_date_ash ilctd_tf">30</span>
+																<span class="ilct_date_ash">31</span>
+																<span class="ilct_date_ash">1</span>
+																<span class="ilct_date_ash">2</span>
+																<span>3</span>
+																<span>4</span>
+																<span>5</span>
+															</li>
+															<li>
+																<div class="ilct_date_ds ilctd_ps2"><div class="ilct_date_ds_con"></div></div> <!-- 选中后的底色 -->
+																
+																<!-- 点击截止日期后状态添加class="ilctd_jz" -->
+																<span>6</span>
+																<span class="ilctd_jz">7</span>
+																<span>8</span>
+																<span>9</span>
+																<span>10</span>
+																<span>11</span>
+																<span>12</span>
+															</li>
+															<li>
+																<div class="ilct_date_ds ilctd_ps3"><div class="ilct_date_ds_con"></div></div> <!-- 选中后的底色 -->
+																<span>13</span>
+																<span>14</span>
+																<span>15</span>
+																<span>16</span>
+																<span>17</span>
+																<span>18</span>
+																<span>19</span>
+															</li>
+															<li>
+																<div class="ilct_date_ds ilctd_ps4"><div class="ilct_date_ds_con"></div></div> <!-- 选中后的底色 -->
+																<span>20</span>
+																<span>21</span>
+																<span>22</span>
+																<span>23</span>
+																<span>24</span>
+																<span>25</span>
+																<span>26</span>
+															</li>
+															<li>
+																<div class="ilct_date_ds ilctd_ps5"><div class="ilct_date_ds_con"></div></div> <!-- 选中后的底色 -->
+																<span>27</span>
+																<span>28</span>
+																<span>29</span>
+																<span>30</span>
+																<span>1</span>
+																<span>2</span>
+																<span>3</span>
+															</li>
+															
+														</ul>
+														<!-- 选择提示 -->
+														<div class="ilctd_choice_prompt">
+															<!-- 点击投放日期前 -->
+															<div class="ilctdcp_p1">请选择开始投放日期</div>
+															
+															<!-- 点击截止日期前 -->
+															<div class="ilctdcp_p2 hide">请选择投放截止日期</div>
+															
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="slrt_td5 inline_block">
+											<div class="input_radio_con inline_block">
+												<label class="inline_block input_radio_active">
+													<input type="radio" name="whether2" id="" value="" checked="checked">
+													<span></span>
+												</label>
+												<p class="inline_block nmicc_yes">是</p>
+												<label class="inline_block">
+													<input type="radio" name="whether2" id="" value="">
+													<span></span>
+												</label>
+												<p class="inline_block nmicc_no">否</p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="sti_li_left">
+									<div class="sti_li_left_img">
+										<img src="../../img/ico_18.png"/>
+										<p>多盟DSP</p>
+									</div>
+									<div class="sll_cost">
+										<p class="sll_cost_p1">推荐费用</p>
+										<div class="sll_cost_p2">
+											<input type="text" name="" id="" value="8000000.00" />
+											<span>元</span>
+										</div>
+									</div>
+									<div class="sll_cost_proportion">
+										<p class="sll_cost_p1">费用占比</p>
+										<div class="sll_cost_p2">
+											<input type="text" name="" id="" value="26.67" />
+											<span>%</span>
+										</div>
+									</div>
+								</div>
+								<div class="sti_li_right">
+									<div class="sti_li_right_head">
+										<p class="slrt_td1">广告位</p>
+										<p class="slrt_td6">平台</p> <!-- 5.29修改 -->
+										<p class="slrt_td2">单价设置</p>
+										<p class="slrt_td3">投放费用</p>
+										<p class="slrt_td4">投放日期</p>
+										<p class="slrt_td5">包断</p>
+									</div>
+									<div class="sti_li_right_tr">
+										<div class="slrt_td1"><p>多盟DSP-andriod-15s贴片-爱奇艺</p></div>
+										<div class="slrt_td6"><p>IOS</p></div> <!-- 5.29修改 -->
+										<div class="slrt_td2"><input type="text" name="" id="" value="5.00" />/ CPM</div>
+										<div class="slrt_td3">
+											<div class="slrt_td_span1">
+												<input type="text" name="" id="" value="4000000.00" />
+												<span>元</span>
+											</div>
+										</div>
+										<div class="slrt_td4">
+											<div class="select">
+												<!-- 点击class="pla"后添加class="ign_bule" -->
+												<div class="pla pla_input"><p>2018.22.32-2018.12.12</p><span></span></div>
+												<div class="opti date_option hide">
+													<!-- 年月数 -->
+													<div class="ilct_years_month clearfix">
+														<div class="ilct_month">
+															<span class="ilctm_left_jt"></span>
+															<span class="ilctm_text">6月</span>
+															<span class="ilctm_right_jt"></span>
+														</div>
+														<div class="ilct_years">
+															<em></em>
+															<span>2018年</span>
+														</div>
+													</div>
+													
+													<div class="ilct_date">
+														<!-- 星期 -->
+														<ul class="ilct_date_week">
+															<li>MON</li>
+															<li>TUE</li>
+															<li>WED</li>
+															<li>THU</li>
+															<li>FRL</li>
+															<li>SAT</li>
+															<li>SUN</li>
+														</ul>
+														
+														<!-- 日期 数-->
+														<ul class="ilct_date_day">
+															<!-- 点击投放日期后状态添加class="ilctd_tf",class="ilct_date_ash"是灰色-->
+															<li>
+																<div class="ilct_date_ds ilctd_ps1"><div class="ilct_date_ds_con"></div></div> <!-- 选中后的底色 -->
+																<span class="ilct_date_ash ilctd_tf">30</span>
+																<span class="ilct_date_ash">31</span>
+																<span class="ilct_date_ash">1</span>
+																<span class="ilct_date_ash">2</span>
+																<span>3</span>
+																<span>4</span>
+																<span>5</span>
+															</li>
+															<li>
+																<div class="ilct_date_ds ilctd_ps2"><div class="ilct_date_ds_con"></div></div> <!-- 选中后的底色 -->
+																
+																<!-- 点击截止日期后状态添加class="ilctd_jz" -->
+																<span>6</span>
+																<span class="ilctd_jz">7</span>
+																<span>8</span>
+																<span>9</span>
+																<span>10</span>
+																<span>11</span>
+																<span>12</span>
+															</li>
+															<li>
+																<div class="ilct_date_ds ilctd_ps3"><div class="ilct_date_ds_con"></div></div> <!-- 选中后的底色 -->
+																<span>13</span>
+																<span>14</span>
+																<span>15</span>
+																<span>16</span>
+																<span>17</span>
+																<span>18</span>
+																<span>19</span>
+															</li>
+															<li>
+																<div class="ilct_date_ds ilctd_ps4"><div class="ilct_date_ds_con"></div></div> <!-- 选中后的底色 -->
+																<span>20</span>
+																<span>21</span>
+																<span>22</span>
+																<span>23</span>
+																<span>24</span>
+																<span>25</span>
+																<span>26</span>
+															</li>
+															<li>
+																<div class="ilct_date_ds ilctd_ps5"><div class="ilct_date_ds_con"></div></div> <!-- 选中后的底色 -->
+																<span>27</span>
+																<span>28</span>
+																<span>29</span>
+																<span>30</span>
+																<span>1</span>
+																<span>2</span>
+																<span>3</span>
+															</li>
+															
+														</ul>
+														<!-- 选择提示 -->
+														<div class="ilctd_choice_prompt">
+															<!-- 点击投放日期前 -->
+															<div class="ilctdcp_p1">请选择开始投放日期</div>
+															
+															<!-- 点击截止日期前 -->
+															<div class="ilctdcp_p2 hide">请选择投放截止日期</div>
+															
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="slrt_td5 inline_block">
+											<div class="input_radio_con inline_block">
+												<label class="inline_block input_radio_active">
+													<input type="radio" name="whether3" id="" value="" checked="checked">
+													<span></span>
+												</label>
+												<p class="inline_block nmicc_yes">是</p>
+												<label class="inline_block">
+													<input type="radio" name="whether3" id="" value="">
+													<span></span>
+												</label>
+												<p class="inline_block nmicc_no">否</p>
+											</div>
+										</div>
+									</div>
+									<div class="sti_li_right_tr">
+										<div class="slrt_td1"><p>多盟DSP-andriod-15s贴片-爱奇艺</p></div>
+										<div class="slrt_td6"><p>IOS</p></div> <!-- 5.29修改 -->
+										<div class="slrt_td2"><input type="text" name="" id="" value="5.00" />/ CPM</div>
+										<div class="slrt_td3">
+											<div class="slrt_td_span1">
+												<input type="text" name="" id="" value="4000000.00" />
+												<span>元</span>
+											</div>
+										</div>
+										<div class="slrt_td4">
+											<div class="select">
+												<!-- 点击class="pla"后添加class="ign_bule" -->
+												<div class="pla pla_input"><p>2018.22.32-2018.12.12</p><span></span></div>
+												<div class="opti date_option hide">
+													<!-- 年月数 -->
+													<div class="ilct_years_month clearfix">
+														<div class="ilct_month">
+															<span class="ilctm_left_jt"></span>
+															<span class="ilctm_text">6月</span>
+															<span class="ilctm_right_jt"></span>
+														</div>
+														<div class="ilct_years">
+															<em></em>
+															<span>2018年</span>
+														</div>
+													</div>
+													
+													<div class="ilct_date">
+														<!-- 星期 -->
+														<ul class="ilct_date_week">
+															<li>MON</li>
+															<li>TUE</li>
+															<li>WED</li>
+															<li>THU</li>
+															<li>FRL</li>
+															<li>SAT</li>
+															<li>SUN</li>
+														</ul>
+														
+														<!-- 日期 数-->
+														<ul class="ilct_date_day">
+															<!-- 点击投放日期后状态添加class="ilctd_tf",class="ilct_date_ash"是灰色-->
+															<li>
+																<div class="ilct_date_ds ilctd_ps1"><div class="ilct_date_ds_con"></div></div> <!-- 选中后的底色 -->
+																<span class="ilct_date_ash ilctd_tf">30</span>
+																<span class="ilct_date_ash">31</span>
+																<span class="ilct_date_ash">1</span>
+																<span class="ilct_date_ash">2</span>
+																<span>3</span>
+																<span>4</span>
+																<span>5</span>
+															</li>
+															<li>
+																<div class="ilct_date_ds ilctd_ps2"><div class="ilct_date_ds_con"></div></div> <!-- 选中后的底色 -->
+																
+																<!-- 点击截止日期后状态添加class="ilctd_jz" -->
+																<span>6</span>
+																<span class="ilctd_jz">7</span>
+																<span>8</span>
+																<span>9</span>
+																<span>10</span>
+																<span>11</span>
+																<span>12</span>
+															</li>
+															<li>
+																<div class="ilct_date_ds ilctd_ps3"><div class="ilct_date_ds_con"></div></div> <!-- 选中后的底色 -->
+																<span>13</span>
+																<span>14</span>
+																<span>15</span>
+																<span>16</span>
+																<span>17</span>
+																<span>18</span>
+																<span>19</span>
+															</li>
+															<li>
+																<div class="ilct_date_ds ilctd_ps4"><div class="ilct_date_ds_con"></div></div> <!-- 选中后的底色 -->
+																<span>20</span>
+																<span>21</span>
+																<span>22</span>
+																<span>23</span>
+																<span>24</span>
+																<span>25</span>
+																<span>26</span>
+															</li>
+															<li>
+																<div class="ilct_date_ds ilctd_ps5"><div class="ilct_date_ds_con"></div></div> <!-- 选中后的底色 -->
+																<span>27</span>
+																<span>28</span>
+																<span>29</span>
+																<span>30</span>
+																<span>1</span>
+																<span>2</span>
+																<span>3</span>
+															</li>
+															
+														</ul>
+														<!-- 选择提示 -->
+														<div class="ilctd_choice_prompt">
+															<!-- 点击投放日期前 -->
+															<div class="ilctdcp_p1">请选择开始投放日期</div>
+															
+															<!-- 点击截止日期前 -->
+															<div class="ilctdcp_p2 hide">请选择投放截止日期</div>
+															
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="slrt_td5 inline_block">
+											<div class="input_radio_con inline_block">
+												<label class="inline_block input_radio_active">
+													<input type="radio" name="whether4" id="" value="" checked="checked">
+													<span></span>
+												</label>
+												<p class="inline_block nmicc_yes">是</p>
+												<label class="inline_block">
+													<input type="radio" name="whether4" id="" value="">
+													<span></span>
+												</label>
+												<p class="inline_block nmicc_no">否</p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="sti_li_left">
+									<div class="sti_li_left_img">
+										<img src="../../img/ico_19.png"/>
+										<p>新浪微博</p>
+									</div>
+									<div class="sll_cost">
+										<p class="sll_cost_p1">推荐费用</p>
+										<div class="sll_cost_p2">
+											<input type="text" name="" id="" value="8000000.00" />
+											<span>元</span>
+										</div>
+									</div>
+									<div class="sll_cost_proportion">
+										<p class="sll_cost_p1">费用占比</p>
+										<div class="sll_cost_p2">
+											<input type="text" name="" id="" value="26.67" />
+											<span>%</span>
+										</div>
+									</div>
+								</div>
+								<div class="sti_li_right">
+									<div class="sti_li_right_head">
+										<p class="slrt_td1">广告位</p>
+										<p class="slrt_td6">平台</p> <!-- 5.29修改 -->
+										<p class="slrt_td2">单价设置</p>
+										<p class="slrt_td3">投放费用</p>
+										<p class="slrt_td4">投放日期</p>
+										<p class="slrt_td5">包断</p>
+									</div>
+									<div class="sti_li_right_tr">
+										<div class="slrt_td1"><p>新浪微博-andriod-15s贴片-爱奇艺</p></div>
+										<div class="slrt_td6"><p>IOS</p></div> <!-- 5.29修改 -->
+										<div class="slrt_td2"><input type="text" name="" id="" value="5.00" />/ CPM</div>
+										<div class="slrt_td3">
+											<div class="slrt_td_span1">
+												<input type="text" name="" id="" value="4000000.00" />
+												<span>元</span>
+											</div>
+										</div>
+										<div class="slrt_td4">
+											<div class="select">
+												<!-- 点击class="pla"后添加class="ign_bule" -->
+												<div class="pla pla_input"><p>2018.22.32-2018.12.12</p><span></span></div>
+												<div class="opti date_option hide">
+													<!-- 年月数 -->
+													<div class="ilct_years_month clearfix">
+														<div class="ilct_month">
+															<span class="ilctm_left_jt"></span>
+															<span class="ilctm_text">6月</span>
+															<span class="ilctm_right_jt"></span>
+														</div>
+														<div class="ilct_years">
+															<em></em>
+															<span>2018年</span>
+														</div>
+													</div>
+													
+													<div class="ilct_date">
+														<!-- 星期 -->
+														<ul class="ilct_date_week">
+															<li>MON</li>
+															<li>TUE</li>
+															<li>WED</li>
+															<li>THU</li>
+															<li>FRL</li>
+															<li>SAT</li>
+															<li>SUN</li>
+														</ul>
+														
+														<!-- 日期 数-->
+														<ul class="ilct_date_day">
+															<!-- 点击投放日期后状态添加class="ilctd_tf",class="ilct_date_ash"是灰色-->
+															<li>
+																<div class="ilct_date_ds ilctd_ps1"><div class="ilct_date_ds_con"></div></div> <!-- 选中后的底色 -->
+																<span class="ilct_date_ash ilctd_tf">30</span>
+																<span class="ilct_date_ash">31</span>
+																<span class="ilct_date_ash">1</span>
+																<span class="ilct_date_ash">2</span>
+																<span>3</span>
+																<span>4</span>
+																<span>5</span>
+															</li>
+															<li>
+																<div class="ilct_date_ds ilctd_ps2"><div class="ilct_date_ds_con"></div></div> <!-- 选中后的底色 -->
+																
+																<!-- 点击截止日期后状态添加class="ilctd_jz" -->
+																<span>6</span>
+																<span class="ilctd_jz">7</span>
+																<span>8</span>
+																<span>9</span>
+																<span>10</span>
+																<span>11</span>
+																<span>12</span>
+															</li>
+															<li>
+																<div class="ilct_date_ds ilctd_ps3"><div class="ilct_date_ds_con"></div></div> <!-- 选中后的底色 -->
+																<span>13</span>
+																<span>14</span>
+																<span>15</span>
+																<span>16</span>
+																<span>17</span>
+																<span>18</span>
+																<span>19</span>
+															</li>
+															<li>
+																<div class="ilct_date_ds ilctd_ps4"><div class="ilct_date_ds_con"></div></div> <!-- 选中后的底色 -->
+																<span>20</span>
+																<span>21</span>
+																<span>22</span>
+																<span>23</span>
+																<span>24</span>
+																<span>25</span>
+																<span>26</span>
+															</li>
+															<li>
+																<div class="ilct_date_ds ilctd_ps5"><div class="ilct_date_ds_con"></div></div> <!-- 选中后的底色 -->
+																<span>27</span>
+																<span>28</span>
+																<span>29</span>
+																<span>30</span>
+																<span>1</span>
+																<span>2</span>
+																<span>3</span>
+															</li>
+															
+														</ul>
+														<!-- 选择提示 -->
+														<div class="ilctd_choice_prompt">
+															<!-- 点击投放日期前 -->
+															<div class="ilctdcp_p1">请选择开始投放日期</div>
+															
+															<!-- 点击截止日期前 -->
+															<div class="ilctdcp_p2 hide">请选择投放截止日期</div>
+															
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="slrt_td5 inline_block">
+											<div class="input_radio_con inline_block">
+												<label class="inline_block input_radio_active">
+													<input type="radio" name="whether5" id="" value="" checked="checked">
+													<span></span>
+												</label>
+												<p class="inline_block nmicc_yes">是</p>
+												<label class="inline_block">
+													<input type="radio" name="whether5" id="" value="">
+													<span></span>
+												</label>
+												<p class="inline_block nmicc_no">否</p>
+											</div>
+										</div>
+									</div>
+									<div class="sti_li_right_tr">
+										<div class="slrt_td1"><p>新浪微博-andriod-15s贴片-爱奇艺</p></div>
+										<div class="slrt_td6"><p>IOS</p></div> <!-- 5.29修改 -->
+										<div class="slrt_td2"><input type="text" name="" id="" value="5.00" />/ CPM</div>
+										<div class="slrt_td3">
+											<div class="slrt_td_span1">
+												<input type="text" name="" id="" value="4000000.00" />
+												<span>元</span>
+											</div>
+										</div>
+										<div class="slrt_td4">
+											<div class="select">
+												<!-- 点击class="pla"后添加class="ign_bule" -->
+												<div class="pla pla_input"><p>2018.22.32-2018.12.12</p><span></span></div>
+												<div class="opti date_option hide">
+													<!-- 年月数 -->
+													<div class="ilct_years_month clearfix">
+														<div class="ilct_month">
+															<span class="ilctm_left_jt"></span>
+															<span class="ilctm_text">6月</span>
+															<span class="ilctm_right_jt"></span>
+														</div>
+														<div class="ilct_years">
+															<em></em>
+															<span>2018年</span>
+														</div>
+													</div>
+													
+													<div class="ilct_date">
+														<!-- 星期 -->
+														<ul class="ilct_date_week">
+															<li>MON</li>
+															<li>TUE</li>
+															<li>WED</li>
+															<li>THU</li>
+															<li>FRL</li>
+															<li>SAT</li>
+															<li>SUN</li>
+														</ul>
+														
+														<!-- 日期 数-->
+														<ul class="ilct_date_day">
+															<!-- 点击投放日期后状态添加class="ilctd_tf",class="ilct_date_ash"是灰色-->
+															<li>
+																<div class="ilct_date_ds ilctd_ps1"><div class="ilct_date_ds_con"></div></div> <!-- 选中后的底色 -->
+																<span class="ilct_date_ash ilctd_tf">30</span>
+																<span class="ilct_date_ash">31</span>
+																<span class="ilct_date_ash">1</span>
+																<span class="ilct_date_ash">2</span>
+																<span>3</span>
+																<span>4</span>
+																<span>5</span>
+															</li>
+															<li>
+																<div class="ilct_date_ds ilctd_ps2"><div class="ilct_date_ds_con"></div></div> <!-- 选中后的底色 -->
+																
+																<!-- 点击截止日期后状态添加class="ilctd_jz" -->
+																<span>6</span>
+																<span class="ilctd_jz">7</span>
+																<span>8</span>
+																<span>9</span>
+																<span>10</span>
+																<span>11</span>
+																<span>12</span>
+															</li>
+															<li>
+																<div class="ilct_date_ds ilctd_ps3"><div class="ilct_date_ds_con"></div></div> <!-- 选中后的底色 -->
+																<span>13</span>
+																<span>14</span>
+																<span>15</span>
+																<span>16</span>
+																<span>17</span>
+																<span>18</span>
+																<span>19</span>
+															</li>
+															<li>
+																<div class="ilct_date_ds ilctd_ps4"><div class="ilct_date_ds_con"></div></div> <!-- 选中后的底色 -->
+																<span>20</span>
+																<span>21</span>
+																<span>22</span>
+																<span>23</span>
+																<span>24</span>
+																<span>25</span>
+																<span>26</span>
+															</li>
+															<li>
+																<div class="ilct_date_ds ilctd_ps5"><div class="ilct_date_ds_con"></div></div> <!-- 选中后的底色 -->
+																<span>27</span>
+																<span>28</span>
+																<span>29</span>
+																<span>30</span>
+																<span>1</span>
+																<span>2</span>
+																<span>3</span>
+															</li>
+															
+														</ul>
+														<!-- 选择提示 -->
+														<div class="ilctd_choice_prompt">
+															<!-- 点击投放日期前 -->
+															<div class="ilctdcp_p1">请选择开始投放日期</div>
+															
+															<!-- 点击截止日期前 -->
+															<div class="ilctdcp_p2 hide">请选择投放截止日期</div>
+															
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="slrt_td5 inline_block">
+											<div class="input_radio_con inline_block">
+												<label class="inline_block input_radio_active">
+													<input type="radio" name="whether6" id="" value="" checked="checked">
+													<span></span>
+												</label>
+												<p class="inline_block nmicc_yes">是</p>
+												<label class="inline_block">
+													<input type="radio" name="whether6" id="" value="">
+													<span></span>
+												</label>
+												<p class="inline_block nmicc_no">否</p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</li>
+						</ul>
+					</div>
+				
+					<!-- 按键 -->
+					<div class="bottom_btn">
+						<a href="javascript:" class="gradual_change_btn">保存</a>
+						<a href="javascript:" class="frame_btn">取消</a>
+					</div>
+				</div>
+			
+				<!-- 删除弹窗 -->
+				<div class="mtgl_pop mtgl_delete hide">
+					<div class="mtgl_delete_ico"></div>
+					<p>确定删除该方案？</p>
+					<div class="mtgl_delete_btn bottom_btn">
+						<a href="JavaScript:" class="mtgldb_confirm gradual_change_btn">确认</a>
+						<a href="JavaScript:" class="mtgldb_cancel frame_btn">取消</a>
+					</div>
+				</div>
+			
+				<!-- 总费用变化 -->
+				<div class="mtgl_pop total_cost_change hide">
+					<div class="warning_ico"></div>
+					<p class="warning_text">总费用已由600,000.00元变化为865,325.50元确定提交审核？</p>
+					<div class="tcc_btn bottom_btn">
+						<a href="JavaScript:" class="tcc_confirm gradual_change_btn">确认</a>
+						<a href="JavaScript:" class="tcc_cancel frame_btn">取消</a>
+					</div>
+				</div>
+				
+				<!-- 配置CPA提示 -->
+				<div class="mtgl_pop configure_cpa_prompt hide">
+					<div class="warning_ico"></div>
+					<p class="warning_text">您还未配置CPA单价</p>
+					<div class="ccp_btn bottom_btn">
+						<a href="JavaScript:" class="gradual_change_btn">配置CPA</a>
+					</div>
+				</div>
+				
+				<!-- CPA配置 -->
+				<div class="mtgl_pop cpa_configure hide">
+					<div class="admin_popup_close"></div>
+					<h5>CPA配置</h5>
+					<div class="calendar_table">
+						<div class="assembly_text">
+							<p class="assembly_text_tit">选择日期</p>
+							<div class="select">
+								<!-- 点击class="pla"后添加class="ign_bule" -->
+								<div class="pla pla_input"><p>2018.6.5-2018.7.20</p><span></span></div>
+								<div class="opti date_option hide">
+									<!-- 年月数 -->
+									<div class="ilct_years_month clearfix">
+										<div class="ilct_month">
+											<span class="ilctm_left_jt"></span>
+											<span class="ilctm_text">6月</span>
+											<span class="ilctm_right_jt"></span>
+										</div>
+										<div class="ilct_years">
+											<em></em>
+											<span>2018年</span>
+										</div>
+									</div>
+									
+									<div class="ilct_date">
+										<!-- 星期 -->
+										<ul class="ilct_date_week">
+											<li>MON</li>
+											<li>TUE</li>
+											<li>WED</li>
+											<li>THU</li>
+											<li>FRL</li>
+											<li>SAT</li>
+											<li>SUN</li>
+										</ul>
+										
+										<!-- 日期 数-->
+										<ul class="ilct_date_day">
+											<!-- 点击投放日期后状态添加class="ilctd_tf",class="ilct_date_ash"是灰色-->
+											<li>
+												<div class="ilct_date_ds ilctd_ps1"><div class="ilct_date_ds_con"></div></div> <!-- 选中后的底色 -->
+												<span class="ilct_date_ash ilctd_tf">30</span>
+												<span class="ilct_date_ash">31</span>
+												<span class="ilct_date_ash">1</span>
+												<span class="ilct_date_ash">2</span>
+												<span>3</span>
+												<span>4</span>
+												<span>5</span>
+											</li>
+											<li>
+												<div class="ilct_date_ds ilctd_ps2"><div class="ilct_date_ds_con"></div></div> <!-- 选中后的底色 -->
+												
+												<!-- 点击截止日期后状态添加class="ilctd_jz" -->
+												<span>6</span>
+												<span class="ilctd_jz">7</span>
+												<span>8</span>
+												<span>9</span>
+												<span>10</span>
+												<span>11</span>
+												<span>12</span>
+											</li>
+											<li>
+												<div class="ilct_date_ds ilctd_ps3"><div class="ilct_date_ds_con"></div></div> <!-- 选中后的底色 -->
+												<span>13</span>
+												<span>14</span>
+												<span>15</span>
+												<span>16</span>
+												<span>17</span>
+												<span>18</span>
+												<span>19</span>
+											</li>
+											<li>
+												<div class="ilct_date_ds ilctd_ps4"><div class="ilct_date_ds_con"></div></div> <!-- 选中后的底色 -->
+												<span>20</span>
+												<span>21</span>
+												<span>22</span>
+												<span>23</span>
+												<span>24</span>
+												<span>25</span>
+												<span>26</span>
+											</li>
+											<li>
+												<div class="ilct_date_ds ilctd_ps5"><div class="ilct_date_ds_con"></div></div> <!-- 选中后的底色 -->
+												<span>27</span>
+												<span>28</span>
+												<span>29</span>
+												<span>30</span>
+												<span>1</span>
+												<span>2</span>
+												<span>3</span>
+											</li>
+											
+										</ul>
+										<!-- 选择提示 -->
+										<div class="ilctd_choice_prompt">
+											<!-- 点击投放日期前 -->
+											<div class="ilctdcp_p1">请选择开始投放日期</div>
+											
+											<!-- 点击截止日期前 -->
+											<div class="ilctdcp_p2 hide">请选择投放截止日期</div>
+											
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<ul class="calendar_table_week">
+							<li>MON</li>
+							<li>TUE</li>
+							<li>WED</li>
+							<li>THU</li>
+							<li>FRL</li>
+							<li>SAT</li>
+							<li>SUN</li>
+						</ul>
+						<div class="calendar_table_date_box scroll">
+							<div class="calendar_table_date">
+								<div class="ctd_time">
+									<p class="inline_block">2018.6</p>
+									<span></span>
+								</div>
+								<ul class="calendar_table_day">
+									<li>
+										<div class="ctd_con">
+											<p class="ctd_con_date gray_color">28</p>
+											<div class="ctd_con_box">
+												<!-- 显示购买量 -->
+												<p class="ctd_con_num"></p>
+												<!-- 不可选择的灰色 -->
+												<span class="ctd_con_gray"></span>
+	
+												<!-- 已占用，不可填写的红色 -->
+												<span class="ctd_con_red hide"></span>
+	
+												<!-- 可填写购买量的蓝色 -->
+												<span class="ctd_con_blue hide"></span>
+	
+												<!-- 填写购买量 -->
+												<input type="text" name="" id="" value="" class="hide" />
+											</div>
+										</div>
+										<div class="ctd_con">
+											<p class="ctd_con_date gray_color">29</p>
+											<div class="ctd_con_box">
+												<!-- 显示购买量 -->
+												<p class="ctd_con_num"></p>
+												<!-- 不可选择的灰色 -->
+												<span class="ctd_con_gray"></span>
+	
+												<!-- 已占用，不可填写的红色 -->
+												<span class="ctd_con_red hide"></span>
+	
+												<!-- 可填写购买量的蓝色 -->
+												<span class="ctd_con_blue hide"></span>
+	
+												<!-- 填写购买量 -->
+												<input type="text" name="" id="" value="" class="hide" />
+											</div>
+										</div>
+										<div class="ctd_con">
+											<p class="ctd_con_date gray_color">30</p>
+											<div class="ctd_con_box">
+												<!-- 显示购买量 -->
+												<p class="ctd_con_num"></p>
+												<!-- 不可选择的灰色 -->
+												<span class="ctd_con_gray "></span>
+	
+												<!-- 已占用，不可填写的红色 -->
+												<span class="ctd_con_red hide"></span>
+	
+												<!-- 可填写购买量的蓝色 -->
+												<span class="ctd_con_blue hide"></span>
+	
+												<!-- 填写购买量 -->
+												<input type="text" name="" id="" value="" class="hide" />
+											</div>
+										</div>
+										<div class="ctd_con">
+											<p class="ctd_con_date gray_color">31</p>
+											<div class="ctd_con_box">
+												<!-- 显示购买量 -->
+												<p class="ctd_con_num"></p>
+												<!-- 不可选择的灰色 -->
+												<span class="ctd_con_gray"></span>
+	
+												<!-- 已占用，不可填写的红色 -->
+												<span class="ctd_con_red hide"></span>
+	
+												<!-- 可填写购买量的蓝色 -->
+												<span class="ctd_con_blue hide"></span>
+	
+												<!-- 填写购买量 -->
+												<input type="text" name="" id="" value="" class="hide" />
+											</div>
+										</div>
+										<div class="ctd_con">
+											<p class="ctd_con_date">1</p>
+											<div class="ctd_con_box">
+												<!-- 显示购买量 -->
+												<p class="ctd_con_num color_red"></p>
+												<!-- 不可选择的灰色 -->
+												<span class="ctd_con_gray hide"></span>
+	
+												<!-- 已占用，不可填写的红色 -->
+												<span class="ctd_con_red"></span>
+	
+												<!-- 可填写购买量的蓝色 -->
+												<span class="ctd_con_blue hide"></span>
+	
+												<!-- 填写购买量 -->
+												<input type="text" name="" id="" value="" class="hide" />
+											</div>
+										</div>
+										<div class="ctd_con weekend">
+											<p class="ctd_con_date">2</p>
+											<div class="ctd_con_box">
+												<!-- 显示购买量 -->
+												<p class="ctd_con_num color_red">5.3</p>
+												<!-- 不可选择的灰色 -->
+												<span class="ctd_con_gray hide"></span>
+	
+												<!-- 已占用，不可填写的红色 -->
+												<span class="ctd_con_red hide"></span>
+	
+												<!-- 可填写购买量的蓝色 -->
+												<span class="ctd_con_blue hide"></span>
+	
+												<!-- 填写购买量 -->
+												<input type="text" name="" id="" value="" class="hide" />
+											</div>
+										</div>
+										<div class="ctd_con weekend">
+											<p class="ctd_con_date">3</p>
+											<div class="ctd_con_box">
+												<!-- 显示购买量 -->
+												<p class="ctd_con_num"></p>
+												<!-- 不可选择的灰色 -->
+												<span class="ctd_con_gray hide"></span>
+	
+												<!-- 已占用，不可填写的红色 -->
+												<span class="ctd_con_red"></span>
+	
+												<!-- 可填写购买量的蓝色 -->
+												<span class="ctd_con_blue hide"></span>
+	
+												<!-- 填写购买量 -->
+												<input type="text" name="" id="" value="" class="hide" />
+											</div>
+										</div>
+									</li>
+									<li>
+										<div class="ctd_con">
+											<p class="ctd_con_date">4</p>
+											<div class="ctd_con_box">
+												<!-- 显示购买量 -->
+												<p class="ctd_con_num"></p>
+												<!-- 不可选择的灰色 -->
+												<span class="ctd_con_gray hide"></span>
+	
+												<!-- 已占用，不可填写的红色 -->
+												<span class="ctd_con_red"></span>
+	
+												<!-- 可填写购买量的蓝色 -->
+												<span class="ctd_con_blue hide"></span>
+	
+												<!-- 填写购买量 -->
+												<input type="text" name="" id="" value="" class="hide" />
+											</div>
+										</div>
+										<div class="ctd_con">
+											<p class="ctd_con_date">5</p>
+											<div class="ctd_con_box">
+												<!-- 显示购买量 -->
+												<p class="ctd_con_num"></p>
+												<!-- 不可选择的灰色 -->
+												<span class="ctd_con_gray hide"></span>
+	
+												<!-- 已占用，不可填写的红色 -->
+												<span class="ctd_con_red hide"></span>
+	
+												<!-- 可填写购买量的蓝色 -->
+												<span class="ctd_con_blue"></span>
+	
+												<!-- 填写购买量 -->
+												<input type="text" name="" id="" value="" class="hide" />
+											</div>
+										</div>
+										<div class="ctd_con">
+											<p class="ctd_con_date">6</p>
+											<div class="ctd_con_box">
+												<!-- 显示购买量 -->
+												<p class="ctd_con_num"></p>
+												<!-- 不可选择的灰色 -->
+												<span class="ctd_con_gray hide"></span>
+	
+												<!-- 已占用，不可填写的红色 -->
+												<span class="ctd_con_red hide"></span>
+	
+												<!-- 可填写购买量的蓝色 -->
+												<span class="ctd_con_blue"></span>
+	
+												<!-- 填写购买量 -->
+												<input type="text" name="" id="" value="" class="hide" />
+											</div>
+										</div>
+										<div class="ctd_con">
+											<p class="ctd_con_date">7</p>
+											<div class="ctd_con_box">
+												<!-- 显示购买量 -->
+												<p class="ctd_con_num"></p>
+												<!-- 不可选择的灰色 -->
+												<span class="ctd_con_gray hide"></span>
+	
+												<!-- 已占用，不可填写的红色 -->
+												<span class="ctd_con_red hide"></span>
+	
+												<!-- 可填写购买量的蓝色 -->
+												<span class="ctd_con_blue"></span>
+	
+												<!-- 填写购买量 -->
+												<input type="text" name="" id="" value="" class="hide" />
+											</div>
+										</div>
+										<div class="ctd_con">
+											<p class="ctd_con_date">8</p>
+											<div class="ctd_con_box">
+												<!-- 显示购买量 -->
+												<p class="ctd_con_num"></p>
+												<!-- 不可选择的灰色 -->
+												<span class="ctd_con_gray hide"></span>
+	
+												<!-- 已占用，不可填写的红色 -->
+												<span class="ctd_con_red hide"></span>
+	
+												<!-- 可填写购买量的蓝色 -->
+												<span class="ctd_con_blue"></span>
+	
+												<!-- 填写购买量 -->
+												<input type="text" name="" id="" value="" class="hide" />
+											</div>
+										</div>
+										<div class="ctd_con weekend">
+											<p class="ctd_con_date">9</p>
+											<div class="ctd_con_box">
+												<!-- 显示购买量 -->
+												<p class="ctd_con_num"></p>
+												<!-- 不可选择的灰色 -->
+												<span class="ctd_con_gray hide"></span>
+	
+												<!-- 已占用，不可填写的红色 -->
+												<span class="ctd_con_red hide"></span>
+	
+												<!-- 可填写购买量的蓝色 -->
+												<span class="ctd_con_blue"></span>
+	
+												<!-- 填写购买量 -->
+												<input type="text" name="" id="" value="" class="hide" />
+											</div>
+										</div>
+										<div class="ctd_con weekend">
+											<p class="ctd_con_date">10</p>
+											<div class="ctd_con_box">
+												<!-- 显示购买量 -->
+												<p class="ctd_con_num"></p>
+												<!-- 不可选择的灰色 -->
+												<span class="ctd_con_gray hide"></span>
+	
+												<!-- 已占用，不可填写的红色 -->
+												<span class="ctd_con_red hide"></span>
+	
+												<!-- 可填写购买量的蓝色 -->
+												<span class="ctd_con_blue"></span>
+	
+												<!-- 填写购买量 -->
+												<input type="text" name="" id="" value="" class="hide" />
+											</div>
+										</div>
+									</li>
+									<li>
+										<div class="ctd_con">
+											<p class="ctd_con_date">11</p>
+											<div class="ctd_con_box">
+												<!-- 显示购买量 -->
+												<p class="ctd_con_num"></p>
+												<!-- 不可选择的灰色 -->
+												<span class="ctd_con_gray hide"></span>
+	
+												<!-- 已占用，不可填写的红色 -->
+												<span class="ctd_con_red hide"></span>
+	
+												<!-- 可填写购买量的蓝色 -->
+												<span class="ctd_con_blue"></span>
+	
+												<!-- 填写购买量 -->
+												<input type="text" name="" id="" value="" class="hide" />
+											</div>
+										</div>
+										<div class="ctd_con">
+											<p class="ctd_con_date">12</p>
+											<div class="ctd_con_box">
+												<!-- 显示购买量 -->
+												<p class="ctd_con_num"></p>
+												<!-- 不可选择的灰色 -->
+												<span class="ctd_con_gray hide"></span>
+	
+												<!-- 已占用，不可填写的红色 -->
+												<span class="ctd_con_red hide"></span>
+	
+												<!-- 可填写购买量的蓝色 -->
+												<span class="ctd_con_blue"></span>
+	
+												<!-- 填写购买量 -->
+												<input type="text" name="" id="" value="" class="hide" />
+											</div>
+										</div>
+										<div class="ctd_con">
+											<p class="ctd_con_date">13</p>
+											<div class="ctd_con_box">
+												<!-- 显示购买量 -->
+												<p class="ctd_con_num"></p>
+												<!-- 不可选择的灰色 -->
+												<span class="ctd_con_gray hide"></span>
+	
+												<!-- 已占用，不可填写的红色 -->
+												<span class="ctd_con_red hide"></span>
+	
+												<!-- 可填写购买量的蓝色 -->
+												<span class="ctd_con_blue"></span>
+	
+												<!-- 填写购买量 -->
+												<input type="text" name="" id="" value="" class="hide" />
+											</div>
+										</div>
+										<div class="ctd_con">
+											<p class="ctd_con_date">14</p>
+											<div class="ctd_con_box">
+												<!-- 显示购买量 -->
+												<p class="ctd_con_num"></p>
+												<!-- 不可选择的灰色 -->
+												<span class="ctd_con_gray hide"></span>
+	
+												<!-- 已占用，不可填写的红色 -->
+												<span class="ctd_con_red hide"></span>
+	
+												<!-- 可填写购买量的蓝色 -->
+												<span class="ctd_con_blue"></span>
+	
+												<!-- 填写购买量 -->
+												<input type="text" name="" id="" value="" class="hide" />
+											</div>
+										</div>
+										<div class="ctd_con">
+											<p class="ctd_con_date">15</p>
+											<div class="ctd_con_box">
+												<!-- 显示购买量 -->
+												<p class="ctd_con_num"></p>
+												<!-- 不可选择的灰色 -->
+												<span class="ctd_con_gray hide"></span>
+	
+												<!-- 已占用，不可填写的红色 -->
+												<span class="ctd_con_red"></span>
+	
+												<!-- 可填写购买量的蓝色 -->
+												<span class="ctd_con_blue hide"></span>
+	
+												<!-- 填写购买量 -->
+												<input type="text" name="" id="" value="" class="hide" />
+											</div>
+										</div>
+										<div class="ctd_con weekend">
+											<p class="ctd_con_date">16</p>
+											<div class="ctd_con_box">
+												<!-- 显示购买量 -->
+												<p class="ctd_con_num"></p>
+												<!-- 不可选择的灰色 -->
+												<span class="ctd_con_gray hide"></span>
+	
+												<!-- 已占用，不可填写的红色 -->
+												<span class="ctd_con_red"></span>
+	
+												<!-- 可填写购买量的蓝色 -->
+												<span class="ctd_con_blue hide"></span>
+	
+												<!-- 填写购买量 -->
+												<input type="text" name="" id="" value="" class="hide" />
+											</div>
+										</div>
+										<div class="ctd_con weekend">
+											<p class="ctd_con_date">17</p>
+											<div class="ctd_con_box">
+												<!-- 显示购买量 -->
+												<p class="ctd_con_num"></p>
+												<!-- 不可选择的灰色 -->
+												<span class="ctd_con_gray hide"></span>
+	
+												<!-- 已占用，不可填写的红色 -->
+												<span class="ctd_con_red hide"></span>
+	
+												<!-- 可填写购买量的蓝色 -->
+												<span class="ctd_con_blue"></span>
+	
+												<!-- 填写购买量 -->
+												<input type="text" name="" id="" value="" class="hide" />
+											</div>
+										</div>
+									</li>
+									<li>
+										<div class="ctd_con">
+											<p class="ctd_con_date">18</p>
+											<div class="ctd_con_box">
+												<!-- 显示购买量 -->
+												<p class="ctd_con_num"></p>
+												<!-- 不可选择的灰色 -->
+												<span class="ctd_con_gray hide"></span>
+	
+												<!-- 已占用，不可填写的红色 -->
+												<span class="ctd_con_red hide"></span>
+	
+												<!-- 可填写购买量的蓝色 -->
+												<span class="ctd_con_blue"></span>
+	
+												<!-- 填写购买量 -->
+												<input type="text" name="" id="" value="" class="hide" />
+											</div>
+										</div>
+										<div class="ctd_con">
+											<p class="ctd_con_date">19</p>
+											<div class="ctd_con_box">
+												<!-- 显示购买量 -->
+												<p class="ctd_con_num"></p>
+												<!-- 不可选择的灰色 -->
+												<span class="ctd_con_gray hide"></span>
+	
+												<!-- 已占用，不可填写的红色 -->
+												<span class="ctd_con_red hide"></span>
+	
+												<!-- 可填写购买量的蓝色 -->
+												<span class="ctd_con_blue"></span>
+	
+												<!-- 填写购买量 -->
+												<input type="text" name="" id="" value="" class="hide" />
+											</div>
+										</div>
+										<div class="ctd_con">
+											<p class="ctd_con_date">20</p>
+											<div class="ctd_con_box">
+												<!-- 显示购买量 -->
+												<p class="ctd_con_num"></p>
+												<!-- 不可选择的灰色 -->
+												<span class="ctd_con_gray hide"></span>
+	
+												<!-- 已占用，不可填写的红色 -->
+												<span class="ctd_con_red hide"></span>
+	
+												<!-- 可填写购买量的蓝色 -->
+												<span class="ctd_con_blue"></span>
+	
+												<!-- 填写购买量 -->
+												<input type="text" name="" id="" value="" class="hide" />
+											</div>
+										</div>
+										<div class="ctd_con">
+											<p class="ctd_con_date">21</p>
+											<div class="ctd_con_box">
+												<!-- 显示购买量 -->
+												<p class="ctd_con_num"></p>
+												<!-- 不可选择的灰色 -->
+												<span class="ctd_con_gray hide"></span>
+	
+												<!-- 已占用，不可填写的红色 -->
+												<span class="ctd_con_red hide"></span>
+	
+												<!-- 可填写购买量的蓝色 -->
+												<span class="ctd_con_blue"></span>
+	
+												<!-- 填写购买量 -->
+												<input type="text" name="" id="" value="" class="hide" />
+											</div>
+										</div>
+										<div class="ctd_con">
+											<p class="ctd_con_date">22</p>
+											<div class="ctd_con_box">
+												<!-- 显示购买量 -->
+												<p class="ctd_con_num"></p>
+												<!-- 不可选择的灰色 -->
+												<span class="ctd_con_gray hide"></span>
+	
+												<!-- 已占用，不可填写的红色 -->
+												<span class="ctd_con_red hide"></span>
+	
+												<!-- 可填写购买量的蓝色 -->
+												<span class="ctd_con_blue"></span>
+	
+												<!-- 填写购买量 -->
+												<input type="text" name="" id="" value="" class="hide" />
+											</div>
+										</div>
+										<div class="ctd_con  weekend">
+											<p class="ctd_con_date">23</p>
+											<div class="ctd_con_box">
+												<!-- 显示购买量 -->
+												<p class="ctd_con_num"></p>
+												<!-- 不可选择的灰色 -->
+												<span class="ctd_con_gray hide"></span>
+	
+												<!-- 已占用，不可填写的红色 -->
+												<span class="ctd_con_red hide"></span>
+	
+												<!-- 可填写购买量的蓝色 -->
+												<span class="ctd_con_blue"></span>
+	
+												<!-- 填写购买量 -->
+												<input type="text" name="" id="" value="" class="hide" />
+											</div>
+										</div>
+										<div class="ctd_con  weekend">
+											<p class="ctd_con_date">24</p>
+											<div class="ctd_con_box">
+												<!-- 显示购买量 -->
+												<p class="ctd_con_num"></p>
+												<!-- 不可选择的灰色 -->
+												<span class="ctd_con_gray hide"></span>
+	
+												<!-- 已占用，不可填写的红色 -->
+												<span class="ctd_con_red hide"></span>
+	
+												<!-- 可填写购买量的蓝色 -->
+												<span class="ctd_con_blue"></span>
+	
+												<!-- 填写购买量 -->
+												<input type="text" name="" id="" value="" class="hide" />
+											</div>
+										</div>
+									</li>
+									<li>
+										<div class="ctd_con">
+											<p class="ctd_con_date">25</p>
+											<div class="ctd_con_box">
+												<!-- 显示购买量 -->
+												<p class="ctd_con_num"></p>
+												<!-- 不可选择的灰色 -->
+												<span class="ctd_con_gray hide"></span>
+	
+												<!-- 已占用，不可填写的红色 -->
+												<span class="ctd_con_red hide"></span>
+	
+												<!-- 可填写购买量的蓝色 -->
+												<span class="ctd_con_blue"></span>
+	
+												<!-- 填写购买量 -->
+												<input type="text" name="" id="" value="" class="hide" />
+											</div>
+										</div>
+										<div class="ctd_con">
+											<p class="ctd_con_date">26</p>
+											<div class="ctd_con_box">
+												<!-- 显示购买量 -->
+												<p class="ctd_con_num"></p>
+												<!-- 不可选择的灰色 -->
+												<span class="ctd_con_gray hide"></span>
+	
+												<!-- 已占用，不可填写的红色 -->
+												<span class="ctd_con_red hide"></span>
+	
+												<!-- 可填写购买量的蓝色 -->
+												<span class="ctd_con_blue"></span>
+	
+												<!-- 填写购买量 -->
+												<input type="text" name="" id="" value="" class="hide" />
+											</div>
+										</div>
+										<div class="ctd_con">
+											<p class="ctd_con_date">27</p>
+											<div class="ctd_con_box">
+												<!-- 显示购买量 -->
+												<p class="ctd_con_num"></p>
+												<!-- 不可选择的灰色 -->
+												<span class="ctd_con_gray hide"></span>
+	
+												<!-- 已占用，不可填写的红色 -->
+												<span class="ctd_con_red hide"></span>
+	
+												<!-- 可填写购买量的蓝色 -->
+												<span class="ctd_con_blue"></span>
+	
+												<!-- 填写购买量 -->
+												<input type="text" name="" id="" value="" class="hide" />
+											</div>
+										</div>
+										<div class="ctd_con">
+											<p class="ctd_con_date">28</p>
+											<div class="ctd_con_box">
+												<!-- 显示购买量 -->
+												<p class="ctd_con_num"></p>
+												<!-- 不可选择的灰色 -->
+												<span class="ctd_con_gray hide"></span>
+	
+												<!-- 已占用，不可填写的红色 -->
+												<span class="ctd_con_red hide"></span>
+	
+												<!-- 可填写购买量的蓝色 -->
+												<span class="ctd_con_blue"></span>
+	
+												<!-- 填写购买量 -->
+												<input type="text" name="" id="" value="" class="hide" />
+											</div>
+										</div>
+										<div class="ctd_con">
+											<p class="ctd_con_date">29</p>
+											<div class="ctd_con_box">
+												<!-- 显示购买量 -->
+												<p class="ctd_con_num"></p>
+												<!-- 不可选择的灰色 -->
+												<span class="ctd_con_gray hide"></span>
+	
+												<!-- 已占用，不可填写的红色 -->
+												<span class="ctd_con_red"></span>
+	
+												<!-- 可填写购买量的蓝色 -->
+												<span class="ctd_con_blue hide"></span>
+	
+												<!-- 填写购买量 -->
+												<input type="text" name="" id="" value="" class="hide" />
+											</div>
+										</div>
+										<div class="ctd_con weekend">
+											<p class="ctd_con_date">30</p>
+											<div class="ctd_con_box">
+												<!-- 显示购买量 -->
+												<p class="ctd_con_num"></p>
+												<!-- 不可选择的灰色 -->
+												<span class="ctd_con_gray hide"></span>
+	
+												<!-- 已占用，不可填写的红色 -->
+												<span class="ctd_con_red hide"></span>
+	
+												<!-- 可填写购买量的蓝色 -->
+												<span class="ctd_con_blue"></span>
+	
+												<!-- 填写购买量 -->
+												<input type="text" name="" id="" value="" class="hide" />
+											</div>
+										</div>
+										<div class="ctd_con weekend">
+											<p class="ctd_con_date gray_color">1</p>
+											<div class="ctd_con_box">
+												<!-- 显示购买量 -->
+												<p class="ctd_con_num"></p>
+												<!-- 不可选择的灰色 -->
+												<span class="ctd_con_gray"></span>
+	
+												<!-- 已占用，不可填写的红色 -->
+												<span class="ctd_con_red hide"></span>
+	
+												<!-- 可填写购买量的蓝色 -->
+												<span class="ctd_con_blue hide"></span>
+	
+												<!-- 填写购买量 -->
+												<input type="text" name="" id="" value="" class="hide" />
+											</div>
+										</div>
+									</li>
+								</ul>
+							</div>
+							
+							<div class="calendar_table_date">
+								<div class="ctd_time">
+									<p class="inline_block">2018.7</p>
+									<span></span>
+								</div>
+								<ul class="calendar_table_day">
+									<li>
+										<div class="ctd_con">
+											<p class="ctd_con_date gray_color">25</p>
+											<div class="ctd_con_box">
+												<!-- 显示购买量 -->
+												<p class="ctd_con_num"></p>
+												<!-- 不可选择的灰色 -->
+												<span class="ctd_con_gray"></span>
+	
+												<!-- 已占用，不可填写的红色 -->
+												<span class="ctd_con_red hide"></span>
+	
+												<!-- 可填写购买量的蓝色 -->
+												<span class="ctd_con_blue hide"></span>
+	
+												<!-- 填写购买量 -->
+												<input type="text" name="" id="" value="" class="hide" />
+											</div>
+										</div>
+										<div class="ctd_con">
+											<p class="ctd_con_date gray_color">26</p>
+											<div class="ctd_con_box">
+												<!-- 显示购买量 -->
+												<p class="ctd_con_num"></p>
+												<!-- 不可选择的灰色 -->
+												<span class="ctd_con_gray"></span>
+	
+												<!-- 已占用，不可填写的红色 -->
+												<span class="ctd_con_red hide"></span>
+	
+												<!-- 可填写购买量的蓝色 -->
+												<span class="ctd_con_blue hide"></span>
+	
+												<!-- 填写购买量 -->
+												<input type="text" name="" id="" value="" class="hide" />
+											</div>
+										</div>
+										<div class="ctd_con">
+											<p class="ctd_con_date gray_color">27</p>
+											<div class="ctd_con_box">
+												<!-- 显示购买量 -->
+												<p class="ctd_con_num"></p>
+												<!-- 不可选择的灰色 -->
+												<span class="ctd_con_gray "></span>
+	
+												<!-- 已占用，不可填写的红色 -->
+												<span class="ctd_con_red hide"></span>
+	
+												<!-- 可填写购买量的蓝色 -->
+												<span class="ctd_con_blue hide"></span>
+	
+												<!-- 填写购买量 -->
+												<input type="text" name="" id="" value="" class="hide" />
+											</div>
+										</div>
+										<div class="ctd_con">
+											<p class="ctd_con_date gray_color">28</p>
+											<div class="ctd_con_box">
+												<!-- 显示购买量 -->
+												<p class="ctd_con_num"></p>
+												<!-- 不可选择的灰色 -->
+												<span class="ctd_con_gray"></span>
+	
+												<!-- 已占用，不可填写的红色 -->
+												<span class="ctd_con_red hide"></span>
+	
+												<!-- 可填写购买量的蓝色 -->
+												<span class="ctd_con_blue hide"></span>
+	
+												<!-- 填写购买量 -->
+												<input type="text" name="" id="" value="" class="hide" />
+											</div>
+										</div>
+										<div class="ctd_con">
+											<p class="ctd_con_date gray_color">29</p>
+											<div class="ctd_con_box">
+												<!-- 显示购买量 -->
+												<p class="ctd_con_num"></p>
+												<!-- 不可选择的灰色 -->
+												<span class="ctd_con_gray"></span>
+	
+												<!-- 已占用，不可填写的红色 -->
+												<span class="ctd_con_red hide"></span>
+	
+												<!-- 可填写购买量的蓝色 -->
+												<span class="ctd_con_blue hide"></span>
+	
+												<!-- 填写购买量 -->
+												<input type="text" name="" id="" value="" class="hide" />
+											</div>
+										</div>
+										<div class="ctd_con weekend">
+											<p class="ctd_con_date gray_color">30</p>
+											<div class="ctd_con_box">
+												<!-- 显示购买量 -->
+												<p class="ctd_con_num"></p>
+												<!-- 不可选择的灰色 -->
+												<span class="ctd_con_gray"></span>
+	
+												<!-- 已占用，不可填写的红色 -->
+												<span class="ctd_con_red hide"></span>
+	
+												<!-- 可填写购买量的蓝色 -->
+												<span class="ctd_con_blue hide"></span>
+	
+												<!-- 填写购买量 -->
+												<input type="text" name="" id="" value="" class="hide" />
+											</div>
+										</div>
+										<div class="ctd_con weekend">
+											<p class="ctd_con_date">1</p>
+											<div class="ctd_con_box">
+												<!-- 显示购买量 -->
+												<p class="ctd_con_num"></p>
+												<!-- 不可选择的灰色 -->
+												<span class="ctd_con_gray hide"></span>
+	
+												<!-- 已占用，不可填写的红色 -->
+												<span class="ctd_con_red"></span>
+	
+												<!-- 可填写购买量的蓝色 -->
+												<span class="ctd_con_blue hide"></span>
+	
+												<!-- 填写购买量 -->
+												<input type="text" name="" id="" value="" class="hide" />
+											</div>
+										</div>
+									</li>
+									<li>
+										<div class="ctd_con">
+											<p class="ctd_con_date">2</p>
+											<div class="ctd_con_box">
+												<!-- 显示购买量 -->
+												<p class="ctd_con_num"></p>
+												<!-- 不可选择的灰色 -->
+												<span class="ctd_con_gray hide"></span>
+	
+												<!-- 已占用，不可填写的红色 -->
+												<span class="ctd_con_red hide"></span>
+	
+												<!-- 可填写购买量的蓝色 -->
+												<span class="ctd_con_blue"></span>
+	
+												<!-- 填写购买量 -->
+												<input type="text" name="" id="" value="" class="hide" />
+											</div>
+										</div>
+										<div class="ctd_con">
+											<p class="ctd_con_date">3</p>
+											<div class="ctd_con_box">
+												<!-- 显示购买量 -->
+												<p class="ctd_con_num"></p>
+												<!-- 不可选择的灰色 -->
+												<span class="ctd_con_gray hide"></span>
+	
+												<!-- 已占用，不可填写的红色 -->
+												<span class="ctd_con_red hide"></span>
+	
+												<!-- 可填写购买量的蓝色 -->
+												<span class="ctd_con_blue"></span>
+	
+												<!-- 填写购买量 -->
+												<input type="text" name="" id="" value="" class="hide" />
+											</div>
+										</div>
+										<div class="ctd_con">
+											<p class="ctd_con_date">4</p>
+											<div class="ctd_con_box">
+												<!-- 显示购买量 -->
+												<p class="ctd_con_num"></p>
+												<!-- 不可选择的灰色 -->
+												<span class="ctd_con_gray hide"></span>
+	
+												<!-- 已占用，不可填写的红色 -->
+												<span class="ctd_con_red hide"></span>
+	
+												<!-- 可填写购买量的蓝色 -->
+												<span class="ctd_con_blue"></span>
+	
+												<!-- 填写购买量 -->
+												<input type="text" name="" id="" value="" class="hide" />
+											</div>
+										</div>
+										<div class="ctd_con">
+											<p class="ctd_con_date">5</p>
+											<div class="ctd_con_box">
+												<!-- 显示购买量 -->
+												<p class="ctd_con_num"></p>
+												<!-- 不可选择的灰色 -->
+												<span class="ctd_con_gray hide"></span>
+	
+												<!-- 已占用，不可填写的红色 -->
+												<span class="ctd_con_red hide"></span>
+	
+												<!-- 可填写购买量的蓝色 -->
+												<span class="ctd_con_blue"></span>
+	
+												<!-- 填写购买量 -->
+												<input type="text" name="" id="" value="" class="hide" />
+											</div>
+										</div>
+										<div class="ctd_con">
+											<p class="ctd_con_date">6</p>
+											<div class="ctd_con_box">
+												<!-- 显示购买量 -->
+												<p class="ctd_con_num"></p>
+												<!-- 不可选择的灰色 -->
+												<span class="ctd_con_gray hide"></span>
+	
+												<!-- 已占用，不可填写的红色 -->
+												<span class="ctd_con_red hide"></span>
+	
+												<!-- 可填写购买量的蓝色 -->
+												<span class="ctd_con_blue"></span>
+	
+												<!-- 填写购买量 -->
+												<input type="text" name="" id="" value="" class="hide" />
+											</div>
+										</div>
+										<div class="ctd_con weekend">
+											<p class="ctd_con_date">7</p>
+											<div class="ctd_con_box">
+												<!-- 显示购买量 -->
+												<p class="ctd_con_num"></p>
+												<!-- 不可选择的灰色 -->
+												<span class="ctd_con_gray hide"></span>
+	
+												<!-- 已占用，不可填写的红色 -->
+												<span class="ctd_con_red hide"></span>
+	
+												<!-- 可填写购买量的蓝色 -->
+												<span class="ctd_con_blue"></span>
+	
+												<!-- 填写购买量 -->
+												<input type="text" name="" id="" value="" class="hide" />
+											</div>
+										</div>
+										<div class="ctd_con weekend">
+											<p class="ctd_con_date">8</p>
+											<div class="ctd_con_box">
+												<!-- 显示购买量 -->
+												<p class="ctd_con_num"></p>
+												<!-- 不可选择的灰色 -->
+												<span class="ctd_con_gray hide"></span>
+	
+												<!-- 已占用，不可填写的红色 -->
+												<span class="ctd_con_red hide"></span>
+	
+												<!-- 可填写购买量的蓝色 -->
+												<span class="ctd_con_blue"></span>
+	
+												<!-- 填写购买量 -->
+												<input type="text" name="" id="" value="" class="hide" />
+											</div>
+										</div>
+									</li>
+									<li>
+										<div class="ctd_con">
+											<p class="ctd_con_date">9</p>
+											<div class="ctd_con_box">
+												<!-- 显示购买量 -->
+												<p class="ctd_con_num"></p>
+												<!-- 不可选择的灰色 -->
+												<span class="ctd_con_gray hide"></span>
+	
+												<!-- 已占用，不可填写的红色 -->
+												<span class="ctd_con_red hide"></span>
+	
+												<!-- 可填写购买量的蓝色 -->
+												<span class="ctd_con_blue"></span>
+	
+												<!-- 填写购买量 -->
+												<input type="text" name="" id="" value="" class="hide" />
+											</div>
+										</div>
+										<div class="ctd_con">
+											<p class="ctd_con_date">10</p>
+											<div class="ctd_con_box">
+												<!-- 显示购买量 -->
+												<p class="ctd_con_num"></p>
+												<!-- 不可选择的灰色 -->
+												<span class="ctd_con_gray hide"></span>
+	
+												<!-- 已占用，不可填写的红色 -->
+												<span class="ctd_con_red hide"></span>
+	
+												<!-- 可填写购买量的蓝色 -->
+												<span class="ctd_con_blue"></span>
+	
+												<!-- 填写购买量 -->
+												<input type="text" name="" id="" value="" class="hide" />
+											</div>
+										</div>
+										<div class="ctd_con">
+											<p class="ctd_con_date">11</p>
+											<div class="ctd_con_box">
+												<!-- 显示购买量 -->
+												<p class="ctd_con_num"></p>
+												<!-- 不可选择的灰色 -->
+												<span class="ctd_con_gray hide"></span>
+	
+												<!-- 已占用，不可填写的红色 -->
+												<span class="ctd_con_red hide"></span>
+	
+												<!-- 可填写购买量的蓝色 -->
+												<span class="ctd_con_blue"></span>
+	
+												<!-- 填写购买量 -->
+												<input type="text" name="" id="" value="" class="hide" />
+											</div>
+										</div>
+										<div class="ctd_con">
+											<p class="ctd_con_date">12</p>
+											<div class="ctd_con_box">
+												<!-- 显示购买量 -->
+												<p class="ctd_con_num"></p>
+												<!-- 不可选择的灰色 -->
+												<span class="ctd_con_gray hide"></span>
+	
+												<!-- 已占用，不可填写的红色 -->
+												<span class="ctd_con_red hide"></span>
+	
+												<!-- 可填写购买量的蓝色 -->
+												<span class="ctd_con_blue"></span>
+	
+												<!-- 填写购买量 -->
+												<input type="text" name="" id="" value="" class="hide" />
+											</div>
+										</div>
+										<div class="ctd_con">
+											<p class="ctd_con_date">13</p>
+											<div class="ctd_con_box">
+												<!-- 显示购买量 -->
+												<p class="ctd_con_num"></p>
+												<!-- 不可选择的灰色 -->
+												<span class="ctd_con_gray hide"></span>
+	
+												<!-- 已占用，不可填写的红色 -->
+												<span class="ctd_con_red"></span>
+	
+												<!-- 可填写购买量的蓝色 -->
+												<span class="ctd_con_blue hide"></span>
+	
+												<!-- 填写购买量 -->
+												<input type="text" name="" id="" value="" class="hide" />
+											</div>
+										</div>
+										<div class="ctd_con weekend">
+											<p class="ctd_con_date">14</p>
+											<div class="ctd_con_box">
+												<!-- 显示购买量 -->
+												<p class="ctd_con_num"></p>
+												<!-- 不可选择的灰色 -->
+												<span class="ctd_con_gray hide"></span>
+	
+												<!-- 已占用，不可填写的红色 -->
+												<span class="ctd_con_red"></span>
+	
+												<!-- 可填写购买量的蓝色 -->
+												<span class="ctd_con_blue hide"></span>
+	
+												<!-- 填写购买量 -->
+												<input type="text" name="" id="" value="" class="hide" />
+											</div>
+										</div>
+										<div class="ctd_con weekend">
+											<p class="ctd_con_date">15</p>
+											<div class="ctd_con_box">
+												<!-- 显示购买量 -->
+												<p class="ctd_con_num"></p>
+												<!-- 不可选择的灰色 -->
+												<span class="ctd_con_gray hide"></span>
+	
+												<!-- 已占用，不可填写的红色 -->
+												<span class="ctd_con_red hide"></span>
+	
+												<!-- 可填写购买量的蓝色 -->
+												<span class="ctd_con_blue"></span>
+	
+												<!-- 填写购买量 -->
+												<input type="text" name="" id="" value="" class="hide" />
+											</div>
+										</div>
+									</li>
+									<li>
+										<div class="ctd_con">
+											<p class="ctd_con_date">16</p>
+											<div class="ctd_con_box">
+												<!-- 显示购买量 -->
+												<p class="ctd_con_num"></p>
+												<!-- 不可选择的灰色 -->
+												<span class="ctd_con_gray hide"></span>
+	
+												<!-- 已占用，不可填写的红色 -->
+												<span class="ctd_con_red hide"></span>
+	
+												<!-- 可填写购买量的蓝色 -->
+												<span class="ctd_con_blue"></span>
+	
+												<!-- 填写购买量 -->
+												<input type="text" name="" id="" value="" class="hide" />
+											</div>
+										</div>
+										<div class="ctd_con">
+											<p class="ctd_con_date">17</p>
+											<div class="ctd_con_box">
+												<!-- 显示购买量 -->
+												<p class="ctd_con_num"></p>
+												<!-- 不可选择的灰色 -->
+												<span class="ctd_con_gray hide"></span>
+	
+												<!-- 已占用，不可填写的红色 -->
+												<span class="ctd_con_red"></span>
+	
+												<!-- 可填写购买量的蓝色 -->
+												<span class="ctd_con_blue hide"></span>
+	
+												<!-- 填写购买量 -->
+												<input type="text" name="" id="" value="" class="hide" />
+											</div>
+										</div>
+										<div class="ctd_con">
+											<p class="ctd_con_date">18</p>
+											<div class="ctd_con_box">
+												<!-- 显示购买量 -->
+												<p class="ctd_con_num color_red">10</p>
+												<!-- 不可选择的灰色 -->
+												<span class="ctd_con_gray hide"></span>
+	
+												<!-- 已占用，不可填写的红色 -->
+												<span class="ctd_con_red hide"></span>
+	
+												<!-- 可填写购买量的蓝色 -->
+												<span class="ctd_con_blue hide"></span>
+	
+												<!-- 填写购买量 -->
+												<input type="text" name="" id="" value="" class="hide" />
+											</div>
+										</div>
+										<div class="ctd_con">
+											<p class="ctd_con_date">19</p>
+											<div class="ctd_con_box">
+												<!-- 显示购买量 -->
+												<p class="ctd_con_num"></p>
+												<!-- 不可选择的灰色 -->
+												<span class="ctd_con_gray hide"></span>
+	
+												<!-- 已占用，不可填写的红色 -->
+												<span class="ctd_con_red"></span>
+	
+												<!-- 可填写购买量的蓝色 -->
+												<span class="ctd_con_blue hide"></span>
+	
+												<!-- 填写购买量 -->
+												<input type="text" name="" id="" value="" class="hide" />
+											</div>
+										</div>
+										<div class="ctd_con">
+											<p class="ctd_con_date">20</p>
+											<div class="ctd_con_box">
+												<!-- 显示购买量 -->
+												<p class="ctd_con_num"></p>
+												<!-- 不可选择的灰色 -->
+												<span class="ctd_con_gray hide"></span>
+	
+												<!-- 已占用，不可填写的红色 -->
+												<span class="ctd_con_red hide"></span>
+	
+												<!-- 可填写购买量的蓝色 -->
+												<span class="ctd_con_blue"></span>
+	
+												<!-- 填写购买量 -->
+												<input type="text" name="" id="" value="" class="hide" />
+											</div>
+										</div>
+										<div class="ctd_con weekend">
+											<p class="ctd_con_date">21</p>
+											<div class="ctd_con_box">
+												<!-- 显示购买量 -->
+												<p class="ctd_con_num"></p>
+												<!-- 不可选择的灰色 -->
+												<span class="ctd_con_gray"></span>
+	
+												<!-- 已占用，不可填写的红色 -->
+												<span class="ctd_con_red hide"></span>
+	
+												<!-- 可填写购买量的蓝色 -->
+												<span class="ctd_con_blue hide"></span>
+	
+												<!-- 填写购买量 -->
+												<input type="text" name="" id="" value="" class="hide" />
+											</div>
+										</div>
+										<div class="ctd_con weekend">
+											<p class="ctd_con_date">22</p>
+											<div class="ctd_con_box">
+												<!-- 显示购买量 -->
+												<p class="ctd_con_num"></p>
+												<!-- 不可选择的灰色 -->
+												<span class="ctd_con_gray"></span>
+	
+												<!-- 已占用，不可填写的红色 -->
+												<span class="ctd_con_red hide"></span>
+	
+												<!-- 可填写购买量的蓝色 -->
+												<span class="ctd_con_blue hide"></span>
+	
+												<!-- 填写购买量 -->
+												<input type="text" name="" id="" value="" class="hide" />
+											</div>
+										</div>
+									</li>
+									<li>
+										<div class="ctd_con">
+											<p class="ctd_con_date">23</p>
+											<div class="ctd_con_box">
+												<!-- 显示购买量 -->
+												<p class="ctd_con_num"></p>
+												<!-- 不可选择的灰色 -->
+												<span class="ctd_con_gray"></span>
+	
+												<!-- 已占用，不可填写的红色 -->
+												<span class="ctd_con_red hide"></span>
+	
+												<!-- 可填写购买量的蓝色 -->
+												<span class="ctd_con_blue hide"></span>
+	
+												<!-- 填写购买量 -->
+												<input type="text" name="" id="" value="" class="hide" />
+											</div>
+										</div>
+										<div class="ctd_con">
+											<p class="ctd_con_date">24</p>
+											<div class="ctd_con_box">
+												<!-- 显示购买量 -->
+												<p class="ctd_con_num"></p>
+												<!-- 不可选择的灰色 -->
+												<span class="ctd_con_gray"></span>
+	
+												<!-- 已占用，不可填写的红色 -->
+												<span class="ctd_con_red hide"></span>
+	
+												<!-- 可填写购买量的蓝色 -->
+												<span class="ctd_con_blue hide"></span>
+	
+												<!-- 填写购买量 -->
+												<input type="text" name="" id="" value="" class="hide" />
+											</div>
+										</div>
+										<div class="ctd_con">
+											<p class="ctd_con_date">25</p>
+											<div class="ctd_con_box">
+												<!-- 显示购买量 -->
+												<p class="ctd_con_num"></p>
+												<!-- 不可选择的灰色 -->
+												<span class="ctd_con_gray"></span>
+	
+												<!-- 已占用，不可填写的红色 -->
+												<span class="ctd_con_red hide"></span>
+	
+												<!-- 可填写购买量的蓝色 -->
+												<span class="ctd_con_blue hide"></span>
+	
+												<!-- 填写购买量 -->
+												<input type="text" name="" id="" value="" class="hide" />
+											</div>
+										</div>
+										<div class="ctd_con">
+											<p class="ctd_con_date">26</p>
+											<div class="ctd_con_box">
+												<!-- 显示购买量 -->
+												<p class="ctd_con_num"></p>
+												<!-- 不可选择的灰色 -->
+												<span class="ctd_con_gray"></span>
+	
+												<!-- 已占用，不可填写的红色 -->
+												<span class="ctd_con_red hide"></span>
+	
+												<!-- 可填写购买量的蓝色 -->
+												<span class="ctd_con_blue hide"></span>
+	
+												<!-- 填写购买量 -->
+												<input type="text" name="" id="" value="" class="hide" />
+											</div>
+										</div>
+										<div class="ctd_con">
+											<p class="ctd_con_date">27</p>
+											<div class="ctd_con_box">
+												<!-- 显示购买量 -->
+												<p class="ctd_con_num"></p>
+												<!-- 不可选择的灰色 -->
+												<span class="ctd_con_gray"></span>
+	
+												<!-- 已占用，不可填写的红色 -->
+												<span class="ctd_con_red hide"></span>
+	
+												<!-- 可填写购买量的蓝色 -->
+												<span class="ctd_con_blue hide"></span>
+	
+												<!-- 填写购买量 -->
+												<input type="text" name="" id="" value="" class="hide" />
+											</div>
+										</div>
+										<div class="ctd_con weekend">
+											<p class="ctd_con_date">28</p>
+											<div class="ctd_con_box">
+												<!-- 显示购买量 -->
+												<p class="ctd_con_num"></p>
+												<!-- 不可选择的灰色 -->
+												<span class="ctd_con_gray"></span>
+	
+												<!-- 已占用，不可填写的红色 -->
+												<span class="ctd_con_red hide"></span>
+	
+												<!-- 可填写购买量的蓝色 -->
+												<span class="ctd_con_blue hide"></span>
+	
+												<!-- 填写购买量 -->
+												<input type="text" name="" id="" value="" class="hide" />
+											</div>
+										</div>
+										<div class="ctd_con weekend">
+											<p class="ctd_con_date">29</p>
+											<div class="ctd_con_box">
+												<!-- 显示购买量 -->
+												<p class="ctd_con_num"></p>
+												<!-- 不可选择的灰色 -->
+												<span class="ctd_con_gray"></span>
+	
+												<!-- 已占用，不可填写的红色 -->
+												<span class="ctd_con_red hide"></span>
+	
+												<!-- 可填写购买量的蓝色 -->
+												<span class="ctd_con_blue hide"></span>
+	
+												<!-- 填写购买量 -->
+												<input type="text" name="" id="" value="" class="hide" />
+											</div>
+										</div>
+									</li>
+									<li>
+										<div class="ctd_con">
+											<p class="ctd_con_date">30</p>
+											<div class="ctd_con_box">
+												<!-- 显示购买量 -->
+												<p class="ctd_con_num"></p>
+												<!-- 不可选择的灰色 -->
+												<span class="ctd_con_gray"></span>
+	
+												<!-- 已占用，不可填写的红色 -->
+												<span class="ctd_con_red hide"></span>
+	
+												<!-- 可填写购买量的蓝色 -->
+												<span class="ctd_con_blue hide"></span>
+	
+												<!-- 填写购买量 -->
+												<input type="text" name="" id="" value="" class="hide" />
+											</div>
+										</div>
+										<div class="ctd_con">
+											<p class="ctd_con_date">31</p>
+											<div class="ctd_con_box">
+												<!-- 显示购买量 -->
+												<p class="ctd_con_num"></p>
+												<!-- 不可选择的灰色 -->
+												<span class="ctd_con_gray"></span>
+	
+												<!-- 已占用，不可填写的红色 -->
+												<span class="ctd_con_red hide"></span>
+	
+												<!-- 可填写购买量的蓝色 -->
+												<span class="ctd_con_blue hide"></span>
+	
+												<!-- 填写购买量 -->
+												<input type="text" name="" id="" value="" class="hide" />
+											</div>
+										</div>
+										<div class="ctd_con">
+											<p class="ctd_con_date gray_color">1</p>
+											<div class="ctd_con_box">
+												<!-- 显示购买量 -->
+												<p class="ctd_con_num"></p>
+												<!-- 不可选择的灰色 -->
+												<span class="ctd_con_gray"></span>
+	
+												<!-- 已占用，不可填写的红色 -->
+												<span class="ctd_con_red hide"></span>
+	
+												<!-- 可填写购买量的蓝色 -->
+												<span class="ctd_con_blue hide"></span>
+	
+												<!-- 填写购买量 -->
+												<input type="text" name="" id="" value="" class="hide" />
+											</div>
+										</div>
+										<div class="ctd_con">
+											<p class="ctd_con_date gray_color">2</p>
+											<div class="ctd_con_box">
+												<!-- 显示购买量 -->
+												<p class="ctd_con_num"></p>
+												<!-- 不可选择的灰色 -->
+												<span class="ctd_con_gray"></span>
+	
+												<!-- 已占用，不可填写的红色 -->
+												<span class="ctd_con_red hide"></span>
+	
+												<!-- 可填写购买量的蓝色 -->
+												<span class="ctd_con_blue hide"></span>
+	
+												<!-- 填写购买量 -->
+												<input type="text" name="" id="" value="" class="hide" />
+											</div>
+										</div>
+										<div class="ctd_con">
+											<p class="ctd_con_date gray_color">3</p>
+											<div class="ctd_con_box">
+												<!-- 显示购买量 -->
+												<p class="ctd_con_num"></p>
+												<!-- 不可选择的灰色 -->
+												<span class="ctd_con_gray"></span>
+	
+												<!-- 已占用，不可填写的红色 -->
+												<span class="ctd_con_red hide"></span>
+	
+												<!-- 可填写购买量的蓝色 -->
+												<span class="ctd_con_blue hide"></span>
+	
+												<!-- 填写购买量 -->
+												<input type="text" name="" id="" value="" class="hide" />
+											</div>
+										</div>
+										<div class="ctd_con weekend">
+											<p class="ctd_con_date gray_color">4</p>
+											<div class="ctd_con_box">
+												<!-- 显示购买量 -->
+												<p class="ctd_con_num"></p>
+												<!-- 不可选择的灰色 -->
+												<span class="ctd_con_gray"></span>
+	
+												<!-- 已占用，不可填写的红色 -->
+												<span class="ctd_con_red hide"></span>
+	
+												<!-- 可填写购买量的蓝色 -->
+												<span class="ctd_con_blue hide"></span>
+	
+												<!-- 填写购买量 -->
+												<input type="text" name="" id="" value="" class="hide" />
+											</div>
+										</div>
+										<div class="ctd_con weekend">
+											<p class="ctd_con_date gray_color">5</p>
+											<div class="ctd_con_box">
+												<!-- 显示购买量 -->
+												<p class="ctd_con_num"></p>
+												<!-- 不可选择的灰色 -->
+												<span class="ctd_con_gray"></span>
+	
+												<!-- 已占用，不可填写的红色 -->
+												<span class="ctd_con_red hide"></span>
+	
+												<!-- 可填写购买量的蓝色 -->
+												<span class="ctd_con_blue hide"></span>
+	
+												<!-- 填写购买量 -->
+												<input type="text" name="" id="" value="" class="hide" />
+											</div>
+										</div>
+									</li>
+								</ul>
+							</div>
+						</div>
+						
+						<div class="color_prompt">
+							<p><span class="ctd_con_blue"></span>可填写购买量</p>
+							<p><span class="ctd_con_red"></span>已占用，不可填写</p>
+							<p><span class="ctd_con_gray"></span>不可选择</p>
+						</div>
+						<div class="ctd_con_btn">
+							<a href="" class="pcdcb_confirm">确 认</a>
+							<a href="javascript:" class="pcdcb_cancel">取 消</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script src="../../js/jquery-1.7.2.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../../js/jquery.mCustomScrollbar.concat.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../../js/admin.js" type="text/javascript" charset="utf-8"></script>
+	</body>
+</html>

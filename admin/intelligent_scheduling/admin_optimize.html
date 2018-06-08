@@ -1,0 +1,818 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>O2精准广告系统</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="../../css/jquery.mCustomScrollbar.css" />
+		<link rel="stylesheet" type="text/css" href="../../css/public.css"/>
+		<link rel="stylesheet" type="text/css" href="../../css/common.css"/>
+		<link rel="stylesheet" type="text/css" href="../../css/admin_style.css"/>
+	</head>
+	<body>
+		<div class="shell">
+			<!-- 左边二级分类导航 -->
+			<div class="left_nav">
+				<div class="left_nav_logo"></div>
+				<!-- 媒体管理 -->
+				<div class="media_manage">
+					<p class="classify_tit"><a href="../media_management/admin_mtgl_pc.html"><span></span>媒体管理</a></p>
+					<ul class="classify_con hide">
+						<li class="cch_xj"><a href="../media_management/admin_mtgl_pc.html"><span></span>PC媒体</a></li>
+						<li class="cch_gl"><a href="../media_management/admin_mtgl_move.html"><span></span>移动媒体</a></li>
+						<li class="cch_tz"><a href="../media_management/admin_mtgl_ggjypt.html"><span></span>广告交易平台</a></li>
+					</ul>
+				</div>
+				
+				<!-- 智能排期 -->
+				<div class="ln_con intel_sche">
+					<p class="classify_tit nav_active"><a href="admin_intel_sche_con.html"><span></span>智能排期(beta)</a></p>
+					<ul class="classify_con">
+						<li class="cch_xj"><a href="admin_intel_sche_con.html"><span></span>新建排期</a></li>
+						<li class="cch_gl"><a href="admin_total_preview.html"><span></span>排期管理</a></li>
+						<li class="cch_tz cc_li_active"><a href="admin_tzjm.html"><span></span>动态优化</a></li>
+					</ul>
+				</div>
+				
+				<!-- 普通排期 -->
+				<div class="ln_con ordin_sche">
+					<p class="classify_tit"><a href="../ordinary_scheduling/admin_ptpq_inf.html"><span></span>普通排期</a></p>
+					<ul class="classify_con hide">
+						<li class="cch_xj"><a href="../ordinary_scheduling/admin_ptpq_inf.html"><span></span>新建排期</a></li>
+						<li class="cch_gl"><a href="../ordinary_scheduling/admin_ptpq_pqgl.html"><span></span>排期管理</a></li>
+					</ul>
+				</div>
+				
+				<!-- 实时竞价排期 -->
+				<div class="ln_con price_sche">
+					<p class="classify_tit"><a href="../shishijingjiapaiqi/admin_ssjjpq_inf.html"><span></span>实时竞价排期</a></p>
+					<ul class="classify_con hide">
+						<li class="cch_xj"><a href="../shishijingjiapaiqi/admin_ssjjpq_inf.html"><span></span>新建排期</a></li>
+						<li class="cch_gl"><a href="../shishijingjiapaiqi/admin_ssjjpq_pqgl.html"><span></span>排期管理</a></li>
+					</ul>
+				</div>
+				
+				<!-- 智能素材 -->
+				<div class="ln_con intel_material">
+					<p class="classify_tit"><a href="../intelligent_material/admin_znsc_scgl.html"><span></span>智能素材</a></p>
+					<ul class="classify_con hide">
+						<li class="cch_xj"><a href="../intelligent_material/admin_znsc_scgl.html"><span></span>素材管理</a></li>
+						<li class="cch_gl"><a href="../intelligent_material/admin_znsc_scsh.html"><span></span>素材审核</a></li>
+					</ul>
+				</div>
+				
+				<!-- 数据中心 -->
+				<div class="ln_con data_center">
+					<p class="classify_tit"><a href=""><span></span>数据中心</a></p>
+					<ul class="classify_con hide">
+						<li class="cch_xj"><a href=""><span></span></a></li>
+						<li class="cch_gl"><a href=""><span></span></a></li>
+						<li class="cch_tz"><a href=""><span></span></a></li>
+					</ul>
+				</div>
+				
+				<!-- DMP精准设置 -->
+				<div class="ln_con precise_setting">
+					<p class="classify_tit"><a href=""><span></span>DMP精准设置</a></p>
+					<ul class="classify_con hide">
+						<li class="cch_xj"><a href=""><span></span></a></li>
+						<li class="cch_gl"><a href=""><span></span></a></li>
+						<li class="cch_tz"><a href=""><span></span></a></li>
+					</ul>
+				</div>
+				
+				<!-- 系统管理 -->
+				<div class="ln_con system_manage">
+					<p class="classify_tit"><a href="../system_management/admin_xtgl_user_settings.html"><span></span>系统管理</a></p>
+					<ul class="classify_con hide">
+						<li class="cch_xj"><a href="../system_management/admin_xtgl_user_settings.html"><span></span>用户管理</a></li>
+						<li class="cch_gl"><a href="../system_management/admin_xtgl_personal_center.html"><span></span>个人中心</a></li>
+						<li class="cch_tz"><a href="../system_management/admin_xtgl_game_management.html"><span></span>游戏管理</a></li>
+						<li class="cch_tz"><a href="../system_management/admin_xtgl_jztfsz.html"><span></span>精准投放设置</a></li>
+					</ul>
+				</div>
+			</div>
+			
+			<!-- 缩略图导航 -->
+			<div class="thumbnail_nav hide">
+				<div class="tn_logo"></div>
+				<ul class="tn_con">
+					<li class="tn_com_li tn_media_manage">
+						<p class="classify_tit"><span class="tn_span"></span>媒体管理</p>
+						<ul class="classify_con hide">
+							<li class="cch_xj"><a href="../media_management/admin_mtgl_pc.html"><span></span>PC媒体</a></li>
+							<li class="cch_gl"><a href="../media_management/admin_mtgl_move.html"><span></span>移动媒体</a></li>
+							<li class="cch_tz"><a href="../media_management/admin_mtgl_ggjypt.html"><span></span>广告交易平台</a></li>
+						</ul>
+					</li>
+					<li class="tn_com_li tn_intel_sche nav_active">
+						<p class="classify_tit"><span class="tn_span"></span>智能排期(beta)</p>
+						<ul class="classify_con hide">
+							<li class="cch_xj"><a href="admin_intel_sche_con.html"><span></span>新建排期</a></li>
+							<li class="cch_gl"><a href="admin_total_preview.html"><span></span>排期管理</a></li>
+							<li class="cch_tz cc_li_active"><a href="admin_tzjm.html"><span></span>动态优化</a></li>
+						</ul>
+					</li>
+					<li class="tn_com_li tn_ordin_sche">
+						<p class="classify_tit"><span class="tn_span"></span>普通排期</p>
+						<ul class="classify_con hide">
+							<li class="cch_xj"><a href="../ordinary_scheduling/admin_ptpq_inf.html"><span></span>新建排期</a></li>
+							<li class="cch_gl"><a href="../ordinary_scheduling/admin_ptpq_pqgl.html"><span></span>排期管理</a></li>
+						</ul>
+					</li>
+					<li class="tn_com_li tn_price_sche">
+						<p class="classify_tit"><span class="tn_span"></span>实时竞价排期</p>
+						<ul class="classify_con hide">
+							<li class="cch_xj"><a href="../shishijingjiapaiqi/admin_ssjjpq_inf.html"><span></span>新建排期</a></li>
+							<li class="cch_gl"><a href="../shishijingjiapaiqi/admin_ssjjpq_pqgl.html"><span></span>排期管理</a></li>
+						</ul>
+					</li>
+					<li class="tn_com_li tn_intel_material">
+						<p class="classify_tit"><span class="tn_span"></span>智能素材</p>
+						<ul class="classify_con hide">
+							<li class="cch_xj"><a href="../intelligent_material/admin_znsc_scgl.html"><span></span>素材管理</a></li>
+							<li class="cch_gl"><a href="../intelligent_material/admin_znsc_scsh.html"><span></span>素材审核</a></li>
+						</ul>
+					</li>
+					<li class="tn_com_li tn_data_center">
+						<p class="classify_tit"><span class="tn_span"></span>数据中心</p>
+						<ul class="classify_con hide">
+							<li class="cch_xj"><a href=""><span></span></a></li>
+							<li class="cch_gl"><a href=""><span></span></a></li>
+							<li class="cch_tz"><a href=""><span></span></a></li>
+						</ul>
+					</li>
+					<li class="tn_com_li tn_precise_setting">
+						<p class="classify_tit"><span class="tn_span"></span>DMP精准设置</p>
+						<ul class="classify_con hide">
+							<li class="cch_xj"><a href=""><span></span></a></li>
+							<li class="cch_gl"><a href=""><span></span></a></li>
+							<li class="cch_tz"><a href=""><span></span></a></li>
+						</ul>
+					</li>
+					<li class="tn_com_li tn_system_manage">
+						<p class="classify_tit"><span class="tn_span"></span>系统管理</p>
+						<ul class="classify_con hide">
+							<li class="cch_xj"><a href="../system_management/admin_xtgl_user_settings.html"><span></span>用户管理</a></li>
+							<li class="cch_gl"><a href="../system_management/admin_xtgl_personal_center.html"><span></span>个人中心</a></li>
+							<li class="cch_tz"><a href="../system_management/admin_xtgl_game_management.html"><span></span>游戏管理</a></li>
+							<li class="cch_tz"><a href="../system_management/admin_xtgl_jztfsz.html"><span></span>精准投放设置</a></li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+			
+			<!-- 右边内容区 -->
+			<div class="right_con">
+				<!-- 实时优化 -->
+				<div class="settle_case">
+					<div class="int_top clearfix">
+						<div class="int_tit">
+							<p><a href="admin_tzjm.html" class="blue">实时优化排期</a></p>
+							<span>></span>
+							<p>实时排期数据</p>
+						</div>
+						<div class="login">
+							<!-- 但没有消息是em为隐藏状态 -->
+							<a href="javascript:" class="mail_btn">
+								<span>
+									<em>2</em>
+								</span>
+							</a>
+							<div class="login_sign_in">
+								<div class="lsi_img">
+									<img src="../../img/ico_16.png"/>
+								</div>
+								<p>艾丽斯...</p>
+								<span class="jt"></span>
+								<div class="lsi_sele hide">
+									<span></span>
+									<p class="qx">权 限<em></em></p>
+									<p class="wb">媒介运营</p>
+									<a href="">退出</a>
+								</div>
+							</div>
+							
+							<!-- 邮件弹窗 -->
+							<div class="mail_popup hide">
+								<span class="mail_popup_triangle"></span>
+								<div class="mail_popup_con_head">
+									<div class="mpch_tab mpch_active">
+										<p>系统通知<span class="hide"></span></p>
+									</div>
+									<!-- 但没有消息是span为隐藏状态 -->
+									<div class="mpch_tab">
+										<p>我的待办<span>2</span></p>
+									</div>
+									<span class="line"></span>
+								</div>
+								<div class="mpc">
+									<ul class="mail_popup_con hide">
+										<li>
+											<div class="mail_popup_con1">
+												<span></span>
+												<p class="mpc_event">动态调整</p>
+												<p class="mpc_time">2018.04.20</p>
+											</div>
+											<p class="mpc_event_con">您的排期《全军出击~2018年4月排期》已经由AI优化完成，请您务必在2018.4.21 16:00前确认 </p>
+											<div class="mpc_see_btn"><a href="">查看详情</a></div>
+										</li>
+										<li>
+											<div class="mail_popup_con1">
+												<span></span>
+												<p class="mpc_event">动态调整</p>
+												<p class="mpc_time">2018.04.20</p>
+											</div>
+											<p class="mpc_event_con">您的排期《全军出击~2018年4月排期》已经由AI优化完成，请您务必在2018.4.21 16:00前确认 </p>
+											<div class="mpc_see_btn"><a href="">查看详情</a></div>
+										</li>
+										<li>
+											<div class="mail_popup_con1">
+												<span></span>
+												<p class="mpc_event">动态调整</p>
+												<p class="mpc_time">2018.04.20</p>
+											</div>
+											<p class="mpc_event_con">您的排期《全军出击~2018年4月排期》已经由AI优化完成，请您务必在2018.4.21 16:00前确认 </p>
+											<div class="mpc_see_btn"><a href="">查看详情</a></div>
+										</li>
+										<li>
+											<div class="mail_popup_con1">
+												<span></span>
+												<p class="mpc_event">动态调整</p>
+												<p class="mpc_time">2018.04.20</p>
+											</div>
+											<p class="mpc_event_con">您的排期《全军出击~2018年4月排期》已经由AI优化完成，请您务必在2018.4.21 16:00前确认 </p>
+											<div class="mpc_see_btn"><a href="">查看详情</a></div>
+										</li>
+									</ul>
+									
+									<!-- 无消息 -->
+									<div class="mpc_not_news">
+										<div class="mpcnn_bg"></div>
+										<p>暂无系统消息</p>
+									</div>
+									<a href="" class="mpc_ckqb_btn">查看全部通知<span></span></a>
+								</div>
+								<div class="mpc hide">
+									<ul class="mail_popup_con">
+										<li>
+											<div class="mail_popup_con1">
+												<span></span>
+												<p class="mpc_event">动态调整</p>
+												<p class="mpc_time">2018.04.20</p>
+											</div>
+											<p class="mpc_event_con">您的排期《全军出击~2018年4月排期》已经由AI优化完成，请您务必在2018.4.21 16:00前确认 </p>
+											<div class="mpc_see_btn"><a href="">查看详情</a></div>
+										</li>
+										<li>
+											<div class="mail_popup_con1">
+												<span></span>
+												<p class="mpc_event">动态调整</p>
+												<p class="mpc_time">2018.04.20</p>
+											</div>
+											<p class="mpc_event_con">您的排期《全军出击~2018年4月排期》已经由AI优化完成，请您务必在2018.4.21 16:00前确认 </p>
+											<div class="mpc_see_btn"><a href="">查看详情</a></div>
+										</li>
+										<li>
+											<div class="mail_popup_con1">
+												<span></span>
+												<p class="mpc_event">动态调整</p>
+												<p class="mpc_time">2018.04.20</p>
+											</div>
+											<p class="mpc_event_con">您的排期《全军出击~2018年4月排期》已经由AI优化完成，请您务必在2018.4.21 16:00前确认 </p>
+											<div class="mpc_see_btn"><a href="">查看详情</a></div>
+										</li>
+									</ul>
+									
+									<!-- 无消息 -->
+									<div class="mpc_not_news hide">
+										<div class="mpcnn_bg"></div>
+										<p>暂无代办</p>
+									</div>
+									<a href="" class="mpc_ckqb_btn">查看全部信息<span></span></a>
+								</div>	
+							</div>
+						</div>
+					</div>
+					
+					<!-- 消息提示 -->
+					<div class="sc_message_hints">
+						<span class="scmh_ico"></span>
+						<p>亲爱的艾丽斯，下午好！您有<em>196</em>个待处理事项<a href="javascript:">立即查看</a></p>
+						<span class="scmh_colse"></span>
+					</div>
+					
+					<div class="optimize_name">
+						<img src="../../img/ico_21.png"/>
+						<div class="optimize_name_text_contain">
+							<div class="optimize_name_text">消除者联盟</div>
+							<div class="optimize_name_detail">
+								<span class="optimize_money">总金额: <span>3800000.00</span></span>
+								<span class="optimize_date">当前周期: <span>20 / 30 天</span></span>
+							</div>
+						</div>
+					</div>
+					
+					<div class="all_data">整体数据</div>
+					<div class="all_data_ztsj">
+						<div class="optimize_detail">
+							<ul class="optimize_detail_list1 all_data_left">
+								<li class="optimize_detail_title">
+									<ul class="optimize_detail_list2">
+										<li class="optimize_detail_list2_item1">投放平台</li>
+										<li class="optimize_detail_list2_item2">媒体名称</li>
+										<li class="optimize_detail_list2_item3">最佳投放费用</li>
+									</ul>	
+								</li>
+								<li class="optimize_details optimize_detail_list2_counter">
+									<ul class="optimize_detail_list2">
+										<li class="optimize_detail_list2_item1">汇总-iOS</li>
+										<li class="optimize_detail_list2_item2"> —— </li>
+										<li class="optimize_detail_list2_item3">4000000.00</li>
+										
+									</ul>	
+								</li>
+								<li class="optimize_details optimize_detail_list2_counter">
+									<ul class="optimize_detail_list2">
+										<li class="optimize_detail_list2_item1">汇总-安卓</li>
+										<li class="optimize_detail_list2_item2"> —— </li>
+										<li class="optimize_detail_list2_item3">4000000.00</li>
+										
+									</ul>	
+								</li>
+								<li class="optimize_details optimize_detail_list2_counter">
+									<ul class="optimize_detail_list2">
+										<li class="optimize_detail_list2_item1">总计</li>
+										<li class="optimize_detail_list2_item2"> —— </li>
+										<li class="optimize_detail_list2_item3">4000000.00</li>
+										
+									</ul>	
+								</li>
+							</ul>
+							<div class="content"> 
+								<ul class="optimize_detail_list1 all_data_right images_container">
+									<li class="optimize_detail_title">
+										<ul class="optimize_detail_list2">
+											<li class="optimize_detail_list2_item4">媒体实际消耗</li>
+											<li class="optimize_detail_list2_item5">投放进度</li>
+											<li class="optimize_detail_list2_item6">注册量</li>
+											<li class="optimize_detail_list2_item7">注册gap</li>
+											<li class="optimize_detail_list2_item8">注册CPA</li>
+											<li class="optimize_detail_list2_item9">次日留存</li>
+											<li class="optimize_detail_list2_item10">2日LTV</li>
+											<li class="optimize_detail_list2_item11">2日ROI</li>
+											<li class="optimize_detail_list2_item12">4日LTV</li>
+											<li class="optimize_detail_list2_item13">4日ROI</li>
+											<li class="optimize_detail_list2_item14">7日LTV</li>
+											<li class="optimize_detail_list2_item15">7日ROI</li>
+											<li class="optimize_detail_list2_item16">15日LTV</li>
+											<li class="optimize_detail_list2_item17">15日ROI</li>
+											
+										</ul>	
+									</li>
+									
+									<li class="optimize_details optimize_detail_list2_counter">
+										<ul class="optimize_detail_list2">
+											<li class="optimize_detail_list2_item4">400000.00</li>
+											<li class="optimize_detail_list2_item5">67.00% <span><span></span></span></li>
+											<li class="optimize_detail_list2_item6">12006</li>
+											<li class="optimize_detail_list2_item7">117%</li>
+											<li class="optimize_detail_list2_item8">49.98</li>
+											<li class="optimize_detail_list2_item9">0.4769600</li>
+											<li class="optimize_detail_list2_item10">3.655172414</li>
+											<li class="optimize_detail_list2_item11">3.655172414</li>
+											<li class="optimize_detail_list2_item12">0.008541088</li>
+											<li class="optimize_detail_list2_item13">3.655172414</li>
+											<li class="optimize_detail_list2_item14">3.655172414</li>
+											<li class="optimize_detail_list2_item15">0.008541088</li>
+											<li class="optimize_detail_list2_item16">3.655172414</li>
+											<li class="optimize_detail_list2_item17">3.655172414</li>									
+										</ul>	
+									</li>
+									<li class="optimize_details optimize_detail_list2_counter">
+										<ul class="optimize_detail_list2">
+											<li class="optimize_detail_list2_item4">400000.00</li>
+											<li class="optimize_detail_list2_item5">67.00% <span><span></span></span></li>
+											<li class="optimize_detail_list2_item6">12006</li>
+											<li class="optimize_detail_list2_item7">117%</li>
+											<li class="optimize_detail_list2_item8">49.98</li>
+											<li class="optimize_detail_list2_item9">0.4769600</li>
+											<li class="optimize_detail_list2_item10">3.655172414</li>
+											<li class="optimize_detail_list2_item11">3.655172414</li>
+											<li class="optimize_detail_list2_item12">0.008541088</li>
+											<li class="optimize_detail_list2_item13">3.655172414</li>
+											<li class="optimize_detail_list2_item14">3.655172414</li>
+											<li class="optimize_detail_list2_item15">0.008541088</li>
+											<li class="optimize_detail_list2_item16">3.655172414</li>
+											<li class="optimize_detail_list2_item17">3.655172414</li>
+											
+										</ul>	
+									</li>
+									<li class="optimize_details optimize_detail_list2_counter">
+										<ul class="optimize_detail_list2">
+											<li class="optimize_detail_list2_item4">400000.00</li>
+											<li class="optimize_detail_list2_item5">67.00% <span><span></span></span></li>
+											<li class="optimize_detail_list2_item6">12006</li>
+											<li class="optimize_detail_list2_item7">117%</li>
+											<li class="optimize_detail_list2_item8">49.98</li>
+											<li class="optimize_detail_list2_item9">0.4769600</li>
+											<li class="optimize_detail_list2_item10">3.655172414</li>
+											<li class="optimize_detail_list2_item11">3.655172414</li>
+											<li class="optimize_detail_list2_item12">0.008541088</li>
+											<li class="optimize_detail_list2_item13">3.655172414</li>
+											<li class="optimize_detail_list2_item14">3.655172414</li>
+											<li class="optimize_detail_list2_item15">0.008541088</li>
+											<li class="optimize_detail_list2_item16">3.655172414</li>
+											<li class="optimize_detail_list2_item17">3.655172414</li>
+										</ul>	
+									</li>
+								</ul>
+							</div>	
+						</div>
+					</div>
+					
+					<div class="all_data">媒体数据</div>
+					<div class="all_data_con">
+						<div class="optimize_detail">
+							<div class="psc_left znsc">
+								<div class="multi_selection_head">
+									<div class="multi_selection_td1">媒体/总费用</div>
+									<div class="multi_selection_td6 inline_block">状态</div>
+									<div class="multi_selection_td3">投放平台</div>
+									<div class="multi_selection_td4">最佳投放费用</div>
+									<div class="multi_selection_td5 inline_block">目标CPA</div>
+								</div>
+								<div class="multi_selection_tr">
+									<div class="multi_selection_td1">
+										<div class="inline_block">
+											<p class="single_line">快手</p>
+											<p class="single_line">1,200,000.00</p>
+										</div>
+									</div>
+									<ul>
+										<li class="color_gray">
+											<div class="multi_selection_td6 inline_block">
+												<p>停用</p>
+											</div>
+											<div class="multi_selection_td3">IOS</div>
+											<div class="multi_selection_td4">
+												<p>600,000.00</p>
+												<input type="text" name="" id="" value="600,000.00" class="hide"/>
+											</div>
+											<div class="multi_selection_td5 inline_block">
+												<p>612</p>
+												<input type="text" name="" id="" value="612" class="hide"/>
+											</div>
+										</li>
+										<li>
+											<div class="multi_selection_td6 inline_block">
+												<p>启用</p>
+											</div>
+											<div class="multi_selection_td3">安卓</div>
+											<div class="multi_selection_td4">
+												<p class="hide">600,000.00</p>
+												<input type="text" name="" id="" value="600,000.00"/>
+											</div>
+											<div class="multi_selection_td5 inline_block">
+												<p class="hide">612</p>
+												<input type="text" name="" id="" value="612"/>
+											</div>
+										</li>
+									</ul>
+								</div>
+								<div class="multi_selection_tr">
+									<div class="multi_selection_td1">
+										<div class="inline_block">
+											<p class="single_line">UC浏览器</p>
+											<p class="single_line">500,000.00</p>
+										</div>
+									</div>
+									<ul>
+										<li>
+											<div class="multi_selection_td6 inline_block">
+												<p>启用</p>
+											</div>
+											<div class="multi_selection_td3">IOS</div>
+											<div class="multi_selection_td4">
+												<p class="hide">600,000.00</p>
+												<input type="text" name="" id="" value="600,000.00"/>
+											</div>
+											<div class="multi_selection_td5 inline_block">
+												<p class="hide">612</p>
+												<input type="text" name="" id="" value="612"/>
+											</div>
+										</li>
+										<li>
+											<div class="multi_selection_td6 inline_block">
+												<p>启用</p>
+											</div>
+											<div class="multi_selection_td3">安卓</div>
+											<div class="multi_selection_td4">
+												<p class="hide">600,000.00</p>
+												<input type="text" name="" id="" value="600,000.00"/>
+											</div>
+											<div class="multi_selection_td5 inline_block">
+												<p class="hide">612</p>
+												<input type="text" name="" id="" value="612"/>
+											</div>
+										</li>
+									</ul>
+								</div>
+								<div class="multi_selection_tr">
+									<div class="multi_selection_td1">
+										<div class="inline_block">
+											<p class="single_line">陌陌</p>
+											<p class="single_line">500,000.00</p>
+										</div>
+									</div>
+									<ul>
+										<li>
+											<div class="multi_selection_td6 inline_block">
+												<p>启用</p>
+											</div>
+											<div class="multi_selection_td3">IOS</div>
+											<div class="multi_selection_td4">
+												<p class="hide">600,000.00</p>
+												<input type="text" name="" id="" value="600,000.00"/>
+											</div>
+											<div class="multi_selection_td5 inline_block">
+												<p class="hide">612</p>
+												<input type="text" name="" id="" value="612"/>
+											</div>
+										</li>
+										<li>
+											<div class="multi_selection_td6 inline_block">
+												<p>启用</p>
+											</div>
+											<div class="multi_selection_td3">安卓</div>
+											<div class="multi_selection_td4">
+												<p class="hide">600,000.00</p>
+												<input type="text" name="" id="" value="600,000.00"/>
+											</div>
+											<div class="multi_selection_td5 inline_block">
+												<p class="hide">612</p>
+												<input type="text" name="" id="" value="612"/>
+											</div>
+										</li>
+									</ul>
+								</div>
+							</div>
+							<div class="content"> 
+								<ul class="optimize_detail_list1 all_data_right images_container">
+									<li class="optimize_detail_title">
+										<ul class="optimize_detail_list2">
+											<li class="optimize_detail_list2_item4">媒体实际消耗</li>
+											<li class="optimize_detail_list2_item5">投放进度</li>
+											<li class="optimize_detail_list2_item6">注册量</li>
+											<li class="optimize_detail_list2_item7">注册gap</li>
+											<li class="optimize_detail_list2_item8">注册CPA</li>
+											<li class="optimize_detail_list2_item9">次日留存</li>
+											<li class="optimize_detail_list2_item10">2日LTV</li>
+											<li class="optimize_detail_list2_item11">2日ROI</li>
+											<li class="optimize_detail_list2_item12">4日LTV</li>
+											<li class="optimize_detail_list2_item13">4日ROI</li>
+											<li class="optimize_detail_list2_item14">7日LTV</li>
+											<li class="optimize_detail_list2_item15">7日ROI</li>
+											<li class="optimize_detail_list2_item16">15日LTV</li>
+											<li class="optimize_detail_list2_item17">15日ROI</li>
+											<li class="optimize_detail_list2_item18">备注</li>
+											<li class="optimize_detail_list2_item19">投放上限</li>
+										</ul>	
+									</li>
+									<li class="optimize_details optimize_detail_list2_counter">
+										<ul class="optimize_detail_list2">
+											<li class="optimize_detail_list2_item4">400000.00</li>
+											<li class="optimize_detail_list2_item5">67.00% <span><span></span></span></li>
+											<li class="optimize_detail_list2_item6">12006</li>
+											<li class="optimize_detail_list2_item7">117%</li>
+											<li class="optimize_detail_list2_item8">49.98</li>
+											<li class="optimize_detail_list2_item9">0.4769600</li>
+											<li class="optimize_detail_list2_item10">3.655172414</li>
+											<li class="optimize_detail_list2_item11">3.655172414</li>
+											<li class="optimize_detail_list2_item12">0.008541088</li>
+											<li class="optimize_detail_list2_item13">3.655172414</li>
+											<li class="optimize_detail_list2_item14">3.655172414</li>
+											<li class="optimize_detail_list2_item15">0.008541088</li>
+											<li class="optimize_detail_list2_item16">3.655172414</li>
+											<li class="optimize_detail_list2_item17">3.655172414</li>
+											<li class="optimize_detail_list2_item18"></li>
+											<li class="optimize_detail_list2_item19">
+												<p class="single_line tfsx">100</p>
+											</li>
+										</ul>	
+									</li>
+									<li class="optimize_details optimize_detail_list2_counter">
+										<ul class="optimize_detail_list2">
+											<li class="optimize_detail_list2_item4">400000.00</li>
+											<li class="optimize_detail_list2_item5">67.00% <span><span></span></span></li>
+											<li class="optimize_detail_list2_item6">12006</li>
+											<li class="optimize_detail_list2_item7">117%</li>
+											<li class="optimize_detail_list2_item8">49.98</li>
+											<li class="optimize_detail_list2_item9">0.4769600</li>
+											<li class="optimize_detail_list2_item10">3.655172414</li>
+											<li class="optimize_detail_list2_item11">3.655172414</li>
+											<li class="optimize_detail_list2_item12">0.008541088</li>
+											<li class="optimize_detail_list2_item13">3.655172414</li>
+											<li class="optimize_detail_list2_item14">3.655172414</li>
+											<li class="optimize_detail_list2_item15">0.008541088</li>
+											<li class="optimize_detail_list2_item16">3.655172414</li>
+											<li class="optimize_detail_list2_item17">3.655172414</li>
+											<li class="optimize_detail_list2_item18"></li>
+											<li class="optimize_detail_list2_item19">
+												<p class="single_line tfsx">100</p>
+											</li>
+										</ul>	
+									</li>
+									<li class="optimize_details optimize_detail_list2_counter">
+										<ul class="optimize_detail_list2">
+											<li class="optimize_detail_list2_item4">400000.00</li>
+											<li class="optimize_detail_list2_item5">67.00% <span><span></span></span></li>
+											<li class="optimize_detail_list2_item6">12006</li>
+											<li class="optimize_detail_list2_item7">117%</li>
+											<li class="optimize_detail_list2_item8">49.98</li>
+											<li class="optimize_detail_list2_item9">0.4769600</li>
+											<li class="optimize_detail_list2_item10">3.655172414</li>
+											<li class="optimize_detail_list2_item11">3.655172414</li>
+											<li class="optimize_detail_list2_item12">0.008541088</li>
+											<li class="optimize_detail_list2_item13">3.655172414</li>
+											<li class="optimize_detail_list2_item14">3.655172414</li>
+											<li class="optimize_detail_list2_item15">0.008541088</li>
+											<li class="optimize_detail_list2_item16">3.655172414</li>
+											<li class="optimize_detail_list2_item17">3.655172414</li>
+											<li class="optimize_detail_list2_item18"></li>
+											<li class="optimize_detail_list2_item19">
+												<p class="single_line tfsx">100</p>
+											</li>
+										</ul>	
+									</li>
+									
+									<li class="optimize_details optimize_detail_list2_counter">
+										<ul class="optimize_detail_list2">
+											<li class="optimize_detail_list2_item4">400000.00</li>
+											<li class="optimize_detail_list2_item5">67.00% <span><span></span></span></li>
+											<li class="optimize_detail_list2_item6">12006</li>
+											<li class="optimize_detail_list2_item7">117%</li>
+											<li class="optimize_detail_list2_item8">49.98</li>
+											<li class="optimize_detail_list2_item9">0.4769600</li>
+											<li class="optimize_detail_list2_item10">3.655172414</li>
+											<li class="optimize_detail_list2_item11">3.655172414</li>
+											<li class="optimize_detail_list2_item12">0.008541088</li>
+											<li class="optimize_detail_list2_item13">3.655172414</li>
+											<li class="optimize_detail_list2_item14">3.655172414</li>
+											<li class="optimize_detail_list2_item15">0.008541088</li>
+											<li class="optimize_detail_list2_item16">3.655172414</li>
+											<li class="optimize_detail_list2_item17">3.655172414</li>
+											<li class="optimize_detail_list2_item18"></li>
+											<li class="optimize_detail_list2_item19">
+												<p class="single_line tfsx">100</p>
+											</li>
+										</ul>
+									</li>
+									<li class="optimize_details optimize_detail_list2_counter">
+										<ul class="optimize_detail_list2">
+											<li class="optimize_detail_list2_item4">400000.00</li>
+											<li class="optimize_detail_list2_item5">67.00% <span><span></span></span></li>
+											<li class="optimize_detail_list2_item6">12006</li>
+											<li class="optimize_detail_list2_item7">117%</li>
+											<li class="optimize_detail_list2_item8">49.98</li>
+											<li class="optimize_detail_list2_item9">0.4769600</li>
+											<li class="optimize_detail_list2_item10">3.655172414</li>
+											<li class="optimize_detail_list2_item11">3.655172414</li>
+											<li class="optimize_detail_list2_item12">0.008541088</li>
+											<li class="optimize_detail_list2_item13">3.655172414</li>
+											<li class="optimize_detail_list2_item14">3.655172414</li>
+											<li class="optimize_detail_list2_item15">0.008541088</li>
+											<li class="optimize_detail_list2_item16">3.655172414</li>
+											<li class="optimize_detail_list2_item17">3.655172414</li>
+											<li class="optimize_detail_list2_item18"></li>
+											<li class="optimize_detail_list2_item19">
+												<p class="single_line tfsx">100</p>
+											</li>
+										</ul>
+									</li>
+									<li class="optimize_details optimize_detail_list2_counter">
+										<ul class="optimize_detail_list2">
+											<li class="optimize_detail_list2_item4">400000.00</li>
+											<li class="optimize_detail_list2_item5">67.00% <span><span></span></span></li>
+											<li class="optimize_detail_list2_item6">12006</li>
+											<li class="optimize_detail_list2_item7">117%</li>
+											<li class="optimize_detail_list2_item8">49.98</li>
+											<li class="optimize_detail_list2_item9">0.4769600</li>
+											<li class="optimize_detail_list2_item10">3.655172414</li>
+											<li class="optimize_detail_list2_item11">3.655172414</li>
+											<li class="optimize_detail_list2_item12">0.008541088</li>
+											<li class="optimize_detail_list2_item13">3.655172414</li>
+											<li class="optimize_detail_list2_item14">3.655172414</li>
+											<li class="optimize_detail_list2_item15">0.008541088</li>
+											<li class="optimize_detail_list2_item16">3.655172414</li>
+											<li class="optimize_detail_list2_item17">3.655172414</li>
+											<li class="optimize_detail_list2_item18"></li>
+											<li class="optimize_detail_list2_item19">
+												<p class="single_line tfsx">100</p>
+											</li>
+										</ul>
+									</li>
+								</ul>
+							</div>	
+						</div>
+					</div>
+					<div class="paging_device">
+						<!-- 左 -->
+						<div class="pd_prev"></div>
+						<ul class="pd_num">
+							<li class="pd_num_active">1</li>
+							<li>2</li>
+							<li>3</li>
+							<li>4</li>
+							<li>5</li>
+						</ul>
+						<!-- 右 -->
+						<div class="pd_next"></div>
+						<p class="pd_page_num">共5页</p>
+					</div>
+					
+					<!-- 按键 -->
+					<div class="settle_case_btn bottom_btn">
+						<a href="" class="scb_confirm gradual_change_btn">确认</a>
+						<a href="" class="scb_cancel frame_btn">取消</a>
+					</div>
+				</div>
+			</div>
+		
+			<!-- 弹窗 -->
+			<div class="admin_popup hide">
+				<div class="mtgl_pop launch_upper_limit hide">
+					<div class="admin_popup_close"></div>
+					<h5>投放上限设置</h5>
+					<div class="assembly_text">
+						<p class="assembly_text_tit">投放上限</p>
+						<input type="text" id="" value="" placeholder="请输入投放上限参数"/>
+					</div>
+					
+					<div class="bottom_btn lul_btn">
+						<a href="javascript:" class="gradual_change_btn">保 存</a>
+						<a href="javascript:" class="frame_btn">取 消</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script src="../../js/jquery-1.7.2.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../../js/admin.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript" src="../../js/jquery.mCustomScrollbar.concat.min.js"></script>
+		<script>
+			(function($){
+				$(window).load(function(){
+					$(".content").mCustomScrollbar({
+						scrollInertia:550,
+						horizontalScroll:true,
+						mouseWheelPixels:116,
+						scrollButtons:{
+							enable:true,
+							scrollType:"pixels",
+							scrollAmount:116
+						},
+						callbacks:{
+							onScroll:function(){ snapScrollbar(); }
+						}
+					});
+					/* toggle buttons scroll type */
+					var content=$(".content");
+					$("a[rel='toggle-buttons-scroll-type']").html("<code>scrollType: \""+content.data("scrollButtons_scrollType")+"\"</code>");
+					$("a[rel='toggle-buttons-scroll-type']").click(function(e){
+						e.preventDefault();
+						var scrollType;
+						if(content.data("scrollButtons_scrollType")==="pixels"){
+							scrollType="continuous";
+						}else{
+							scrollType="pixels";
+						}
+						content.data({"scrollButtons_scrollType":scrollType}).mCustomScrollbar("update");
+						$(this).html("<code>scrollType: \""+content.data("scrollButtons_scrollType")+"\"</code>");
+					});
+					/* snap scrollbar fn */
+					var snapTo=[];
+					$(".content .images_container img").each(function(){
+						var $this=$(this),thisX=$this.position().left;
+						snapTo.push(thisX);
+					});
+					function snapScrollbar(){
+						var posX=$(".content .mCSB_container").position().left,closestX=findClosest(Math.abs(posX),snapTo);
+						$(".content").mCustomScrollbar("scrollTo",closestX,{scrollInertia:350,callbacks:false});
+					}
+					function findClosest(num,arr){
+		                var curr=arr[0];
+	    	            var diff=Math.abs(num-curr);
+	        	        for(var val=0; val<arr.length; val++){
+	            	        var newdiff=Math.abs(num-arr[val]);
+	                	    if(newdiff<diff){
+	                    	    diff=newdiff;
+	                        	curr=arr[val];
+	                    	}
+	                	}
+	                	return curr;
+	            	}
+				});
+			})(jQuery);
+		</script>
+	</body>
+</html>

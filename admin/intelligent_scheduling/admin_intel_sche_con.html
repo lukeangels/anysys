@@ -1,0 +1,606 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>O2精准广告系统</title>
+		<link rel="stylesheet" type="text/css" href="../../css/public.css"/>
+		<link rel="stylesheet" type="text/css" href="../../css/admin_style.css"/>
+	</head>
+	<body>
+		<div class="shell">
+			<!-- 左边二级分类导航 -->
+			<div class="left_nav">
+				<div class="left_nav_logo"></div>
+				<!-- 媒体管理 -->
+				<div class="media_manage">
+					<p class="classify_tit"><a href="../media_management/admin_mtgl_pc.html"><span></span>媒体管理</a></p>
+					<ul class="classify_con hide">
+						<li class="cch_xj"><a href="../media_management/admin_mtgl_pc.html"><span></span>PC媒体</a></li>
+						<li class="cch_gl"><a href="../media_management/admin_mtgl_move.html"><span></span>移动媒体</a></li>
+						<li class="cch_tz"><a href="../media_management/admin_mtgl_ggjypt.html"><span></span>广告交易平台</a></li>
+					</ul>
+				</div>
+				
+				<!-- 智能排期 -->
+				<div class="ln_con intel_sche">
+					<p class="classify_tit nav_active"><a href="admin_intel_sche_con.html"><span></span>智能排期(beta)</a></p>
+					<ul class="classify_con">
+						<li class="cc_li_active cch_xj"><a href="admin_intel_sche_con.html"><span></span>新建排期</a></li>
+						<li class="cch_gl"><a href="admin_total_preview.html"><span></span>排期管理</a></li>
+						<li class="cch_tz"><a href="admin_tzjm.html"><span></span>动态优化</a></li>
+					</ul>
+				</div>
+				
+				<!-- 普通排期 -->
+				<div class="ln_con ordin_sche">
+					<p class="classify_tit"><a href="../ordinary_scheduling/admin_ptpq_inf.html"><span></span>普通排期</a></p>
+					<ul class="classify_con hide">
+						<li class="cch_xj"><a href="../ordinary_scheduling/admin_ptpq_inf.html"><span></span>新建排期</a></li>
+						<li class="cch_gl"><a href="../ordinary_scheduling/admin_ptpq_pqgl.html"><span></span>排期管理</a></li>
+					</ul>
+				</div>
+				
+				<!-- 实时竞价排期 -->
+				<div class="ln_con price_sche">
+					<p class="classify_tit"><a href="../shishijingjiapaiqi/admin_ssjjpq_inf.html"><span></span>实时竞价排期</a></p>
+					<ul class="classify_con hide">
+						<li class="cch_xj"><a href="../shishijingjiapaiqi/admin_ssjjpq_inf.html"><span></span>新建排期</a></li>
+						<li class="cch_gl"><a href="../shishijingjiapaiqi/admin_ssjjpq_pqgl.html"><span></span>排期管理</a></li>
+					</ul>
+				</div>
+				
+				<!-- 智能素材 -->
+				<div class="ln_con intel_material">
+					<p class="classify_tit"><a href="../intelligent_material/admin_znsc_scgl.html"><span></span>智能素材</a></p>
+					<ul class="classify_con hide">
+						<li class="cch_xj"><a href="../intelligent_material/admin_znsc_scgl.html"><span></span>素材管理</a></li>
+						<li class="cch_gl"><a href="../intelligent_material/admin_znsc_scsh.html"><span></span>素材审核</a></li>
+					</ul>
+				</div>
+				
+				<!-- 数据中心 -->
+				<div class="ln_con data_center">
+					<p class="classify_tit"><a href=""><span></span>数据中心</a></p>
+					<ul class="classify_con hide">
+						<li class="cch_xj"><a href=""><span></span></a></li>
+						<li class="cch_gl"><a href=""><span></span></a></li>
+						<li class="cch_tz"><a href=""><span></span></a></li>
+					</ul>
+				</div>
+				
+				<!-- DMP精准设置 -->
+				<div class="ln_con precise_setting">
+					<p class="classify_tit"><a href=""><span></span>DMP精准设置</a></p>
+					<ul class="classify_con hide">
+						<li class="cch_xj"><a href=""><span></span></a></li>
+						<li class="cch_gl"><a href=""><span></span></a></li>
+						<li class="cch_tz"><a href=""><span></span></a></li>
+					</ul>
+				</div>
+				
+				<!-- 系统管理 -->
+				<div class="ln_con system_manage">
+					<p class="classify_tit"><a href="../system_management/admin_xtgl_user_settings.html"><span></span>系统管理</a></p>
+					<ul class="classify_con hide">
+						<li class="cch_xj"><a href="../system_management/admin_xtgl_user_settings.html"><span></span>用户管理</a></li>
+						<li class="cch_gl"><a href="../system_management/admin_xtgl_personal_center.html"><span></span>个人中心</a></li>
+						<li class="cch_tz"><a href="../system_management/admin_xtgl_game_management.html"><span></span>游戏管理</a></li>
+						<li class="cch_tz"><a href="../system_management/admin_xtgl_jztfsz.html"><span></span>精准投放设置</a></li>
+					</ul>
+				</div>
+			</div>
+			
+			<!-- 缩略图导航 -->
+			<div class="thumbnail_nav hide">
+				<div class="tn_logo"></div>
+				<ul class="tn_con">
+					<li class="tn_com_li tn_media_manage">
+						<p class="classify_tit"><span class="tn_span"></span>媒体管理</p>
+						<ul class="classify_con hide">
+							<li class="cch_xj"><a href="../media_management/admin_mtgl_pc.html"><span></span>PC媒体</a></li>
+							<li class="cch_gl"><a href="../media_management/admin_mtgl_move.html"><span></span>移动媒体</a></li>
+							<li class="cch_tz"><a href="../media_management/admin_mtgl_ggjypt.html"><span></span>广告交易平台</a></li>
+						</ul>
+					</li>
+					<li class="tn_com_li tn_intel_sche nav_active">
+						<p class="classify_tit"><span class="tn_span"></span>智能排期(beta)</p>
+						<ul class="classify_con hide">
+							<li class="cc_li_active cch_xj"><a href="admin_intel_sche_con.html"><span></span>新建排期</a></li>
+							<li class="cch_gl"><a href="admin_total_preview.html"><span></span>排期管理</a></li>
+							<li class="cch_tz"><a href="admin_tzjm.html"><span></span>动态优化</a></li>
+						</ul>
+					</li>
+					<li class="tn_com_li tn_ordin_sche">
+						<p class="classify_tit"><span class="tn_span"></span>普通排期</p>
+						<ul class="classify_con hide">
+							<li class="cch_xj"><a href="../ordinary_scheduling/admin_ptpq_inf.html"><span></span>新建排期</a></li>
+							<li class="cch_gl"><a href="../ordinary_scheduling/admin_ptpq_pqgl.html"><span></span>排期管理</a></li>
+						</ul>
+					</li>
+					<li class="tn_com_li tn_price_sche">
+						<p class="classify_tit"><span class="tn_span"></span>实时竞价排期</p>
+						<ul class="classify_con hide">
+							<li class="cch_xj"><a href="../shishijingjiapaiqi/admin_ssjjpq_inf.html"><span></span>新建排期</a></li>
+							<li class="cch_gl"><a href="../shishijingjiapaiqi/admin_ssjjpq_pqgl.html"><span></span>排期管理</a></li>
+						</ul>
+					</li>
+					<li class="tn_com_li tn_intel_material">
+						<p class="classify_tit"><span class="tn_span"></span>智能素材</p>
+						<ul class="classify_con hide">
+							<li class="cch_xj"><a href="../intelligent_material/admin_znsc_scgl.html"><span></span>素材管理</a></li>
+							<li class="cch_gl"><a href="../intelligent_material/admin_znsc_scsh.html"><span></span>素材审核</a></li>
+						</ul>
+					</li>
+					<li class="tn_com_li tn_data_center">
+						<p class="classify_tit"><span class="tn_span"></span>数据中心</p>
+						<ul class="classify_con hide">
+							<li class="cch_xj"><a href=""><span></span></a></li>
+							<li class="cch_gl"><a href=""><span></span></a></li>
+							<li class="cch_tz"><a href=""><span></span></a></li>
+						</ul>
+					</li>
+					<li class="tn_com_li tn_precise_setting">
+						<p class="classify_tit"><span class="tn_span"></span>DMP精准设置</p>
+						<ul class="classify_con hide">
+							<li class="cch_xj"><a href=""><span></span></a></li>
+							<li class="cch_gl"><a href=""><span></span></a></li>
+							<li class="cch_tz"><a href=""><span></span></a></li>
+						</ul>
+					</li>
+					<li class="tn_com_li tn_system_manage">
+						<p class="classify_tit"><span class="tn_span"></span>系统管理</p>
+						<ul class="classify_con hide">
+							<li class="cch_xj"><a href="../system_management/admin_xtgl_user_settings.html"><span></span>用户管理</a></li>
+							<li class="cch_gl"><a href="../system_management/admin_xtgl_personal_center.html"><span></span>个人中心</a></li>
+							<li class="cch_tz"><a href="../system_management/admin_xtgl_game_management.html"><span></span>游戏管理</a></li>
+							<li class="cch_tz"><a href="../system_management/admin_xtgl_jztfsz.html"><span></span>精准投放设置</a></li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+			
+			<!-- 右边内容区 -->
+			<div class="right_con">
+				<!-- 智能排期内容 -->
+				<div class="intel_sche_con rc">
+					<div class="int_top clearfix">
+						<div class="int_tit">
+							<p>填写排期信息</p>
+						</div>
+						<div class="login">
+							<!-- 但没有消息是em为隐藏状态 -->
+							<a href="javascript:" class="mail_btn">
+								<span>
+									<em>2</em>
+								</span>
+							</a>
+							<div class="login_sign_in">
+								<div class="lsi_img">
+									<img src="../../img/ico_16.png"/>
+								</div>
+								<p>艾丽斯...</p>
+								<span class="jt"></span>
+								<div class="lsi_sele hide">
+									<span></span>
+									<p class="qx">权 限<em></em></p>
+									<p class="wb">媒介运营</p>
+									<a href="">退出</a>
+								</div>
+							</div>
+							
+							<!-- 邮件弹窗 -->
+							<div class="mail_popup hide">
+								<span class="mail_popup_triangle"></span>
+								<div class="mail_popup_con_head">
+									<div class="mpch_tab mpch_active">
+										<p>系统通知<span class="hide"></span></p>
+									</div>
+									<!-- 但没有消息是span为隐藏状态 -->
+									<div class="mpch_tab">
+										<p>我的待办<span>2</span></p>
+									</div>
+									<span class="line"></span>
+								</div>
+								<div class="mpc">
+									<ul class="mail_popup_con hide">
+										<li>
+											<div class="mail_popup_con1">
+												<span></span>
+												<p class="mpc_event">动态调整</p>
+												<p class="mpc_time">2018.04.20</p>
+											</div>
+											<p class="mpc_event_con">您的排期《全军出击~2018年4月排期》已经由AI优化完成，请您务必在2018.4.21 16:00前确认 </p>
+											<div class="mpc_see_btn"><a href="">查看详情</a></div>
+										</li>
+										<li>
+											<div class="mail_popup_con1">
+												<span></span>
+												<p class="mpc_event">动态调整</p>
+												<p class="mpc_time">2018.04.20</p>
+											</div>
+											<p class="mpc_event_con">您的排期《全军出击~2018年4月排期》已经由AI优化完成，请您务必在2018.4.21 16:00前确认 </p>
+											<div class="mpc_see_btn"><a href="">查看详情</a></div>
+										</li>
+										<li>
+											<div class="mail_popup_con1">
+												<span></span>
+												<p class="mpc_event">动态调整</p>
+												<p class="mpc_time">2018.04.20</p>
+											</div>
+											<p class="mpc_event_con">您的排期《全军出击~2018年4月排期》已经由AI优化完成，请您务必在2018.4.21 16:00前确认 </p>
+											<div class="mpc_see_btn"><a href="">查看详情</a></div>
+										</li>
+										<li>
+											<div class="mail_popup_con1">
+												<span></span>
+												<p class="mpc_event">动态调整</p>
+												<p class="mpc_time">2018.04.20</p>
+											</div>
+											<p class="mpc_event_con">您的排期《全军出击~2018年4月排期》已经由AI优化完成，请您务必在2018.4.21 16:00前确认 </p>
+											<div class="mpc_see_btn"><a href="">查看详情</a></div>
+										</li>
+									</ul>
+									
+									
+									
+									<!-- 无消息 -->
+									<div class="mpc_not_news">
+										<div class="mpcnn_bg"></div>
+										<p>暂无系统消息</p>
+									</div>
+									<a href="" class="mpc_ckqb_btn">查看全部通知<span></span></a>
+								</div>
+								<div class="mpc hide">
+									<ul class="mail_popup_con">
+										<li>
+											<div class="mail_popup_con1">
+												<span></span>
+												<p class="mpc_event">动态调整</p>
+												<p class="mpc_time">2018.04.20</p>
+											</div>
+											<p class="mpc_event_con">您的排期《全军出击~2018年4月排期》已经由AI优化完成，请您务必在2018.4.21 16:00前确认 </p>
+											<div class="mpc_see_btn"><a href="">查看详情</a></div>
+										</li>
+										<li>
+											<div class="mail_popup_con1">
+												<span></span>
+												<p class="mpc_event">动态调整</p>
+												<p class="mpc_time">2018.04.20</p>
+											</div>
+											<p class="mpc_event_con">您的排期《全军出击~2018年4月排期》已经由AI优化完成，请您务必在2018.4.21 16:00前确认 </p>
+											<div class="mpc_see_btn"><a href="">查看详情</a></div>
+										</li>
+										<li>
+											<div class="mail_popup_con1">
+												<span></span>
+												<p class="mpc_event">动态调整</p>
+												<p class="mpc_time">2018.04.20</p>
+											</div>
+											<p class="mpc_event_con">您的排期《全军出击~2018年4月排期》已经由AI优化完成，请您务必在2018.4.21 16:00前确认 </p>
+											<div class="mpc_see_btn"><a href="">查看详情</a></div>
+										</li>
+									</ul>
+									
+									<!-- 无消息 -->
+									<div class="mpc_not_news hide">
+										<div class="mpcnn_bg"></div>
+										<p>暂无代办</p>
+									</div>
+									<a href="" class="mpc_ckqb_btn">查看全部信息<span></span></a>
+								</div>	
+							</div>
+						</div>
+					</div>
+					
+					<!-- 消息提示 -->
+					<div class="sc_message_hints">
+						<span class="scmh_ico"></span>
+						<p>亲爱的艾丽斯，下午好！您有<em>196</em>个待处理事项<a href="javascript:">立即查看</a></p>
+						<span class="scmh_colse"></span>
+					</div>
+					
+					<div class="isc_con">
+						<div class="iscc_right_con">
+							<div class="isccrc_basic_inf"> <!-- 5.29修改 -->
+								<h5>基本信息</h5>
+								<ul class="isccrc_ul"> <!-- 5.29修改 -->
+									<li>
+										<p>排期名称</p>
+										<input type="text" name="" id="" value="2018年3月百度原生信息流（安卓）技术联调-传奇霸业" />
+									</li>
+									
+									<li class="ilc_game_name">
+										<p>游戏名称</p>
+										<div class="ign_wrap">
+											<div class="select">
+												<!-- 点击class="iw_pla"后添加class="ign_bule" -->
+												<div class="pla pla_input"><p>请选择游戏或搜索游戏名称</p><span></span></div>
+												<div class="opti text_option hide">
+													<span>王者荣耀</span>
+													<span>QQ飞车</span>
+													<span>QQ炫舞</span>
+													<span>奥拉星</span>
+													<span>崩坏3</span>
+													<span>刺激战场</span>
+													<span>楚留香</span>
+													<span>刀塔传奇</span>
+												</div>
+											</div>
+												
+											<div class="ign_con">
+												<span>王者荣耀</span>
+												<span>QQ飞车</span>
+												<span>QQ炫舞</span>
+											</div>
+										</div>
+										
+									</li>
+									<li>
+										<p>投放目的</p>
+										<div class="irc_radio">
+											<div class="irc_radio_style">
+												<input type="radio" name="radio" id="" value="11" checked="checked"/>
+												<span class="ircrs_span"><em class="ircrs_bule"></em></span>
+											</div>
+											<p>拉新</p>
+											<div class="irc_radio_style">
+												<input type="radio" name="radio" id="" value=""/>
+												<span><em></em></span>
+											</div>
+											<p>拉活跃</p>
+											<div class="irc_radio_style">
+												<input type="radio" name="radio" id="" value=""/>
+												<span><em></em></span>
+											</div>
+											<p>拉新，拉活跃</p>
+										</div>
+									</li>
+									<li>
+										<p>投放金额</p>
+										<div class="ilc_tfje">
+											<input type="text" name="" id="" value="" placeholder="请输入总金额"/>
+											<span>元</span>
+										</div>
+									</li>
+									<li class="ilc_time">
+										<p>投放日期</p>
+										<div class="select">
+											<!-- 点击class="pla"后添加class="ign_bule" -->
+											<div class="pla pla_input"><p>请选择投放开始至截止日期</p><span></span></div>
+											<div class="opti date_option hide">
+												<!-- 年月数 -->
+												<div class="ilct_years_month clearfix">
+													<div class="ilct_month">
+														<span class="ilctm_left_jt"></span>
+														<span class="ilctm_text">6月</span>
+														<span class="ilctm_right_jt"></span>
+													</div>
+													<div class="ilct_years">
+														<em></em>
+														<span>2018年</span>
+													</div>
+												</div>
+												
+												<div class="ilct_date">
+													<!-- 星期 -->
+													<ul class="ilct_date_week">
+														<li>MON</li>
+														<li>TUE</li>
+														<li>WED</li>
+														<li>THU</li>
+														<li>FRL</li>
+														<li>SAT</li>
+														<li>SUN</li>
+													</ul>
+													
+													<!-- 日期 数-->
+													<ul class="ilct_date_day">
+														<!-- 点击投放日期后状态添加class="ilctd_tf",class="ilct_date_ash"是灰色-->
+														<li>
+															<div class="ilct_date_ds ilctd_ps1"><div class="ilct_date_ds_con"></div></div> <!-- 选中后的底色 -->
+															<span class="ilct_date_ash ilctd_tf">30</span>
+															<span class="ilct_date_ash">31</span>
+															<span class="ilct_date_ash">1</span>
+															<span class="ilct_date_ash">2</span>
+															<span>3</span>
+															<span>4</span>
+															<span>5</span>
+														</li>
+														<li>
+															<div class="ilct_date_ds ilctd_ps2"><div class="ilct_date_ds_con"></div></div> <!-- 选中后的底色 -->
+															
+															<!-- 点击截止日期后状态添加class="ilctd_jz" -->
+															<span>6</span>
+															<span class="ilctd_jz">7</span>
+															<span>8</span>
+															<span>9</span>
+															<span>10</span>
+															<span>11</span>
+															<span>12</span>
+														</li>
+														<li>
+															<div class="ilct_date_ds ilctd_ps3"><div class="ilct_date_ds_con"></div></div> <!-- 选中后的底色 -->
+															<span>13</span>
+															<span>14</span>
+															<span>15</span>
+															<span>16</span>
+															<span>17</span>
+															<span>18</span>
+															<span>19</span>
+														</li>
+														<li>
+															<div class="ilct_date_ds ilctd_ps4"><div class="ilct_date_ds_con"></div></div> <!-- 选中后的底色 -->
+															<span>20</span>
+															<span>21</span>
+															<span>22</span>
+															<span>23</span>
+															<span>24</span>
+															<span>25</span>
+															<span>26</span>
+														</li>
+														<li>
+															<div class="ilct_date_ds ilctd_ps5"><div class="ilct_date_ds_con"></div></div> <!-- 选中后的底色 -->
+															<span>27</span>
+															<span>28</span>
+															<span>29</span>
+															<span>30</span>
+															<span>1</span>
+															<span>2</span>
+															<span>3</span>
+														</li>
+														
+													</ul>
+													<!-- 选择提示 -->
+													<div class="ilctd_choice_prompt">
+														<!-- 点击投放日期前 -->
+														<div class="ilctdcp_p1">请选择开始投放日期</div>
+														
+														<!-- 点击截止日期前 -->
+														<div class="ilctdcp_p2 hide">请选择投放截止日期</div>
+													
+													</div>
+												</div>
+											</div>
+										</div>
+									</li>
+									<li>
+										<p>审核人</p>
+										<div class="select">
+											<!-- 点击class="pla"后添加class="ign_bule" -->
+											<div class="pla pla_input"><p>请选择审核人</p><span></span></div>
+											<div class="opti text_option hide">
+												<span>王者荣耀</span>
+												<span>QQ飞车</span>
+												<span>QQ炫舞</span>
+												<span>奥拉星</span>
+												<span>崩坏3</span>
+											</div>
+										</div>
+									</li>
+								</ul>
+							</div>
+							
+							<!-- 5.29修改 -->
+							
+							<!-- 高级设置 -->
+							<div class="isccrc_advanced_setting ias_padding">
+								<div class="ias_tit clearfix">
+									<h5 class="float_left">高级设置<span>（选填）</span></h5>
+									<div class="open_and_take_up float_right">
+										<p class="oatu_open">展开<span></span></p>
+										<p class="oatu_take_up hide">收起<span></span></p>
+									</div>
+								</div>
+								
+								<ul class="isccrc_ul hide">
+									<li>
+										<p>媒体比例</p>
+										<div class="ias_mtbl_input inline_block">
+											<p>IOS</p>
+											<div class="ias_input_ios inline_block">
+												<input type="text" name="" id="" value="" placeholder="IOS比例"/>
+												<span>%</span>
+											</div>
+											<p>安卓</p>
+											<div class="ias_input_android inline_block">
+												<input type="text" name="" id="" value="" placeholder="安卓比例"/>
+												<span>%</span>
+											</div>
+										</div>
+									</li>
+									
+									<li class="ptpqic_con_input">
+										<p class="pic_name">必选媒体</p>
+										<div class="pci_drop_down">
+											<div class="select">
+												<!-- 点击class="iw_pla"后添加class="ign_bule" -->
+												<div class="pla"><p>请选择或输入必选媒体</p><span></span></div>
+												<div class="opti text_option hide">
+													<span>王者荣耀</span>
+													<span>QQ飞车</span>
+													<span>QQ炫舞</span>
+													<span>奥拉星</span>
+													<span>崩坏3</span>
+													<span>刺激战场</span>
+													<span>楚留香</span>
+													<span>刀塔传奇</span>
+												</div>
+											</div>
+											
+											<!-- 当选择一个媒体后，出现这个媒体框，所有选中的每个都添加在下框中 -->
+											<div class="already_chosen hide">
+												<p><em>英雄联盟</em><span></span></p>
+											</div>
+										</div>
+									</li>
+									<li class="ptpqic_con_input">
+										<p class="pic_name">不选媒体</p>
+										<div class="pci_drop_down">
+											<div class="select">
+												<!-- 点击class="iw_pla"后添加class="ign_bule" -->
+												<div class="pla"><p>请选择或输入不选媒体</p><span></span></div>
+												<div class="opti text_option hide">
+													<span>王者荣耀</span>
+													<span>QQ飞车</span>
+													<span>QQ炫舞</span>
+													<span>奥拉星</span>
+													<span>崩坏3</span>
+													<span>刺激战场</span>
+													<span>楚留香</span>
+													<span>刀塔传奇</span>
+												</div>
+											</div>
+											
+											<!-- 当选择一个媒体后，出现这个媒体框，所有选中的每个都添加在下框中 -->
+											<div class="already_chosen hide">
+												<p><em>英雄联盟</em><span></span></p>
+											</div>
+										</div>
+									</li>
+									<li>
+										<p>参考游戏</p>
+										<div class="ias_sele inline_block">
+											<div class="select">
+												<!-- 点击class="pla"后添加class="ign_bule" -->
+												<div class="pla pla_input"><p>请选择审核人</p><span></span></div>
+												<div class="opti text_option hide">
+													<span>王者荣耀</span>
+													<span>QQ飞车</span>
+													<span>QQ炫舞</span>
+													<span>奥拉星</span>
+													<span>崩坏3</span>
+												</div>
+											</div>
+											<div class="select">
+												<!-- 点击class="pla"后添加class="ign_bule" -->
+												<div class="pla pla_input"><p>请选择审核人</p><span></span></div>
+												<div class="opti text_option hide">
+													<span>王者荣耀</span>
+													<span>QQ飞车</span>
+													<span>QQ炫舞</span>
+													<span>奥拉星</span>
+													<span>崩坏3</span>
+												</div>
+											</div>
+										</div>
+									</li>
+									<li>
+										<p>目标CPA</p>
+										<input type="text" name="" id="" value="" placeholder="请输入目标CPA"/>
+									</li>
+								</ul>
+							</div>
+							<div class="ilc_btn">
+								<a href="admin_sche_inf.html" class="ilc_btn_left">生成智能方案</a>
+								<a href="javascript:" class="ilc_btn_right">取消</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script src="../../js/jquery-1.7.2.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../../js/jquery.mCustomScrollbar.concat.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../../js/admin.js" type="text/javascript" charset="utf-8"></script>
+	</body>
+</html>
